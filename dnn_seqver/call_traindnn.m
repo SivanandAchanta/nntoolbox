@@ -42,7 +42,7 @@ clear all; close all; clc;
 
 % Load configuration file
 config_spss
-% config
+% config_basic
 
 % Step 1 : Read data
 readdata_rnn

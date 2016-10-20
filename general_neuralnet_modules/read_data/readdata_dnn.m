@@ -89,7 +89,6 @@ if intmvnf
     I1 = bsxfun(@rdivide,I1,v(:,mvnivec)+1e-5);
     train_batchdata(:,mvnivec) = I1;
 end
-clear I1;
 train_batchdata = train_batchdata(:,invec);
 
 if outtmvnf
@@ -103,7 +102,6 @@ if outtmvnf
     train_batchtargets = I1;
     save(strcat(datadir,'maxmino.mat'),'maxv','minv');
 end
-clear I1;
 train_batchtargets = train_batchtargets(:,outvec);
 
 totnum=size(train_batchdata,1);
@@ -158,7 +156,6 @@ val_clv = cumsum([1 clv]);
 val_numbats = length(val_clv) - 1;
 clear data targets clv
 
-val_batchsize = 10000;
 Nval = size(val_batchdata,1);
 remsamps = mod(Nval,val_batchsize);
 Nval = Nval - remsamps;
@@ -203,7 +200,7 @@ test_clv = cumsum([1 clv]);
 test_numbats = length(test_clv) - 1;
 clear data targets clv
 
-test_batchsize = 10000;
+
 Ntest = size(test_batchdata,1);
 remsamps = mod(Ntest,test_batchsize);
 Ntest = Ntest - remsamps;

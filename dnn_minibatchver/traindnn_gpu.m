@@ -69,14 +69,14 @@ for NE = 1:numepochs
         num_up = num_up + 1;
         
         % get data
-        [X,Y,bs] = get_XY(train_batchdata, train_batchtargets, rp, i, gpu_flag);
+        [X,Y] = get_XY(train_batchdata, train_batchtargets, rp, i, gpu_flag);
         
         % fp
-        [otl] = get_otl(bs,nl,nlv);
-        [ol] = fpav_gpu(X,GW,Gb,nl,fl,nh,wtl,btl,a_tanh,b_tanh,bs);
+        [otl] = get_otl(train_batchsize,nl,nlv);
+        [ol] = fpav_gpu(X,GW,Gb,nl,fl,nh,wtl,btl,a_tanh,b_tanh,train_batchsize);
         
         % bp
-        [gW,gb] = bpav_gpu(X,Y,ol,GW,otl,btl,wtl,a_tanh,b_tanh,bby2a,fl,bs,nl,nh,cfn,l1,l2);
+        [gW,gb] = bpav_gpu(X,Y,ol,GW,otl,btl,wtl,a_tanh,b_tanh,bby2a,fl,train_batchsize,nl,nh,cfn,l1,l2);
 
         % *** gradCheck ***
         % gradCheck
@@ -87,12 +87,12 @@ for NE = 1:numepochs
         if mod(num_up,check_valfreq) == 0
             
             tic
-            [trainerr] = compute_error(train_batchdata,train_batchtargets,train_clv,train_test_numbats,gpu_flag,GW,Gb,nl,nlv,fl,nh,wtl,btl,cfn,a_tanh,b_tanh);
+            [trainerr] = compute_error(train_batchdata,train_batchtargets,train_test_numbats,gpu_flag,GW,Gb,nl,nlv,fl,nh,wtl,btl,cfn,a_tanh,b_tanh,val_batchsize);
             toc
             
             % Validation data error computation
             tvde = tic;
-            [valerr] = compute_error(val_batchdata,val_batchtargets,val_clv,val_numbats,gpu_flag,GW,Gb,nl,nlv,fl,nh,wtl,btl,cfn,a_tanh,b_tanh);
+            [valerr] = compute_error(val_batchdata,val_batchtargets,val_numbats,gpu_flag,GW,Gb,nl,nlv,fl,nh,wtl,btl,cfn,a_tanh,b_tanh,val_batchsize);
             toc(tvde)
             
             % Print error (validation) per epoc
@@ -105,7 +105,7 @@ for NE = 1:numepochs
                 best_val_loss = valerr;
                 best_iter = iter;
                 
-                [testerr] = compute_error(test_batchdata,test_batchtargets,test_clv,test_numbats,gpu_flag,GW,Gb,nl,nlv,fl,nh,wtl,btl,cfn,a_tanh,b_tanh);
+                [testerr] = compute_error(test_batchdata,test_batchtargets,test_numbats,gpu_flag,GW,Gb,nl,nlv,fl,nh,wtl,btl,cfn,a_tanh,b_tanh,test_batchsize);
                 
                 % Print error (testing) per epoc
                 fprintf('\t Epoch : %d  Update: %d Test Loss : %f \n',NE,num_up,testerr);
