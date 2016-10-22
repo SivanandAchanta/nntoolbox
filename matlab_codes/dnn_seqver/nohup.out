@@ -1,0 +1,3613 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016a (9.0.0.341360) 64-bit (glnxa64)
+                             February 11, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> >> >> >> 
+in_nml_meth =
+
+mvni
+
+
+out_nml_meth =
+
+mvno
+
+[Warning: Directory already exists.] 
+[> In config (line 128)] 
+[Warning: Directory already exists.] 
+[> In config (line 129)] 
+>> >> >> 
+i =
+
+     1
+
+
+i =
+
+     2
+
+
+i =
+
+     3
+
+
+i =
+
+     4
+
+
+i =
+
+     5
+
+
+i =
+
+     6
+
+     1219024
+
+     1219024
+
+Normalizing input feats using mean variance normalization ...
+Normalizing output feats using mean variance normalization ...
+Size of the training dataset 2874283 
+
+ans =
+
+       51499
+
+
+ans =
+
+       51499
+
+
+ans =
+
+       51499
+
+
+ans =
+
+       51499
+
+size of train i/o data
+
+Nin =
+
+     2874283
+
+
+din =
+
+   310
+
+
+Nout =
+
+     2874283
+
+
+dout =
+
+     4
+
+Number of Train, Validation and Test Batches ...
+
+train_numbats =
+
+        5634
+
+
+val_numbats =
+
+   253
+
+
+test_numbats =
+
+   253
+
+>> >> >> >> >> >> >> training with ADA-DELTA optimizer ...
+size of weight matrix
+
+ans =
+
+           1      157000
+
+
+arch_name =
+
+310L500R4L_l25e-05_rho0.99_eps0.0001_mf0_mvni_mvno_1
+
+training on GPU ... :) 
+Elapsed time is 2.669485 seconds.
+Elapsed time is 0.684930 seconds.
+Epoch : 1  Update : 1000 Train Loss : 1.025695 Val Loss : 1.006115 
+Elapsed time is 0.587726 seconds.
+	 Epoch : 1  Update: 1000 Test Loss : 1.006115 
+Elapsed time is 2.575327 seconds.
+Elapsed time is 0.683968 seconds.
+Epoch : 1  Update : 2000 Train Loss : 0.967564 Val Loss : 0.968807 
+Elapsed time is 0.586804 seconds.
+	 Epoch : 1  Update: 2000 Test Loss : 0.968807 
+Elapsed time is 2.580909 seconds.
+Elapsed time is 0.687299 seconds.
+Epoch : 1  Update : 3000 Train Loss : 0.965268 Val Loss : 0.973990 
+Elapsed time is 2.567526 seconds.
+Elapsed time is 0.688320 seconds.
+Epoch : 1  Update : 4000 Train Loss : 1.036146 Val Loss : 1.054000 
+Elapsed time is 2.552865 seconds.
+Elapsed time is 0.683663 seconds.
+Epoch : 1  Update : 5000 Train Loss : 0.973231 Val Loss : 0.989684 
+Elapsed time is 90.110268 seconds.
+Elapsed time is 2.589967 seconds.
+Elapsed time is 0.685037 seconds.
+Epoch : 2  Update : 6000 Train Loss : 0.965341 Val Loss : 0.977538 
+Elapsed time is 2.554781 seconds.
+Elapsed time is 0.687500 seconds.
+Epoch : 2  Update : 7000 Train Loss : 0.990056 Val Loss : 0.990815 
+Elapsed time is 2.565072 seconds.
+Elapsed time is 0.689349 seconds.
+Epoch : 2  Update : 8000 Train Loss : 0.982642 Val Loss : 0.983194 
+Elapsed time is 2.562773 seconds.
+Elapsed time is 0.684747 seconds.
+Epoch : 2  Update : 9000 Train Loss : 1.043625 Val Loss : 1.018442 
+Elapsed time is 2.591496 seconds.
+Elapsed time is 0.688775 seconds.
+Epoch : 2  Update : 10000 Train Loss : 0.951284 Val Loss : 0.952111 
+Elapsed time is 0.590969 seconds.
+	 Epoch : 2  Update: 10000 Test Loss : 0.952111 
+Elapsed time is 2.620201 seconds.
+Elapsed time is 0.696893 seconds.
+Epoch : 2  Update : 11000 Train Loss : 0.994218 Val Loss : 0.967673 
+Elapsed time is 67.304350 seconds.
+Elapsed time is 2.608964 seconds.
+Elapsed time is 0.695259 seconds.
+Epoch : 3  Update : 12000 Train Loss : 0.960548 Val Loss : 0.972157 
+Elapsed time is 2.609461 seconds.
+Elapsed time is 0.695046 seconds.
+Epoch : 3  Update : 13000 Train Loss : 0.963351 Val Loss : 0.959697 
+Elapsed time is 2.638420 seconds.
+Elapsed time is 0.695434 seconds.
+Epoch : 3  Update : 14000 Train Loss : 0.969056 Val Loss : 0.969614 
+Elapsed time is 2.610774 seconds.
+Elapsed time is 0.695968 seconds.
+Epoch : 3  Update : 15000 Train Loss : 0.957485 Val Loss : 0.962940 
+Elapsed time is 2.603976 seconds.
+Elapsed time is 0.695023 seconds.
+Epoch : 3  Update : 16000 Train Loss : 0.937243 Val Loss : 0.953339 
+Elapsed time is 64.661437 seconds.
+Elapsed time is 2.613762 seconds.
+Elapsed time is 0.697030 seconds.
+Epoch : 4  Update : 17000 Train Loss : 1.017958 Val Loss : 1.008745 
+Elapsed time is 2.656218 seconds.
+Elapsed time is 0.701954 seconds.
+Epoch : 4  Update : 18000 Train Loss : 0.948987 Val Loss : 0.957419 
+Elapsed time is 2.631735 seconds.
+Elapsed time is 0.697224 seconds.
+Epoch : 4  Update : 19000 Train Loss : 0.988334 Val Loss : 0.978011 
+Elapsed time is 2.613709 seconds.
+Elapsed time is 0.695895 seconds.
+Epoch : 4  Update : 20000 Train Loss : 0.973818 Val Loss : 0.984458 
+Elapsed time is 2.605980 seconds.
+Elapsed time is 0.695958 seconds.
+Epoch : 4  Update : 21000 Train Loss : 0.976970 Val Loss : 0.977473 
+Elapsed time is 2.645864 seconds.
+Elapsed time is 0.702212 seconds.
+Epoch : 4  Update : 22000 Train Loss : 0.951264 Val Loss : 0.957780 
+Elapsed time is 68.046602 seconds.
+Elapsed time is 2.636834 seconds.
+Elapsed time is 0.695879 seconds.
+Epoch : 5  Update : 23000 Train Loss : 0.956199 Val Loss : 0.972817 
+Elapsed time is 2.610663 seconds.
+Elapsed time is 0.699780 seconds.
+Epoch : 5  Update : 24000 Train Loss : 0.937960 Val Loss : 0.950847 
+Elapsed time is 0.601590 seconds.
+	 Epoch : 5  Update: 24000 Test Loss : 0.950847 
+Elapsed time is 2.564550 seconds.
+Elapsed time is 0.688684 seconds.
+Epoch : 5  Update : 25000 Train Loss : 0.967915 Val Loss : 0.959769 
+Elapsed time is 2.580567 seconds.
+Elapsed time is 0.687483 seconds.
+Epoch : 5  Update : 26000 Train Loss : 0.976588 Val Loss : 0.984123 
+Elapsed time is 2.560379 seconds.
+Elapsed time is 0.686545 seconds.
+Epoch : 5  Update : 27000 Train Loss : 0.939291 Val Loss : 0.941975 
+Elapsed time is 0.593081 seconds.
+	 Epoch : 5  Update: 27000 Test Loss : 0.941975 
+Elapsed time is 2.618431 seconds.
+Elapsed time is 0.696537 seconds.
+Epoch : 5  Update : 28000 Train Loss : 0.970960 Val Loss : 0.983345 
+Elapsed time is 68.283677 seconds.
+Elapsed time is 2.626001 seconds.
+Elapsed time is 0.698310 seconds.
+Epoch : 6  Update : 29000 Train Loss : 0.934332 Val Loss : 0.941337 
+Elapsed time is 0.606016 seconds.
+	 Epoch : 6  Update: 29000 Test Loss : 0.941337 
+Elapsed time is 2.599270 seconds.
+Elapsed time is 0.686147 seconds.
+Epoch : 6  Update : 30000 Train Loss : 0.989565 Val Loss : 1.008144 
+Elapsed time is 2.565517 seconds.
+Elapsed time is 0.688002 seconds.
+Epoch : 6  Update : 31000 Train Loss : 0.940481 Val Loss : 0.952696 
+Elapsed time is 2.564579 seconds.
+Elapsed time is 0.689491 seconds.
+Epoch : 6  Update : 32000 Train Loss : 0.936818 Val Loss : 0.951172 
+Elapsed time is 2.571439 seconds.
+Elapsed time is 0.685374 seconds.
+Epoch : 6  Update : 33000 Train Loss : 0.933991 Val Loss : 0.950449 
+Elapsed time is 63.950572 seconds.
+Elapsed time is 2.607545 seconds.
+Elapsed time is 0.694114 seconds.
+Epoch : 7  Update : 34000 Train Loss : 0.950454 Val Loss : 0.956939 
+Elapsed time is 2.590806 seconds.
+Elapsed time is 0.695403 seconds.
+Epoch : 7  Update : 35000 Train Loss : 0.957336 Val Loss : 0.969726 
+Elapsed time is 2.556630 seconds.
+Elapsed time is 0.688972 seconds.
+Epoch : 7  Update : 36000 Train Loss : 1.034760 Val Loss : 1.034944 
+Elapsed time is 2.568847 seconds.
+Elapsed time is 0.688854 seconds.
+Epoch : 7  Update : 37000 Train Loss : 0.956321 Val Loss : 0.971895 
+Elapsed time is 2.560831 seconds.
+Elapsed time is 0.685113 seconds.
+Epoch : 7  Update : 38000 Train Loss : 0.948078 Val Loss : 0.949825 
+Elapsed time is 2.581963 seconds.
+Elapsed time is 0.684972 seconds.
+Epoch : 7  Update : 39000 Train Loss : 0.942854 Val Loss : 0.956299 
+Elapsed time is 66.296018 seconds.
+Elapsed time is 2.557805 seconds.
+Elapsed time is 0.685815 seconds.
+Epoch : 8  Update : 40000 Train Loss : 0.971233 Val Loss : 0.975163 
+Elapsed time is 2.557115 seconds.
+Elapsed time is 0.685749 seconds.
+Epoch : 8  Update : 41000 Train Loss : 1.069609 Val Loss : 1.092281 
+Elapsed time is 2.559472 seconds.
+Elapsed time is 0.684932 seconds.
+Epoch : 8  Update : 42000 Train Loss : 0.964090 Val Loss : 0.989278 
+Elapsed time is 2.599654 seconds.
+Elapsed time is 0.692989 seconds.
+Epoch : 8  Update : 43000 Train Loss : 0.952239 Val Loss : 0.956905 
+Elapsed time is 2.590662 seconds.
+Elapsed time is 0.692681 seconds.
+Epoch : 8  Update : 44000 Train Loss : 0.955383 Val Loss : 0.953622 
+Elapsed time is 2.572804 seconds.
+Elapsed time is 0.693161 seconds.
+Epoch : 8  Update : 45000 Train Loss : 0.942925 Val Loss : 0.962577 
+Elapsed time is 66.309390 seconds.
+Elapsed time is 2.580525 seconds.
+Elapsed time is 0.690871 seconds.
+Epoch : 9  Update : 46000 Train Loss : 0.940978 Val Loss : 0.951304 
+Elapsed time is 2.611956 seconds.
+Elapsed time is 0.690006 seconds.
+Epoch : 9  Update : 47000 Train Loss : 0.967166 Val Loss : 0.963045 
+Elapsed time is 2.582174 seconds.
+Elapsed time is 0.693200 seconds.
+Epoch : 9  Update : 48000 Train Loss : 0.937804 Val Loss : 0.943985 
+Elapsed time is 2.586432 seconds.
+Elapsed time is 0.692850 seconds.
+Epoch : 9  Update : 49000 Train Loss : 0.977720 Val Loss : 1.004826 
+Elapsed time is 2.576250 seconds.
+Elapsed time is 0.690063 seconds.
+Epoch : 9  Update : 50000 Train Loss : 0.941349 Val Loss : 0.960355 
+Elapsed time is 63.343342 seconds.
+Elapsed time is 2.592470 seconds.
+Elapsed time is 0.688449 seconds.
+Epoch : 10  Update : 51000 Train Loss : 0.951144 Val Loss : 0.972932 
+Elapsed time is 2.584530 seconds.
+Elapsed time is 0.693010 seconds.
+Epoch : 10  Update : 52000 Train Loss : 0.970470 Val Loss : 0.973828 
+Elapsed time is 2.571709 seconds.
+Elapsed time is 0.688862 seconds.
+Epoch : 10  Update : 53000 Train Loss : 0.945275 Val Loss : 0.956074 
+Elapsed time is 2.561955 seconds.
+Elapsed time is 0.688528 seconds.
+Epoch : 10  Update : 54000 Train Loss : 0.939804 Val Loss : 0.960888 
+Elapsed time is 2.610198 seconds.
+Elapsed time is 0.690396 seconds.
+Epoch : 10  Update : 55000 Train Loss : 0.955596 Val Loss : 0.960926 
+Elapsed time is 2.583804 seconds.
+Elapsed time is 0.691171 seconds.
+Epoch : 10  Update : 56000 Train Loss : 0.951218 Val Loss : 0.970965 
+Elapsed time is 66.473465 seconds.
+Elapsed time is 2.585030 seconds.
+Elapsed time is 0.693698 seconds.
+Epoch : 11  Update : 57000 Train Loss : 0.956506 Val Loss : 0.986372 
+Elapsed time is 2.585074 seconds.
+Elapsed time is 0.693157 seconds.
+Epoch : 11  Update : 58000 Train Loss : 0.974465 Val Loss : 0.976415 
+Elapsed time is 2.599593 seconds.
+Elapsed time is 0.691785 seconds.
+Epoch : 11  Update : 59000 Train Loss : 0.938408 Val Loss : 0.961120 
+Elapsed time is 2.579228 seconds.
+Elapsed time is 0.692512 seconds.
+Epoch : 11  Update : 60000 Train Loss : 0.971908 Val Loss : 0.984949 
+Elapsed time is 2.578734 seconds.
+Elapsed time is 0.689215 seconds.
+Epoch : 11  Update : 61000 Train Loss : 0.942338 Val Loss : 0.958261 
+Elapsed time is 63.297670 seconds.
+Elapsed time is 2.569003 seconds.
+Elapsed time is 0.689872 seconds.
+Epoch : 12  Update : 62000 Train Loss : 0.928128 Val Loss : 0.944452 
+Elapsed time is 2.609574 seconds.
+Elapsed time is 0.695117 seconds.
+Epoch : 12  Update : 63000 Train Loss : 1.071444 Val Loss : 1.074372 
+Elapsed time is 2.569380 seconds.
+Elapsed time is 0.693682 seconds.
+Epoch : 12  Update : 64000 Train Loss : 0.940423 Val Loss : 0.946194 
+Elapsed time is 2.572551 seconds.
+Elapsed time is 0.691817 seconds.
+Epoch : 12  Update : 65000 Train Loss : 0.979317 Val Loss : 0.988956 
+Elapsed time is 2.581344 seconds.
+Elapsed time is 0.691783 seconds.
+Epoch : 12  Update : 66000 Train Loss : 0.964867 Val Loss : 0.968211 
+Elapsed time is 2.581553 seconds.
+Elapsed time is 0.684815 seconds.
+Epoch : 12  Update : 67000 Train Loss : 1.189034 Val Loss : 1.237434 
+Elapsed time is 66.534465 seconds.
+Elapsed time is 2.569474 seconds.
+Elapsed time is 0.687096 seconds.
+Epoch : 13  Update : 68000 Train Loss : 0.958413 Val Loss : 0.965579 
+Elapsed time is 2.567497 seconds.
+Elapsed time is 0.687760 seconds.
+Epoch : 13  Update : 69000 Train Loss : 0.922762 Val Loss : 0.937910 
+Elapsed time is 0.592761 seconds.
+	 Epoch : 13  Update: 69000 Test Loss : 0.937910 
+Elapsed time is 2.627426 seconds.
+Elapsed time is 0.699159 seconds.
+Epoch : 13  Update : 70000 Train Loss : 1.047267 Val Loss : 1.042547 
+Elapsed time is 2.651756 seconds.
+Elapsed time is 0.697804 seconds.
+Epoch : 13  Update : 71000 Train Loss : 0.926792 Val Loss : 0.944517 
+Elapsed time is 2.621937 seconds.
+Elapsed time is 0.704984 seconds.
+Epoch : 13  Update : 72000 Train Loss : 0.943897 Val Loss : 0.945740 
+Elapsed time is 2.623515 seconds.
+Elapsed time is 0.699292 seconds.
+Epoch : 13  Update : 73000 Train Loss : 0.951959 Val Loss : 0.977161 
+Elapsed time is 68.245527 seconds.
+Elapsed time is 2.625435 seconds.
+Elapsed time is 0.699764 seconds.
+Epoch : 14  Update : 74000 Train Loss : 1.045186 Val Loss : 1.021770 
+Elapsed time is 2.650617 seconds.
+Elapsed time is 0.700657 seconds.
+Epoch : 14  Update : 75000 Train Loss : 0.931759 Val Loss : 0.943936 
+Elapsed time is 2.631579 seconds.
+Elapsed time is 0.701611 seconds.
+Epoch : 14  Update : 76000 Train Loss : 0.959409 Val Loss : 0.977061 
+Elapsed time is 2.630714 seconds.
+Elapsed time is 0.700090 seconds.
+Epoch : 14  Update : 77000 Train Loss : 0.938264 Val Loss : 0.940818 
+Elapsed time is 2.633380 seconds.
+Elapsed time is 0.700881 seconds.
+Epoch : 14  Update : 78000 Train Loss : 0.940279 Val Loss : 0.957379 
+Elapsed time is 64.850184 seconds.
+Elapsed time is 2.650963 seconds.
+Elapsed time is 0.702154 seconds.
+Epoch : 15  Update : 79000 Train Loss : 0.959435 Val Loss : 0.969421 
+Elapsed time is 2.641787 seconds.
+Elapsed time is 0.700050 seconds.
+Epoch : 15  Update : 80000 Train Loss : 0.947710 Val Loss : 0.968281 
+Elapsed time is 2.637409 seconds.
+Elapsed time is 0.699139 seconds.
+Epoch : 15  Update : 81000 Train Loss : 0.971313 Val Loss : 0.972119 
+Elapsed time is 2.616576 seconds.
+Elapsed time is 0.697095 seconds.
+Epoch : 15  Update : 82000 Train Loss : 0.929558 Val Loss : 0.940825 
+Elapsed time is 2.672778 seconds.
+Elapsed time is 0.704096 seconds.
+Epoch : 15  Update : 83000 Train Loss : 0.950698 Val Loss : 0.952335 
+Elapsed time is 2.627600 seconds.
+Elapsed time is 0.702549 seconds.
+Epoch : 15  Update : 84000 Train Loss : 0.933212 Val Loss : 0.944418 
+Elapsed time is 68.195949 seconds.
+Elapsed time is 2.625753 seconds.
+Elapsed time is 0.698119 seconds.
+Epoch : 16  Update : 85000 Train Loss : 0.937173 Val Loss : 0.945377 
+Elapsed time is 2.606948 seconds.
+Elapsed time is 0.695961 seconds.
+Epoch : 16  Update : 86000 Train Loss : 0.951449 Val Loss : 0.951694 
+Elapsed time is 2.665184 seconds.
+Elapsed time is 0.701216 seconds.
+Epoch : 16  Update : 87000 Train Loss : 0.922829 Val Loss : 0.944808 
+Elapsed time is 2.632465 seconds.
+Elapsed time is 0.701580 seconds.
+Epoch : 16  Update : 88000 Train Loss : 1.024546 Val Loss : 1.012950 
+Elapsed time is 2.618253 seconds.
+Elapsed time is 0.695731 seconds.
+Epoch : 16  Update : 89000 Train Loss : 0.956247 Val Loss : 0.959685 
+Elapsed time is 2.636833 seconds.
+Elapsed time is 0.702886 seconds.
+Epoch : 16  Update : 90000 Train Loss : 0.924366 Val Loss : 0.934463 
+Elapsed time is 0.605739 seconds.
+	 Epoch : 16  Update: 90000 Test Loss : 0.934463 
+Elapsed time is 68.692022 seconds.
+Elapsed time is 2.567572 seconds.
+Elapsed time is 0.687750 seconds.
+Epoch : 17  Update : 91000 Train Loss : 0.999352 Val Loss : 1.022760 
+Elapsed time is 2.558176 seconds.
+Elapsed time is 0.684835 seconds.
+Epoch : 17  Update : 92000 Train Loss : 0.968174 Val Loss : 0.961377 
+Elapsed time is 2.561357 seconds.
+Elapsed time is 0.687091 seconds.
+Epoch : 17  Update : 93000 Train Loss : 0.935427 Val Loss : 0.951246 
+Elapsed time is 2.561106 seconds.
+Elapsed time is 0.687423 seconds.
+Epoch : 17  Update : 94000 Train Loss : 0.972692 Val Loss : 0.989593 
+Elapsed time is 2.596275 seconds.
+Elapsed time is 0.690485 seconds.
+Epoch : 17  Update : 95000 Train Loss : 0.943260 Val Loss : 0.959318 
+Elapsed time is 62.906002 seconds.
+Elapsed time is 2.557771 seconds.
+Elapsed time is 0.689098 seconds.
+Epoch : 18  Update : 96000 Train Loss : 1.005505 Val Loss : 1.007013 
+Elapsed time is 2.585809 seconds.
+Elapsed time is 0.693853 seconds.
+Epoch : 18  Update : 97000 Train Loss : 0.924653 Val Loss : 0.946697 
+Elapsed time is 2.585538 seconds.
+Elapsed time is 0.692694 seconds.
+Epoch : 18  Update : 98000 Train Loss : 0.937612 Val Loss : 0.942486 
+Elapsed time is 2.571077 seconds.
+Elapsed time is 0.692472 seconds.
+Epoch : 18  Update : 99000 Train Loss : 0.949744 Val Loss : 0.952024 
+Elapsed time is 2.590517 seconds.
+Elapsed time is 0.687823 seconds.
+Epoch : 18  Update : 100000 Train Loss : 0.945067 Val Loss : 0.951953 
+Elapsed time is 2.567021 seconds.
+Elapsed time is 0.692964 seconds.
+Epoch : 18  Update : 101000 Train Loss : 0.953683 Val Loss : 0.964543 
+Elapsed time is 66.437315 seconds.
+Elapsed time is 2.574158 seconds.
+Elapsed time is 0.690524 seconds.
+Epoch : 19  Update : 102000 Train Loss : 0.932516 Val Loss : 0.955671 
+Elapsed time is 2.571291 seconds.
+Elapsed time is 0.691163 seconds.
+Epoch : 19  Update : 103000 Train Loss : 0.934117 Val Loss : 0.945522 
+Elapsed time is 2.609291 seconds.
+Elapsed time is 0.690302 seconds.
+Epoch : 19  Update : 104000 Train Loss : 0.934350 Val Loss : 0.943625 
+Elapsed time is 2.577449 seconds.
+Elapsed time is 0.694221 seconds.
+Epoch : 19  Update : 105000 Train Loss : 0.982433 Val Loss : 1.013101 
+Elapsed time is 2.584832 seconds.
+Elapsed time is 0.694203 seconds.
+Epoch : 19  Update : 106000 Train Loss : 0.943793 Val Loss : 0.961939 
+Elapsed time is 2.586285 seconds.
+Elapsed time is 0.687286 seconds.
+Epoch : 19  Update : 107000 Train Loss : 0.956294 Val Loss : 0.966842 
+Elapsed time is 66.476804 seconds.
+Elapsed time is 2.594687 seconds.
+Elapsed time is 0.686122 seconds.
+Epoch : 20  Update : 108000 Train Loss : 1.196737 Val Loss : 1.220556 
+Elapsed time is 2.570401 seconds.
+Elapsed time is 0.688331 seconds.
+Epoch : 20  Update : 109000 Train Loss : 0.930012 Val Loss : 0.932913 
+Elapsed time is 0.593202 seconds.
+	 Epoch : 20  Update: 109000 Test Loss : 0.932913 
+Elapsed time is 2.621195 seconds.
+Elapsed time is 0.699747 seconds.
+Epoch : 20  Update : 110000 Train Loss : 0.950914 Val Loss : 0.977089 
+Elapsed time is 2.614957 seconds.
+Elapsed time is 0.700144 seconds.
+Epoch : 20  Update : 111000 Train Loss : 0.925950 Val Loss : 0.946177 
+Elapsed time is 2.658995 seconds.
+Elapsed time is 0.703819 seconds.
+Epoch : 20  Update : 112000 Train Loss : 0.948398 Val Loss : 0.957118 
+Elapsed time is 64.880917 seconds.
+Training done !!!
+Best val error : 0.932913 ; at epoch : 19 ; with test error : 0.932913 
+size of weight matrix
+
+ans =
+
+           1      157000
+
+
+arch_name =
+
+310L500R4L_l25e-05_rho0.99_eps1e-06_mf0_mvni_mvno_1
+
+training on GPU ... :) 
+Elapsed time is 2.563731 seconds.
+Elapsed time is 0.687103 seconds.
+Epoch : 1  Update : 1000 Train Loss : 0.949681 Val Loss : 0.959214 
+Elapsed time is 0.592685 seconds.
+	 Epoch : 1  Update: 1000 Test Loss : 0.959214 
+Elapsed time is 2.613210 seconds.
+Elapsed time is 0.698247 seconds.
+Epoch : 1  Update : 2000 Train Loss : 0.920243 Val Loss : 0.936703 
+Elapsed time is 0.603117 seconds.
+	 Epoch : 1  Update: 2000 Test Loss : 0.936703 
+Elapsed time is 2.595208 seconds.
+Elapsed time is 0.687577 seconds.
+Epoch : 1  Update : 3000 Train Loss : 0.933199 Val Loss : 0.942349 
+Elapsed time is 2.584867 seconds.
+Elapsed time is 0.691230 seconds.
+Epoch : 1  Update : 4000 Train Loss : 0.916297 Val Loss : 0.927235 
+Elapsed time is 0.596010 seconds.
+	 Epoch : 1  Update: 4000 Test Loss : 0.927235 
+Elapsed time is 2.627235 seconds.
+Elapsed time is 0.704021 seconds.
+Epoch : 1  Update : 5000 Train Loss : 0.907778 Val Loss : 0.928681 
+Elapsed time is 65.560802 seconds.
+Elapsed time is 2.631596 seconds.
+Elapsed time is 0.702640 seconds.
+Epoch : 2  Update : 6000 Train Loss : 0.926021 Val Loss : 0.946655 
+Elapsed time is 2.651248 seconds.
+Elapsed time is 0.697376 seconds.
+Epoch : 2  Update : 7000 Train Loss : 0.908248 Val Loss : 0.921427 
+Elapsed time is 0.603268 seconds.
+	 Epoch : 2  Update: 7000 Test Loss : 0.921427 
+Elapsed time is 2.571344 seconds.
+Elapsed time is 0.688554 seconds.
+Epoch : 2  Update : 8000 Train Loss : 0.966645 Val Loss : 0.974011 
+Elapsed time is 2.576366 seconds.
+Elapsed time is 0.687723 seconds.
+Epoch : 2  Update : 9000 Train Loss : 0.902379 Val Loss : 0.923351 
+Elapsed time is 2.572473 seconds.
+Elapsed time is 0.689985 seconds.
+Epoch : 2  Update : 10000 Train Loss : 0.912738 Val Loss : 0.927376 
+Elapsed time is 2.603865 seconds.
+Elapsed time is 0.690395 seconds.
+Epoch : 2  Update : 11000 Train Loss : 0.912801 Val Loss : 0.935689 
+Elapsed time is 67.565553 seconds.
+Elapsed time is 2.583685 seconds.
+Elapsed time is 0.693174 seconds.
+Epoch : 3  Update : 12000 Train Loss : 0.906597 Val Loss : 0.937089 
+Elapsed time is 2.593264 seconds.
+Elapsed time is 0.693054 seconds.
+Epoch : 3  Update : 13000 Train Loss : 0.912435 Val Loss : 0.928465 
+Elapsed time is 2.588266 seconds.
+Elapsed time is 0.691969 seconds.
+Epoch : 3  Update : 14000 Train Loss : 0.899464 Val Loss : 0.925975 
+Elapsed time is 2.602495 seconds.
+Elapsed time is 0.687183 seconds.
+Epoch : 3  Update : 15000 Train Loss : 0.900438 Val Loss : 0.917823 
+Elapsed time is 0.594038 seconds.
+	 Epoch : 3  Update: 15000 Test Loss : 0.917823 
+Elapsed time is 2.607827 seconds.
+Elapsed time is 0.695519 seconds.
+Epoch : 3  Update : 16000 Train Loss : 0.901438 Val Loss : 0.920377 
+Elapsed time is 64.383330 seconds.
+Elapsed time is 2.636680 seconds.
+Elapsed time is 0.701120 seconds.
+Epoch : 4  Update : 17000 Train Loss : 0.904287 Val Loss : 0.925125 
+Elapsed time is 2.630472 seconds.
+Elapsed time is 0.701735 seconds.
+Epoch : 4  Update : 18000 Train Loss : 0.908845 Val Loss : 0.926890 
+Elapsed time is 2.665903 seconds.
+Elapsed time is 0.700792 seconds.
+Epoch : 4  Update : 19000 Train Loss : 0.903665 Val Loss : 0.922090 
+Elapsed time is 2.621899 seconds.
+Elapsed time is 0.700795 seconds.
+Epoch : 4  Update : 20000 Train Loss : 0.902835 Val Loss : 0.917153 
+Elapsed time is 0.601731 seconds.
+	 Epoch : 4  Update: 20000 Test Loss : 0.917153 
+Elapsed time is 2.579659 seconds.
+Elapsed time is 0.693379 seconds.
+Epoch : 4  Update : 21000 Train Loss : 0.888121 Val Loss : 0.923181 
+Elapsed time is 2.582469 seconds.
+Elapsed time is 0.691095 seconds.
+Epoch : 4  Update : 22000 Train Loss : 0.897954 Val Loss : 0.917565 
+Elapsed time is 68.094581 seconds.
+Elapsed time is 2.606671 seconds.
+Elapsed time is 0.689232 seconds.
+Epoch : 5  Update : 23000 Train Loss : 0.907488 Val Loss : 0.922835 
+Elapsed time is 2.573714 seconds.
+Elapsed time is 0.687773 seconds.
+Epoch : 5  Update : 24000 Train Loss : 0.906507 Val Loss : 0.927904 
+Elapsed time is 2.560379 seconds.
+Elapsed time is 0.687306 seconds.
+Epoch : 5  Update : 25000 Train Loss : 0.888036 Val Loss : 0.912355 
+Elapsed time is 0.594224 seconds.
+	 Epoch : 5  Update: 25000 Test Loss : 0.912355 
+Elapsed time is 2.618181 seconds.
+Elapsed time is 0.695723 seconds.
+Epoch : 5  Update : 26000 Train Loss : 0.912551 Val Loss : 0.944688 
+Elapsed time is 2.660348 seconds.
+Elapsed time is 0.702595 seconds.
+Epoch : 5  Update : 27000 Train Loss : 0.898649 Val Loss : 0.931978 
+Elapsed time is 2.636952 seconds.
+Elapsed time is 0.699853 seconds.
+Epoch : 5  Update : 28000 Train Loss : 0.942205 Val Loss : 0.960374 
+Elapsed time is 67.925373 seconds.
+Elapsed time is 2.616484 seconds.
+Elapsed time is 0.695261 seconds.
+Epoch : 6  Update : 29000 Train Loss : 0.929459 Val Loss : 0.938685 
+Elapsed time is 2.629774 seconds.
+Elapsed time is 0.699519 seconds.
+Epoch : 6  Update : 30000 Train Loss : 0.904830 Val Loss : 0.931722 
+Elapsed time is 2.669737 seconds.
+Elapsed time is 0.699686 seconds.
+Epoch : 6  Update : 31000 Train Loss : 0.902068 Val Loss : 0.923691 
+Elapsed time is 2.627126 seconds.
+Elapsed time is 0.697756 seconds.
+Epoch : 6  Update : 32000 Train Loss : 0.895652 Val Loss : 0.913622 
+Elapsed time is 2.613558 seconds.
+Elapsed time is 0.694910 seconds.
+Epoch : 6  Update : 33000 Train Loss : 0.891995 Val Loss : 0.916104 
+Elapsed time is 64.684426 seconds.
+Elapsed time is 2.616395 seconds.
+Elapsed time is 0.696766 seconds.
+Epoch : 7  Update : 34000 Train Loss : 0.896233 Val Loss : 0.923960 
+Elapsed time is 2.650547 seconds.
+Elapsed time is 0.700263 seconds.
+Epoch : 7  Update : 35000 Train Loss : 0.896957 Val Loss : 0.917215 
+Elapsed time is 2.646324 seconds.
+Elapsed time is 0.700533 seconds.
+Epoch : 7  Update : 36000 Train Loss : 0.899352 Val Loss : 0.928049 
+Elapsed time is 2.630780 seconds.
+Elapsed time is 0.702001 seconds.
+Epoch : 7  Update : 37000 Train Loss : 0.888801 Val Loss : 0.909795 
+Elapsed time is 0.606348 seconds.
+	 Epoch : 7  Update: 37000 Test Loss : 0.909795 
+Elapsed time is 2.582335 seconds.
+Elapsed time is 0.688393 seconds.
+Epoch : 7  Update : 38000 Train Loss : 0.889167 Val Loss : 0.915598 
+Elapsed time is 2.582059 seconds.
+Elapsed time is 0.688021 seconds.
+Epoch : 7  Update : 39000 Train Loss : 0.879545 Val Loss : 0.905129 
+Elapsed time is 0.593197 seconds.
+	 Epoch : 7  Update: 39000 Test Loss : 0.905129 
+Elapsed time is 68.869588 seconds.
+Elapsed time is 2.626093 seconds.
+Elapsed time is 0.705180 seconds.
+Epoch : 8  Update : 40000 Train Loss : 0.879748 Val Loss : 0.915050 
+Elapsed time is 2.639766 seconds.
+Elapsed time is 0.701652 seconds.
+Epoch : 8  Update : 41000 Train Loss : 0.916499 Val Loss : 0.957899 
+Elapsed time is 2.645323 seconds.
+Elapsed time is 0.701437 seconds.
+Epoch : 8  Update : 42000 Train Loss : 0.903566 Val Loss : 0.923321 
+Elapsed time is 2.680790 seconds.
+Elapsed time is 0.702083 seconds.
+Epoch : 8  Update : 43000 Train Loss : 0.891789 Val Loss : 0.913816 
+Elapsed time is 2.641621 seconds.
+Elapsed time is 0.701829 seconds.
+Epoch : 8  Update : 44000 Train Loss : 0.887142 Val Loss : 0.916607 
+Elapsed time is 2.633640 seconds.
+Elapsed time is 0.700569 seconds.
+Epoch : 8  Update : 45000 Train Loss : 0.902047 Val Loss : 0.927130 
+Elapsed time is 68.368212 seconds.
+Elapsed time is 2.639147 seconds.
+Elapsed time is 0.704990 seconds.
+Epoch : 9  Update : 46000 Train Loss : 0.895342 Val Loss : 0.919861 
+Elapsed time is 2.667210 seconds.
+Elapsed time is 0.708864 seconds.
+Epoch : 9  Update : 47000 Train Loss : 0.881884 Val Loss : 0.915026 
+Elapsed time is 2.657958 seconds.
+Elapsed time is 0.709218 seconds.
+Epoch : 9  Update : 48000 Train Loss : 0.907761 Val Loss : 0.932156 
+Elapsed time is 2.649420 seconds.
+Elapsed time is 0.700660 seconds.
+Epoch : 9  Update : 49000 Train Loss : 0.885098 Val Loss : 0.916888 
+Elapsed time is 2.628674 seconds.
+Elapsed time is 0.698548 seconds.
+Epoch : 9  Update : 50000 Train Loss : 0.895891 Val Loss : 0.922778 
+Elapsed time is 65.160837 seconds.
+Elapsed time is 2.665942 seconds.
+Elapsed time is 0.703004 seconds.
+Epoch : 10  Update : 51000 Train Loss : 0.896251 Val Loss : 0.921690 
+Elapsed time is 2.619371 seconds.
+Elapsed time is 0.696326 seconds.
+Epoch : 10  Update : 52000 Train Loss : 0.887363 Val Loss : 0.908596 
+Elapsed time is 2.637883 seconds.
+Elapsed time is 0.698325 seconds.
+Epoch : 10  Update : 53000 Train Loss : 0.903446 Val Loss : 0.939498 
+Elapsed time is 2.632919 seconds.
+Elapsed time is 0.701695 seconds.
+Epoch : 10  Update : 54000 Train Loss : 0.887993 Val Loss : 0.916052 
+Elapsed time is 2.678444 seconds.
+Elapsed time is 0.707363 seconds.
+Epoch : 10  Update : 55000 Train Loss : 0.908333 Val Loss : 0.936584 
+Elapsed time is 2.637160 seconds.
+Elapsed time is 0.704382 seconds.
+Epoch : 10  Update : 56000 Train Loss : 0.892552 Val Loss : 0.918394 
+Elapsed time is 68.431977 seconds.
+Elapsed time is 2.625914 seconds.
+Elapsed time is 0.702052 seconds.
+Epoch : 11  Update : 57000 Train Loss : 0.892783 Val Loss : 0.920572 
+Elapsed time is 2.625856 seconds.
+Elapsed time is 0.700990 seconds.
+Epoch : 11  Update : 58000 Train Loss : 0.914189 Val Loss : 0.942683 
+Elapsed time is 2.677313 seconds.
+Elapsed time is 0.704010 seconds.
+Epoch : 11  Update : 59000 Train Loss : 0.888056 Val Loss : 0.914992 
+Elapsed time is 2.646528 seconds.
+Elapsed time is 0.702356 seconds.
+Epoch : 11  Update : 60000 Train Loss : 0.891789 Val Loss : 0.922522 
+Elapsed time is 2.632826 seconds.
+Elapsed time is 0.702947 seconds.
+Epoch : 11  Update : 61000 Train Loss : 0.902060 Val Loss : 0.927808 
+Elapsed time is 65.057933 seconds.
+Elapsed time is 2.614553 seconds.
+Elapsed time is 0.699922 seconds.
+Epoch : 12  Update : 62000 Train Loss : 0.929818 Val Loss : 0.944673 
+Elapsed time is 2.654434 seconds.
+Elapsed time is 0.698234 seconds.
+Epoch : 12  Update : 63000 Train Loss : 0.880120 Val Loss : 0.912330 
+Elapsed time is 2.621285 seconds.
+Elapsed time is 0.696409 seconds.
+Epoch : 12  Update : 64000 Train Loss : 0.963805 Val Loss : 1.003649 
+Elapsed time is 2.619572 seconds.
+Elapsed time is 0.698270 seconds.
+Epoch : 12  Update : 65000 Train Loss : 0.926813 Val Loss : 0.951210 
+Elapsed time is 2.627944 seconds.
+Elapsed time is 0.697873 seconds.
+Epoch : 12  Update : 66000 Train Loss : 0.892589 Val Loss : 0.919056 
+Elapsed time is 2.639337 seconds.
+Elapsed time is 0.699403 seconds.
+Epoch : 12  Update : 67000 Train Loss : 0.894109 Val Loss : 0.923037 
+Elapsed time is 68.042336 seconds.
+Elapsed time is 2.632206 seconds.
+Elapsed time is 0.698752 seconds.
+Epoch : 13  Update : 68000 Train Loss : 0.878835 Val Loss : 0.916153 
+Elapsed time is 2.631971 seconds.
+Elapsed time is 0.697240 seconds.
+Epoch : 13  Update : 69000 Train Loss : 0.912896 Val Loss : 0.939738 
+Elapsed time is 2.629236 seconds.
+Elapsed time is 0.699577 seconds.
+Epoch : 13  Update : 70000 Train Loss : 0.890320 Val Loss : 0.928816 
+Elapsed time is 2.670963 seconds.
+Elapsed time is 0.705482 seconds.
+Epoch : 13  Update : 71000 Train Loss : 0.886870 Val Loss : 0.923859 
+Elapsed time is 2.638027 seconds.
+Elapsed time is 0.700744 seconds.
+Epoch : 13  Update : 72000 Train Loss : 0.883312 Val Loss : 0.914180 
+Elapsed time is 2.627624 seconds.
+Elapsed time is 0.702021 seconds.
+Epoch : 13  Update : 73000 Train Loss : 0.924416 Val Loss : 0.960790 
+Elapsed time is 68.183279 seconds.
+Elapsed time is 2.635209 seconds.
+Elapsed time is 0.699794 seconds.
+Epoch : 14  Update : 74000 Train Loss : 0.902390 Val Loss : 0.926606 
+Elapsed time is 2.652794 seconds.
+Elapsed time is 0.702011 seconds.
+Epoch : 14  Update : 75000 Train Loss : 0.896922 Val Loss : 0.921583 
+Elapsed time is 2.617768 seconds.
+Elapsed time is 0.699367 seconds.
+Epoch : 14  Update : 76000 Train Loss : 0.928373 Val Loss : 0.965893 
+Elapsed time is 2.621654 seconds.
+Elapsed time is 0.696051 seconds.
+Epoch : 14  Update : 77000 Train Loss : 0.885175 Val Loss : 0.918473 
+Elapsed time is 2.621679 seconds.
+Elapsed time is 0.698343 seconds.
+Epoch : 14  Update : 78000 Train Loss : 0.887486 Val Loss : 0.916628 
+Elapsed time is 64.787706 seconds.
+Elapsed time is 2.640809 seconds.
+Elapsed time is 0.702203 seconds.
+Epoch : 15  Update : 79000 Train Loss : 0.879341 Val Loss : 0.917011 
+Elapsed time is 2.624378 seconds.
+Elapsed time is 0.698309 seconds.
+Epoch : 15  Update : 80000 Train Loss : 0.891003 Val Loss : 0.922099 
+Elapsed time is 2.608170 seconds.
+Elapsed time is 0.698480 seconds.
+Epoch : 15  Update : 81000 Train Loss : 0.917195 Val Loss : 0.951761 
+Elapsed time is 2.623513 seconds.
+Elapsed time is 0.700166 seconds.
+Epoch : 15  Update : 82000 Train Loss : 0.879615 Val Loss : 0.904695 
+Elapsed time is 0.602551 seconds.
+	 Epoch : 15  Update: 82000 Test Loss : 0.904695 
+Elapsed time is 2.603815 seconds.
+Elapsed time is 0.688925 seconds.
+Epoch : 15  Update : 83000 Train Loss : 0.886871 Val Loss : 0.909082 
+Elapsed time is 2.592022 seconds.
+Elapsed time is 0.691235 seconds.
+Epoch : 15  Update : 84000 Train Loss : 0.888883 Val Loss : 0.925258 
+Elapsed time is 67.950130 seconds.
+Elapsed time is 2.590310 seconds.
+Elapsed time is 0.692247 seconds.
+Epoch : 16  Update : 85000 Train Loss : 0.894004 Val Loss : 0.924572 
+Elapsed time is 2.571692 seconds.
+Elapsed time is 0.693176 seconds.
+Epoch : 16  Update : 86000 Train Loss : 0.926375 Val Loss : 0.969065 
+Elapsed time is 2.576569 seconds.
+Elapsed time is 0.691218 seconds.
+Epoch : 16  Update : 87000 Train Loss : 0.879900 Val Loss : 0.913847 
+Elapsed time is 2.567667 seconds.
+Elapsed time is 0.688475 seconds.
+Epoch : 16  Update : 88000 Train Loss : 0.885676 Val Loss : 0.914807 
+Elapsed time is 2.574749 seconds.
+Elapsed time is 0.689183 seconds.
+Epoch : 16  Update : 89000 Train Loss : 0.885095 Val Loss : 0.923747 
+Elapsed time is 2.580874 seconds.
+Elapsed time is 0.689226 seconds.
+Epoch : 16  Update : 90000 Train Loss : 0.900379 Val Loss : 0.934505 
+Elapsed time is 66.394870 seconds.
+Elapsed time is 2.571814 seconds.
+Elapsed time is 0.687718 seconds.
+Epoch : 17  Update : 91000 Train Loss : 0.883289 Val Loss : 0.921422 
+Elapsed time is 2.586696 seconds.
+Elapsed time is 0.687778 seconds.
+Epoch : 17  Update : 92000 Train Loss : 0.902594 Val Loss : 0.921361 
+Elapsed time is 2.564858 seconds.
+Elapsed time is 0.687537 seconds.
+Epoch : 17  Update : 93000 Train Loss : 0.905355 Val Loss : 0.933231 
+Elapsed time is 2.575666 seconds.
+Elapsed time is 0.690246 seconds.
+Epoch : 17  Update : 94000 Train Loss : 0.886792 Val Loss : 0.915159 
+Elapsed time is 2.569826 seconds.
+Elapsed time is 0.687068 seconds.
+Epoch : 17  Update : 95000 Train Loss : 0.894273 Val Loss : 0.908378 
+Elapsed time is 63.005643 seconds.
+Elapsed time is 2.597674 seconds.
+Elapsed time is 0.689874 seconds.
+Epoch : 18  Update : 96000 Train Loss : 0.895603 Val Loss : 0.915986 
+Elapsed time is 2.604580 seconds.
+Elapsed time is 0.694278 seconds.
+Epoch : 18  Update : 97000 Train Loss : 0.899872 Val Loss : 0.938277 
+Elapsed time is 2.583012 seconds.
+Elapsed time is 0.690282 seconds.
+Epoch : 18  Update : 98000 Train Loss : 0.880665 Val Loss : 0.907483 
+Elapsed time is 2.584659 seconds.
+Elapsed time is 0.692190 seconds.
+Epoch : 18  Update : 99000 Train Loss : 0.913056 Val Loss : 0.944179 
+Elapsed time is 2.631900 seconds.
+Elapsed time is 0.692133 seconds.
+Epoch : 18  Update : 100000 Train Loss : 0.886161 Val Loss : 0.917319 
+Elapsed time is 2.583760 seconds.
+Elapsed time is 0.689358 seconds.
+Epoch : 18  Update : 101000 Train Loss : 0.907005 Val Loss : 0.944880 
+Elapsed time is 66.701765 seconds.
+Elapsed time is 2.593200 seconds.
+Elapsed time is 0.689830 seconds.
+Epoch : 19  Update : 102000 Train Loss : 0.881571 Val Loss : 0.917061 
+Elapsed time is 2.585162 seconds.
+Elapsed time is 0.689643 seconds.
+Epoch : 19  Update : 103000 Train Loss : 0.888908 Val Loss : 0.927648 
+Elapsed time is 2.617840 seconds.
+Elapsed time is 0.692495 seconds.
+Epoch : 19  Update : 104000 Train Loss : 0.883593 Val Loss : 0.915791 
+Elapsed time is 2.587647 seconds.
+Elapsed time is 0.691902 seconds.
+Epoch : 19  Update : 105000 Train Loss : 0.880485 Val Loss : 0.911230 
+Elapsed time is 2.580701 seconds.
+Elapsed time is 0.690714 seconds.
+Epoch : 19  Update : 106000 Train Loss : 0.925025 Val Loss : 0.973045 
+Elapsed time is 2.582648 seconds.
+Elapsed time is 0.688203 seconds.
+Epoch : 19  Update : 107000 Train Loss : 0.923867 Val Loss : 0.958066 
+Elapsed time is 66.707305 seconds.
+Elapsed time is 2.635317 seconds.
+Elapsed time is 0.693744 seconds.
+Epoch : 20  Update : 108000 Train Loss : 0.889500 Val Loss : 0.918668 
+Elapsed time is 2.583526 seconds.
+Elapsed time is 0.695068 seconds.
+Epoch : 20  Update : 109000 Train Loss : 0.906579 Val Loss : 0.943621 
+Elapsed time is 2.580342 seconds.
+Elapsed time is 0.693086 seconds.
+Epoch : 20  Update : 110000 Train Loss : 0.889923 Val Loss : 0.919574 
+Elapsed time is 2.590500 seconds.
+Elapsed time is 0.690459 seconds.
+Epoch : 20  Update : 111000 Train Loss : 0.888962 Val Loss : 0.921717 
+Elapsed time is 2.618566 seconds.
+Elapsed time is 0.691206 seconds.
+Epoch : 20  Update : 112000 Train Loss : 0.882093 Val Loss : 0.916915 
+Elapsed time is 63.400759 seconds.
+Training done !!!
+Best val error : 0.904695 ; at epoch : 14 ; with test error : 0.904695 
+size of weight matrix
+
+ans =
+
+           1      157000
+
+
+arch_name =
+
+310L500R4L_l25e-05_rho0.99_eps1e-08_mf0_mvni_mvno_1
+
+training on GPU ... :) 
+Elapsed time is 2.619171 seconds.
+Elapsed time is 0.698458 seconds.
+Epoch : 1  Update : 1000 Train Loss : 0.933678 Val Loss : 0.955349 
+Elapsed time is 0.602513 seconds.
+	 Epoch : 1  Update: 1000 Test Loss : 0.955349 
+Elapsed time is 2.573124 seconds.
+Elapsed time is 0.689595 seconds.
+Epoch : 1  Update : 2000 Train Loss : 0.918610 Val Loss : 0.947310 
+Elapsed time is 0.594868 seconds.
+	 Epoch : 1  Update: 2000 Test Loss : 0.947310 
+Elapsed time is 2.611179 seconds.
+Elapsed time is 0.696086 seconds.
+Epoch : 1  Update : 3000 Train Loss : 0.913672 Val Loss : 0.932141 
+Elapsed time is 0.604056 seconds.
+	 Epoch : 1  Update: 3000 Test Loss : 0.932141 
+Elapsed time is 2.599923 seconds.
+Elapsed time is 0.690043 seconds.
+Epoch : 1  Update : 4000 Train Loss : 0.917348 Val Loss : 0.945513 
+Elapsed time is 2.585499 seconds.
+Elapsed time is 0.692995 seconds.
+Epoch : 1  Update : 5000 Train Loss : 0.907707 Val Loss : 0.935927 
+Elapsed time is 65.640216 seconds.
+Elapsed time is 2.577727 seconds.
+Elapsed time is 0.691228 seconds.
+Epoch : 2  Update : 6000 Train Loss : 0.894913 Val Loss : 0.925286 
+Elapsed time is 0.595489 seconds.
+	 Epoch : 2  Update: 6000 Test Loss : 0.925286 
+Elapsed time is 2.630554 seconds.
+Elapsed time is 0.702804 seconds.
+Epoch : 2  Update : 7000 Train Loss : 0.898008 Val Loss : 0.928316 
+Elapsed time is 2.655001 seconds.
+Elapsed time is 0.703051 seconds.
+Epoch : 2  Update : 8000 Train Loss : 0.905929 Val Loss : 0.928414 
+Elapsed time is 2.628343 seconds.
+Elapsed time is 0.699957 seconds.
+Epoch : 2  Update : 9000 Train Loss : 0.888064 Val Loss : 0.924103 
+Elapsed time is 0.601881 seconds.
+	 Epoch : 2  Update: 9000 Test Loss : 0.924103 
+Elapsed time is 2.602364 seconds.
+Elapsed time is 0.696386 seconds.
+Epoch : 2  Update : 10000 Train Loss : 0.891924 Val Loss : 0.919751 
+Elapsed time is 0.601418 seconds.
+	 Epoch : 2  Update: 10000 Test Loss : 0.919751 
+Elapsed time is 2.602797 seconds.
+Elapsed time is 0.697116 seconds.
+Epoch : 2  Update : 11000 Train Loss : 0.899045 Val Loss : 0.921205 
+Elapsed time is 69.735342 seconds.
+Elapsed time is 2.655464 seconds.
+Elapsed time is 0.699359 seconds.
+Epoch : 3  Update : 12000 Train Loss : 0.882317 Val Loss : 0.908496 
+Elapsed time is 0.603927 seconds.
+	 Epoch : 3  Update: 12000 Test Loss : 0.908496 
+Elapsed time is 2.617187 seconds.
+Elapsed time is 0.696400 seconds.
+Epoch : 3  Update : 13000 Train Loss : 0.888462 Val Loss : 0.922829 
+Elapsed time is 2.606297 seconds.
+Elapsed time is 0.694227 seconds.
+Epoch : 3  Update : 14000 Train Loss : 0.925227 Val Loss : 0.956380 
+Elapsed time is 2.606561 seconds.
+Elapsed time is 0.699304 seconds.
+Epoch : 3  Update : 15000 Train Loss : 0.904233 Val Loss : 0.933505 
+Elapsed time is 2.641302 seconds.
+Elapsed time is 0.696350 seconds.
+Epoch : 3  Update : 16000 Train Loss : 0.886283 Val Loss : 0.916936 
+Elapsed time is 65.643322 seconds.
+Elapsed time is 2.626525 seconds.
+Elapsed time is 0.701454 seconds.
+Epoch : 4  Update : 17000 Train Loss : 0.899667 Val Loss : 0.939520 
+Elapsed time is 2.625319 seconds.
+Elapsed time is 0.701932 seconds.
+Epoch : 4  Update : 18000 Train Loss : 0.879381 Val Loss : 0.922537 
+Elapsed time is 2.625844 seconds.
+Elapsed time is 0.700871 seconds.
+Epoch : 4  Update : 19000 Train Loss : 0.882608 Val Loss : 0.917242 
+Elapsed time is 2.660581 seconds.
+Elapsed time is 0.705709 seconds.
+Epoch : 4  Update : 20000 Train Loss : 0.880587 Val Loss : 0.912842 
+Elapsed time is 2.638736 seconds.
+Elapsed time is 0.703097 seconds.
+Epoch : 4  Update : 21000 Train Loss : 0.870107 Val Loss : 0.915511 
+Elapsed time is 2.633421 seconds.
+Elapsed time is 0.700762 seconds.
+Epoch : 4  Update : 22000 Train Loss : 0.869653 Val Loss : 0.914418 
+Elapsed time is 68.374887 seconds.
+Elapsed time is 2.619068 seconds.
+Elapsed time is 0.698536 seconds.
+Epoch : 5  Update : 23000 Train Loss : 0.879254 Val Loss : 0.916025 
+Elapsed time is 2.650060 seconds.
+Elapsed time is 0.696790 seconds.
+Epoch : 5  Update : 24000 Train Loss : 0.879191 Val Loss : 0.916999 
+Elapsed time is 2.613526 seconds.
+Elapsed time is 0.701384 seconds.
+Epoch : 5  Update : 25000 Train Loss : 0.864034 Val Loss : 0.907594 
+Elapsed time is 0.604765 seconds.
+	 Epoch : 5  Update: 25000 Test Loss : 0.907594 
+Elapsed time is 2.571162 seconds.
+Elapsed time is 0.686717 seconds.
+Epoch : 5  Update : 26000 Train Loss : 0.879333 Val Loss : 0.925104 
+Elapsed time is 2.574521 seconds.
+Elapsed time is 0.690835 seconds.
+Epoch : 5  Update : 27000 Train Loss : 0.870586 Val Loss : 0.915021 
+Elapsed time is 2.596397 seconds.
+Elapsed time is 0.690384 seconds.
+Epoch : 5  Update : 28000 Train Loss : 0.869526 Val Loss : 0.920322 
+Elapsed time is 67.966808 seconds.
+Elapsed time is 2.575811 seconds.
+Elapsed time is 0.693235 seconds.
+Epoch : 6  Update : 29000 Train Loss : 0.872894 Val Loss : 0.922420 
+Elapsed time is 2.579060 seconds.
+Elapsed time is 0.692521 seconds.
+Epoch : 6  Update : 30000 Train Loss : 0.865931 Val Loss : 0.911139 
+Elapsed time is 2.592945 seconds.
+Elapsed time is 0.691178 seconds.
+Epoch : 6  Update : 31000 Train Loss : 0.866148 Val Loss : 0.921469 
+Elapsed time is 2.603831 seconds.
+Elapsed time is 0.689031 seconds.
+Epoch : 6  Update : 32000 Train Loss : 0.865875 Val Loss : 0.912979 
+Elapsed time is 2.574164 seconds.
+Elapsed time is 0.685504 seconds.
+Epoch : 6  Update : 33000 Train Loss : 0.860212 Val Loss : 0.913738 
+Elapsed time is 63.220714 seconds.
+Elapsed time is 2.577729 seconds.
+Elapsed time is 0.689726 seconds.
+Epoch : 7  Update : 34000 Train Loss : 0.866666 Val Loss : 0.922657 
+Elapsed time is 2.579688 seconds.
+Elapsed time is 0.689365 seconds.
+Epoch : 7  Update : 35000 Train Loss : 0.860526 Val Loss : 0.914573 
+Elapsed time is 2.600611 seconds.
+Elapsed time is 0.684155 seconds.
+Epoch : 7  Update : 36000 Train Loss : 0.865677 Val Loss : 0.927878 
+Elapsed time is 2.576343 seconds.
+Elapsed time is 0.686902 seconds.
+Epoch : 7  Update : 37000 Train Loss : 0.852108 Val Loss : 0.913512 
+Elapsed time is 2.562012 seconds.
+Elapsed time is 0.693259 seconds.
+Epoch : 7  Update : 38000 Train Loss : 0.868954 Val Loss : 0.917830 
+Elapsed time is 2.575567 seconds.
+Elapsed time is 0.688071 seconds.
+Epoch : 7  Update : 39000 Train Loss : 0.870675 Val Loss : 0.929575 
+Elapsed time is 66.500437 seconds.
+Elapsed time is 2.610639 seconds.
+Elapsed time is 0.691746 seconds.
+Epoch : 8  Update : 40000 Train Loss : 0.855701 Val Loss : 0.917021 
+Elapsed time is 2.577279 seconds.
+Elapsed time is 0.693458 seconds.
+Epoch : 8  Update : 41000 Train Loss : 0.856044 Val Loss : 0.919802 
+Elapsed time is 2.566730 seconds.
+Elapsed time is 0.691868 seconds.
+Epoch : 8  Update : 42000 Train Loss : 0.861367 Val Loss : 0.929710 
+Elapsed time is 2.583009 seconds.
+Elapsed time is 0.692423 seconds.
+Epoch : 8  Update : 43000 Train Loss : 0.852811 Val Loss : 0.910913 
+Elapsed time is 2.607461 seconds.
+Elapsed time is 0.694073 seconds.
+Epoch : 8  Update : 44000 Train Loss : 0.855462 Val Loss : 0.924061 
+Elapsed time is 2.584634 seconds.
+Elapsed time is 0.689042 seconds.
+Epoch : 8  Update : 45000 Train Loss : 0.867765 Val Loss : 0.920028 
+Elapsed time is 66.639075 seconds.
+Elapsed time is 2.576762 seconds.
+Elapsed time is 0.690364 seconds.
+Epoch : 9  Update : 46000 Train Loss : 0.863242 Val Loss : 0.927015 
+Elapsed time is 2.589489 seconds.
+Elapsed time is 0.691953 seconds.
+Epoch : 9  Update : 47000 Train Loss : 0.851765 Val Loss : 0.918061 
+Elapsed time is 2.561708 seconds.
+Elapsed time is 0.687927 seconds.
+Epoch : 9  Update : 48000 Train Loss : 0.855362 Val Loss : 0.918597 
+Elapsed time is 2.558576 seconds.
+Elapsed time is 0.684259 seconds.
+Epoch : 9  Update : 49000 Train Loss : 0.869065 Val Loss : 0.922701 
+Elapsed time is 2.568213 seconds.
+Elapsed time is 0.685047 seconds.
+Epoch : 9  Update : 50000 Train Loss : 0.850514 Val Loss : 0.922939 
+Elapsed time is 63.058434 seconds.
+Elapsed time is 2.567242 seconds.
+Elapsed time is 0.689578 seconds.
+Epoch : 10  Update : 51000 Train Loss : 0.837900 Val Loss : 0.908363 
+Elapsed time is 2.596942 seconds.
+Elapsed time is 0.689136 seconds.
+Epoch : 10  Update : 52000 Train Loss : 0.871889 Val Loss : 0.954353 
+Elapsed time is 2.558629 seconds.
+Elapsed time is 0.689618 seconds.
+Epoch : 10  Update : 53000 Train Loss : 0.847009 Val Loss : 0.929609 
+Elapsed time is 2.567177 seconds.
+Elapsed time is 0.688138 seconds.
+Epoch : 10  Update : 54000 Train Loss : 0.841563 Val Loss : 0.917153 
+Elapsed time is 2.562968 seconds.
+Elapsed time is 0.688981 seconds.
+Epoch : 10  Update : 55000 Train Loss : 0.841860 Val Loss : 0.916241 
+Elapsed time is 2.613204 seconds.
+Elapsed time is 0.687567 seconds.
+Epoch : 10  Update : 56000 Train Loss : 0.852882 Val Loss : 0.930181 
+Elapsed time is 66.396784 seconds.
+Elapsed time is 2.564420 seconds.
+Elapsed time is 0.683135 seconds.
+Epoch : 11  Update : 57000 Train Loss : 0.840716 Val Loss : 0.917673 
+Elapsed time is 2.564499 seconds.
+Elapsed time is 0.685496 seconds.
+Epoch : 11  Update : 58000 Train Loss : 0.845150 Val Loss : 0.921856 
+Elapsed time is 2.575830 seconds.
+Elapsed time is 0.693006 seconds.
+Epoch : 11  Update : 59000 Train Loss : 0.847740 Val Loss : 0.934469 
+Elapsed time is 2.594259 seconds.
+Elapsed time is 0.687328 seconds.
+Epoch : 11  Update : 60000 Train Loss : 0.851343 Val Loss : 0.939715 
+Elapsed time is 2.571626 seconds.
+Elapsed time is 0.690309 seconds.
+Epoch : 11  Update : 61000 Train Loss : 0.838013 Val Loss : 0.920470 
+Elapsed time is 63.134956 seconds.
+Elapsed time is 2.575929 seconds.
+Elapsed time is 0.694536 seconds.
+Epoch : 12  Update : 62000 Train Loss : 0.858081 Val Loss : 0.952558 
+Elapsed time is 2.576831 seconds.
+Elapsed time is 0.688807 seconds.
+Epoch : 12  Update : 63000 Train Loss : 0.855677 Val Loss : 0.940321 
+Elapsed time is 2.593355 seconds.
+Elapsed time is 0.686294 seconds.
+Epoch : 12  Update : 64000 Train Loss : 0.839215 Val Loss : 0.930446 
+Elapsed time is 2.565706 seconds.
+Elapsed time is 0.688316 seconds.
+Epoch : 12  Update : 65000 Train Loss : 0.854329 Val Loss : 0.928978 
+Elapsed time is 2.576889 seconds.
+Elapsed time is 0.686166 seconds.
+Epoch : 12  Update : 66000 Train Loss : 0.828354 Val Loss : 0.913948 
+Elapsed time is 2.575823 seconds.
+Elapsed time is 0.687533 seconds.
+Epoch : 12  Update : 67000 Train Loss : 0.834221 Val Loss : 0.922140 
+Elapsed time is 66.448482 seconds.
+Elapsed time is 2.601595 seconds.
+Elapsed time is 0.690301 seconds.
+Epoch : 13  Update : 68000 Train Loss : 0.837272 Val Loss : 0.924809 
+Elapsed time is 2.570014 seconds.
+Elapsed time is 0.684822 seconds.
+Epoch : 13  Update : 69000 Train Loss : 0.840624 Val Loss : 0.934531 
+Elapsed time is 2.570863 seconds.
+Elapsed time is 0.684210 seconds.
+Epoch : 13  Update : 70000 Train Loss : 0.837002 Val Loss : 0.931331 
+Elapsed time is 2.557813 seconds.
+Elapsed time is 0.688353 seconds.
+Epoch : 13  Update : 71000 Train Loss : 0.837443 Val Loss : 0.940056 
+Elapsed time is 2.557735 seconds.
+Elapsed time is 0.685542 seconds.
+Epoch : 13  Update : 72000 Train Loss : 0.844714 Val Loss : 0.948168 
+Elapsed time is 2.580217 seconds.
+Elapsed time is 0.686549 seconds.
+Epoch : 13  Update : 73000 Train Loss : 0.830680 Val Loss : 0.918306 
+Elapsed time is 66.308849 seconds.
+Elapsed time is 2.569041 seconds.
+Elapsed time is 0.687571 seconds.
+Epoch : 14  Update : 74000 Train Loss : 0.836811 Val Loss : 0.934362 
+Elapsed time is 2.569926 seconds.
+Elapsed time is 0.690348 seconds.
+Epoch : 14  Update : 75000 Train Loss : 0.825518 Val Loss : 0.927073 
+Elapsed time is 2.567968 seconds.
+Elapsed time is 0.687554 seconds.
+Epoch : 14  Update : 76000 Train Loss : 0.855765 Val Loss : 0.953228 
+Elapsed time is 2.596406 seconds.
+Elapsed time is 0.689595 seconds.
+Epoch : 14  Update : 77000 Train Loss : 0.829039 Val Loss : 0.930405 
+Elapsed time is 2.573929 seconds.
+Elapsed time is 0.686411 seconds.
+Epoch : 14  Update : 78000 Train Loss : 0.821031 Val Loss : 0.925497 
+Elapsed time is 63.084889 seconds.
+Elapsed time is 2.564143 seconds.
+Elapsed time is 0.688335 seconds.
+Epoch : 15  Update : 79000 Train Loss : 0.825919 Val Loss : 0.925559 
+Elapsed time is 2.564231 seconds.
+Elapsed time is 0.684143 seconds.
+Epoch : 15  Update : 80000 Train Loss : 0.829656 Val Loss : 0.929293 
+Elapsed time is 2.593989 seconds.
+Elapsed time is 0.688851 seconds.
+Epoch : 15  Update : 81000 Train Loss : 0.828927 Val Loss : 0.943545 
+Elapsed time is 2.566329 seconds.
+Elapsed time is 0.687536 seconds.
+Epoch : 15  Update : 82000 Train Loss : 0.821179 Val Loss : 0.929975 
+Elapsed time is 2.557454 seconds.
+Elapsed time is 0.685994 seconds.
+Epoch : 15  Update : 83000 Train Loss : 0.826468 Val Loss : 0.937650 
+Elapsed time is 2.570907 seconds.
+Elapsed time is 0.687476 seconds.
+Epoch : 15  Update : 84000 Train Loss : 0.822351 Val Loss : 0.932048 
+Elapsed time is 66.227901 seconds.
+Elapsed time is 2.593670 seconds.
+Elapsed time is 0.689005 seconds.
+Epoch : 16  Update : 85000 Train Loss : 0.826090 Val Loss : 0.933304 
+Elapsed time is 2.575623 seconds.
+Elapsed time is 0.689692 seconds.
+Epoch : 16  Update : 86000 Train Loss : 0.833311 Val Loss : 0.920077 
+Elapsed time is 2.566378 seconds.
+Elapsed time is 0.687796 seconds.
+Epoch : 16  Update : 87000 Train Loss : 0.833173 Val Loss : 0.939372 
+Elapsed time is 2.567799 seconds.
+Elapsed time is 0.686772 seconds.
+Epoch : 16  Update : 88000 Train Loss : 0.828434 Val Loss : 0.937861 
+Elapsed time is 2.605185 seconds.
+Elapsed time is 0.686995 seconds.
+Epoch : 16  Update : 89000 Train Loss : 0.820766 Val Loss : 0.934904 
+Elapsed time is 2.572493 seconds.
+Elapsed time is 0.688160 seconds.
+Epoch : 16  Update : 90000 Train Loss : 0.818663 Val Loss : 0.931496 
+Elapsed time is 66.454159 seconds.
+Elapsed time is 2.571811 seconds.
+Elapsed time is 0.690437 seconds.
+Epoch : 17  Update : 91000 Train Loss : 0.823390 Val Loss : 0.927288 
+Elapsed time is 2.569324 seconds.
+Elapsed time is 0.687676 seconds.
+Epoch : 17  Update : 92000 Train Loss : 0.823139 Val Loss : 0.926796 
+Elapsed time is 2.583108 seconds.
+Elapsed time is 0.686569 seconds.
+Epoch : 17  Update : 93000 Train Loss : 0.818933 Val Loss : 0.935419 
+Elapsed time is 2.566206 seconds.
+Elapsed time is 0.689539 seconds.
+Epoch : 17  Update : 94000 Train Loss : 0.831801 Val Loss : 0.944301 
+Elapsed time is 2.562692 seconds.
+Elapsed time is 0.687719 seconds.
+Epoch : 17  Update : 95000 Train Loss : 0.822048 Val Loss : 0.940993 
+Elapsed time is 62.961420 seconds.
+Elapsed time is 2.569378 seconds.
+Elapsed time is 0.687124 seconds.
+Epoch : 18  Update : 96000 Train Loss : 0.824812 Val Loss : 0.949910 
+Elapsed time is 2.616996 seconds.
+Elapsed time is 0.691353 seconds.
+Epoch : 18  Update : 97000 Train Loss : 0.808673 Val Loss : 0.931703 
+Elapsed time is 2.584164 seconds.
+Elapsed time is 0.693173 seconds.
+Epoch : 18  Update : 98000 Train Loss : 0.820485 Val Loss : 0.950127 
+Elapsed time is 2.581422 seconds.
+Elapsed time is 0.691612 seconds.
+Epoch : 18  Update : 99000 Train Loss : 0.844262 Val Loss : 0.969057 
+Elapsed time is 2.581167 seconds.
+Elapsed time is 0.691895 seconds.
+Epoch : 18  Update : 100000 Train Loss : 0.815625 Val Loss : 0.932723 
+Elapsed time is 2.579484 seconds.
+Elapsed time is 0.690465 seconds.
+Epoch : 18  Update : 101000 Train Loss : 0.812345 Val Loss : 0.934623 
+Elapsed time is 66.662033 seconds.
+Elapsed time is 2.575099 seconds.
+Elapsed time is 0.687115 seconds.
+Epoch : 19  Update : 102000 Train Loss : 0.820594 Val Loss : 0.947287 
+Elapsed time is 2.577151 seconds.
+Elapsed time is 0.691030 seconds.
+Epoch : 19  Update : 103000 Train Loss : 0.807815 Val Loss : 0.945615 
+Elapsed time is 2.580696 seconds.
+Elapsed time is 0.693244 seconds.
+Epoch : 19  Update : 104000 Train Loss : 0.806559 Val Loss : 0.935285 
+Elapsed time is 2.616053 seconds.
+Elapsed time is 0.686920 seconds.
+Epoch : 19  Update : 105000 Train Loss : 0.826328 Val Loss : 0.962918 
+Elapsed time is 2.569097 seconds.
+Elapsed time is 0.688950 seconds.
+Epoch : 19  Update : 106000 Train Loss : 0.815338 Val Loss : 0.942381 
+Elapsed time is 2.570807 seconds.
+Elapsed time is 0.688061 seconds.
+Epoch : 19  Update : 107000 Train Loss : 0.801458 Val Loss : 0.929448 
+Elapsed time is 66.420422 seconds.
+Elapsed time is 2.571412 seconds.
+Elapsed time is 0.687789 seconds.
+Epoch : 20  Update : 108000 Train Loss : 0.816920 Val Loss : 0.956545 
+Elapsed time is 2.593590 seconds.
+Elapsed time is 0.689757 seconds.
+Epoch : 20  Update : 109000 Train Loss : 0.808710 Val Loss : 0.938045 
+Elapsed time is 2.561923 seconds.
+Elapsed time is 0.688385 seconds.
+Epoch : 20  Update : 110000 Train Loss : 0.806473 Val Loss : 0.950578 
+Elapsed time is 2.566433 seconds.
+Elapsed time is 0.689503 seconds.
+Epoch : 20  Update : 111000 Train Loss : 0.823438 Val Loss : 0.956109 
+Elapsed time is 2.565607 seconds.
+Elapsed time is 0.687446 seconds.
+Epoch : 20  Update : 112000 Train Loss : 0.814030 Val Loss : 0.944746 
+Elapsed time is 63.160142 seconds.
+Training done !!!
+Best val error : 0.907594 ; at epoch : 4 ; with test error : 0.907594 
+size of weight matrix
+
+ans =
+
+           1      157000
+
+
+arch_name =
+
+310L500R4L_l25e-05_rho0.98_eps0.0001_mf0_mvni_mvno_1
+
+training on GPU ... :) 
+Elapsed time is 2.641952 seconds.
+Elapsed time is 0.694460 seconds.
+Epoch : 1  Update : 1000 Train Loss : 0.965336 Val Loss : 0.967288 
+Elapsed time is 0.599565 seconds.
+	 Epoch : 1  Update: 1000 Test Loss : 0.967288 
+Elapsed time is 2.553364 seconds.
+Elapsed time is 0.686217 seconds.
+Epoch : 1  Update : 2000 Train Loss : 0.970343 Val Loss : 0.989408 
+Elapsed time is 2.566910 seconds.
+Elapsed time is 0.687188 seconds.
+Epoch : 1  Update : 3000 Train Loss : 0.993071 Val Loss : 1.002243 
+Elapsed time is 2.546262 seconds.
+Elapsed time is 0.683445 seconds.
+Epoch : 1  Update : 4000 Train Loss : 0.953274 Val Loss : 0.957255 
+Elapsed time is 0.589067 seconds.
+	 Epoch : 1  Update: 4000 Test Loss : 0.957255 
+Elapsed time is 2.629222 seconds.
+Elapsed time is 0.693501 seconds.
+Epoch : 1  Update : 5000 Train Loss : 0.999864 Val Loss : 1.027794 
+Elapsed time is 64.841272 seconds.
+Elapsed time is 2.594787 seconds.
+Elapsed time is 0.691865 seconds.
+Epoch : 2  Update : 6000 Train Loss : 0.941116 Val Loss : 0.952802 
+Elapsed time is 0.598127 seconds.
+	 Epoch : 2  Update: 6000 Test Loss : 0.952802 
+Elapsed time is 2.543243 seconds.
+Elapsed time is 0.682040 seconds.
+Epoch : 2  Update : 7000 Train Loss : 0.955272 Val Loss : 0.970983 
+Elapsed time is 2.555087 seconds.
+Elapsed time is 0.681231 seconds.
+Epoch : 2  Update : 8000 Train Loss : 0.936987 Val Loss : 0.953684 
+Elapsed time is 2.584059 seconds.
+Elapsed time is 0.685569 seconds.
+Epoch : 2  Update : 9000 Train Loss : 0.929122 Val Loss : 0.942039 
+Elapsed time is 0.589516 seconds.
+	 Epoch : 2  Update: 9000 Test Loss : 0.942039 
+Elapsed time is 2.616012 seconds.
+Elapsed time is 0.695691 seconds.
+Epoch : 2  Update : 10000 Train Loss : 1.006834 Val Loss : 1.028897 
+Elapsed time is 2.609777 seconds.
+Elapsed time is 0.698069 seconds.
+Epoch : 2  Update : 11000 Train Loss : 0.940871 Val Loss : 0.944272 
+Elapsed time is 68.123585 seconds.
+Elapsed time is 2.606656 seconds.
+Elapsed time is 0.696197 seconds.
+Epoch : 3  Update : 12000 Train Loss : 0.937141 Val Loss : 0.956771 
+Elapsed time is 2.624606 seconds.
+Elapsed time is 0.689642 seconds.
+Epoch : 3  Update : 13000 Train Loss : 0.956356 Val Loss : 0.954666 
+Elapsed time is 2.597966 seconds.
+Elapsed time is 0.691263 seconds.
+Epoch : 3  Update : 14000 Train Loss : 0.971582 Val Loss : 1.004590 
+Elapsed time is 2.596913 seconds.
+Elapsed time is 0.691249 seconds.
+Epoch : 3  Update : 15000 Train Loss : 0.957191 Val Loss : 0.968639 
+Elapsed time is 2.591505 seconds.
+Elapsed time is 0.691441 seconds.
+Epoch : 3  Update : 16000 Train Loss : 0.947244 Val Loss : 0.957895 
+Elapsed time is 64.448905 seconds.
+Elapsed time is 2.620394 seconds.
+Elapsed time is 0.693032 seconds.
+Epoch : 4  Update : 17000 Train Loss : 0.941669 Val Loss : 0.940812 
+Elapsed time is 0.597383 seconds.
+	 Epoch : 4  Update: 17000 Test Loss : 0.940812 
+Elapsed time is 2.557291 seconds.
+Elapsed time is 0.687944 seconds.
+Epoch : 4  Update : 18000 Train Loss : 1.023967 Val Loss : 1.039037 
+Elapsed time is 2.565809 seconds.
+Elapsed time is 0.685458 seconds.
+Epoch : 4  Update : 19000 Train Loss : 0.952001 Val Loss : 0.956863 
+Elapsed time is 2.575152 seconds.
+Elapsed time is 0.686161 seconds.
+Epoch : 4  Update : 20000 Train Loss : 0.955639 Val Loss : 0.967740 
+Elapsed time is 2.601599 seconds.
+Elapsed time is 0.687948 seconds.
+Epoch : 4  Update : 21000 Train Loss : 1.022688 Val Loss : 1.048102 
+Elapsed time is 2.580060 seconds.
+Elapsed time is 0.687950 seconds.
+Epoch : 4  Update : 22000 Train Loss : 0.953901 Val Loss : 0.973127 
+Elapsed time is 67.141428 seconds.
+Elapsed time is 2.570828 seconds.
+Elapsed time is 0.686385 seconds.
+Epoch : 5  Update : 23000 Train Loss : 0.936023 Val Loss : 0.938347 
+Elapsed time is 0.591493 seconds.
+	 Epoch : 5  Update: 23000 Test Loss : 0.938347 
+Elapsed time is 2.627999 seconds.
+Elapsed time is 0.696026 seconds.
+Epoch : 5  Update : 24000 Train Loss : 0.962426 Val Loss : 0.974077 
+Elapsed time is 2.640282 seconds.
+Elapsed time is 0.695019 seconds.
+Epoch : 5  Update : 25000 Train Loss : 0.938200 Val Loss : 0.946546 
+Elapsed time is 2.619574 seconds.
+Elapsed time is 0.696152 seconds.
+Epoch : 5  Update : 26000 Train Loss : 0.952190 Val Loss : 0.956451 
+Elapsed time is 2.605810 seconds.
+Elapsed time is 0.692696 seconds.
+Epoch : 5  Update : 27000 Train Loss : 0.946907 Val Loss : 0.946925 
+Elapsed time is 2.604747 seconds.
+Elapsed time is 0.694761 seconds.
+Epoch : 5  Update : 28000 Train Loss : 0.939900 Val Loss : 0.952522 
+Elapsed time is 68.512636 seconds.
+Elapsed time is 2.640549 seconds.
+Elapsed time is 0.689889 seconds.
+Epoch : 6  Update : 29000 Train Loss : 1.056121 Val Loss : 1.037666 
+Elapsed time is 2.595855 seconds.
+Elapsed time is 0.691161 seconds.
+Epoch : 6  Update : 30000 Train Loss : 0.932324 Val Loss : 0.944934 
+Elapsed time is 2.599016 seconds.
+Elapsed time is 0.688777 seconds.
+Epoch : 6  Update : 31000 Train Loss : 0.920183 Val Loss : 0.934993 
+Elapsed time is 0.594667 seconds.
+	 Epoch : 6  Update: 31000 Test Loss : 0.934993 
+Elapsed time is 2.555008 seconds.
+Elapsed time is 0.682886 seconds.
+Epoch : 6  Update : 32000 Train Loss : 0.940078 Val Loss : 0.943121 
+Elapsed time is 2.599740 seconds.
+Elapsed time is 0.682904 seconds.
+Epoch : 6  Update : 33000 Train Loss : 0.948813 Val Loss : 0.954691 
+Elapsed time is 64.397495 seconds.
+Elapsed time is 2.566951 seconds.
+Elapsed time is 0.686085 seconds.
+Epoch : 7  Update : 34000 Train Loss : 0.951685 Val Loss : 0.962162 
+Elapsed time is 2.555755 seconds.
+Elapsed time is 0.680943 seconds.
+Epoch : 7  Update : 35000 Train Loss : 0.947644 Val Loss : 0.963791 
+Elapsed time is 2.574288 seconds.
+Elapsed time is 0.685862 seconds.
+Epoch : 7  Update : 36000 Train Loss : 1.038282 Val Loss : 1.090563 
+Elapsed time is 2.581533 seconds.
+Elapsed time is 0.685084 seconds.
+Epoch : 7  Update : 37000 Train Loss : 0.930944 Val Loss : 0.939513 
+Elapsed time is 2.566702 seconds.
+Elapsed time is 0.683994 seconds.
+Epoch : 7  Update : 38000 Train Loss : 0.973549 Val Loss : 0.992708 
+Elapsed time is 2.551944 seconds.
+Elapsed time is 0.684035 seconds.
+Epoch : 7  Update : 39000 Train Loss : 0.952182 Val Loss : 0.945254 
+Elapsed time is 66.528986 seconds.
+Elapsed time is 2.559658 seconds.
+Elapsed time is 0.682882 seconds.
+Epoch : 8  Update : 40000 Train Loss : 0.980078 Val Loss : 0.998825 
+Elapsed time is 2.562094 seconds.
+Elapsed time is 0.683894 seconds.
+Epoch : 8  Update : 41000 Train Loss : 0.931972 Val Loss : 0.951905 
+Elapsed time is 2.556258 seconds.
+Elapsed time is 0.680757 seconds.
+Epoch : 8  Update : 42000 Train Loss : 0.968723 Val Loss : 0.973956 
+Elapsed time is 2.569167 seconds.
+Elapsed time is 0.683506 seconds.
+Epoch : 8  Update : 43000 Train Loss : 0.924651 Val Loss : 0.943543 
+Elapsed time is 2.559503 seconds.
+Elapsed time is 0.683560 seconds.
+Epoch : 8  Update : 44000 Train Loss : 1.069426 Val Loss : 1.076724 
+Elapsed time is 2.586941 seconds.
+Elapsed time is 0.683213 seconds.
+Epoch : 8  Update : 45000 Train Loss : 0.949909 Val Loss : 0.960036 
+Elapsed time is 66.483698 seconds.
+Elapsed time is 2.570971 seconds.
+Elapsed time is 0.683387 seconds.
+Epoch : 9  Update : 46000 Train Loss : 0.935917 Val Loss : 0.943899 
+Elapsed time is 2.563564 seconds.
+Elapsed time is 0.684293 seconds.
+Epoch : 9  Update : 47000 Train Loss : 1.009632 Val Loss : 1.032001 
+Elapsed time is 2.555566 seconds.
+Elapsed time is 0.683357 seconds.
+Epoch : 9  Update : 48000 Train Loss : 0.943393 Val Loss : 0.973102 
+Elapsed time is 2.588180 seconds.
+Elapsed time is 0.684285 seconds.
+Epoch : 9  Update : 49000 Train Loss : 0.941189 Val Loss : 0.947981 
+Elapsed time is 2.573671 seconds.
+Elapsed time is 0.690594 seconds.
+Epoch : 9  Update : 50000 Train Loss : 0.967369 Val Loss : 0.972622 
+Elapsed time is 63.247639 seconds.
+Elapsed time is 2.569787 seconds.
+Elapsed time is 0.686552 seconds.
+Epoch : 10  Update : 51000 Train Loss : 0.939483 Val Loss : 0.963947 
+Elapsed time is 2.565993 seconds.
+Elapsed time is 0.686189 seconds.
+Epoch : 10  Update : 52000 Train Loss : 0.935684 Val Loss : 0.962706 
+Elapsed time is 2.582777 seconds.
+Elapsed time is 0.679475 seconds.
+Epoch : 10  Update : 53000 Train Loss : 1.178121 Val Loss : 1.210942 
+Elapsed time is 2.561173 seconds.
+Elapsed time is 0.680877 seconds.
+Epoch : 10  Update : 54000 Train Loss : 0.950378 Val Loss : 0.971749 
+Elapsed time is 2.572113 seconds.
+Elapsed time is 0.687369 seconds.
+Epoch : 10  Update : 55000 Train Loss : 0.953529 Val Loss : 0.972633 
+Elapsed time is 2.550974 seconds.
+Elapsed time is 0.684071 seconds.
+Epoch : 10  Update : 56000 Train Loss : 0.919914 Val Loss : 0.930785 
+Elapsed time is 0.586475 seconds.
+	 Epoch : 10  Update: 56000 Test Loss : 0.930785 
+Elapsed time is 66.924771 seconds.
+Elapsed time is 2.615007 seconds.
+Elapsed time is 0.688519 seconds.
+Epoch : 11  Update : 57000 Train Loss : 0.925063 Val Loss : 0.942454 
+Elapsed time is 2.587861 seconds.
+Elapsed time is 0.687386 seconds.
+Epoch : 11  Update : 58000 Train Loss : 0.939513 Val Loss : 0.943969 
+Elapsed time is 2.595933 seconds.
+Elapsed time is 0.691453 seconds.
+Epoch : 11  Update : 59000 Train Loss : 0.939367 Val Loss : 0.962984 
+Elapsed time is 2.599855 seconds.
+Elapsed time is 0.687565 seconds.
+Epoch : 11  Update : 60000 Train Loss : 0.930092 Val Loss : 0.950010 
+Elapsed time is 2.651827 seconds.
+Elapsed time is 0.700856 seconds.
+Epoch : 11  Update : 61000 Train Loss : 0.933474 Val Loss : 0.947657 
+Elapsed time is 64.481739 seconds.
+Elapsed time is 2.630162 seconds.
+Elapsed time is 0.696768 seconds.
+Epoch : 12  Update : 62000 Train Loss : 0.955588 Val Loss : 0.968205 
+Elapsed time is 2.615959 seconds.
+Elapsed time is 0.695894 seconds.
+Epoch : 12  Update : 63000 Train Loss : 0.961401 Val Loss : 0.969945 
+Elapsed time is 2.625543 seconds.
+Elapsed time is 0.696068 seconds.
+Epoch : 12  Update : 64000 Train Loss : 0.943171 Val Loss : 0.972106 
+Elapsed time is 2.631866 seconds.
+Elapsed time is 0.693322 seconds.
+Epoch : 12  Update : 65000 Train Loss : 0.961580 Val Loss : 0.969468 
+Elapsed time is 2.621324 seconds.
+Elapsed time is 0.694884 seconds.
+Epoch : 12  Update : 66000 Train Loss : 0.987557 Val Loss : 0.982002 
+Elapsed time is 2.614574 seconds.
+Elapsed time is 0.694122 seconds.
+Epoch : 12  Update : 67000 Train Loss : 0.964351 Val Loss : 0.989769 
+Elapsed time is 68.202874 seconds.
+Elapsed time is 2.607384 seconds.
+Elapsed time is 0.695475 seconds.
+Epoch : 13  Update : 68000 Train Loss : 0.984432 Val Loss : 0.998595 
+Elapsed time is 2.652217 seconds.
+Elapsed time is 0.696344 seconds.
+Epoch : 13  Update : 69000 Train Loss : 0.959206 Val Loss : 0.951939 
+Elapsed time is 2.614004 seconds.
+Elapsed time is 0.695270 seconds.
+Epoch : 13  Update : 70000 Train Loss : 0.931943 Val Loss : 0.959905 
+Elapsed time is 2.603816 seconds.
+Elapsed time is 0.695429 seconds.
+Epoch : 13  Update : 71000 Train Loss : 0.977525 Val Loss : 0.987004 
+Elapsed time is 2.614104 seconds.
+Elapsed time is 0.694995 seconds.
+Epoch : 13  Update : 72000 Train Loss : 0.942556 Val Loss : 0.950134 
+Elapsed time is 2.632962 seconds.
+Elapsed time is 0.689259 seconds.
+Epoch : 13  Update : 73000 Train Loss : 1.027288 Val Loss : 1.042280 
+Elapsed time is 68.223822 seconds.
+Elapsed time is 2.603498 seconds.
+Elapsed time is 0.694852 seconds.
+Epoch : 14  Update : 74000 Train Loss : 0.934356 Val Loss : 0.942634 
+Elapsed time is 2.597996 seconds.
+Elapsed time is 0.690824 seconds.
+Epoch : 14  Update : 75000 Train Loss : 0.925831 Val Loss : 0.939848 
+Elapsed time is 2.609442 seconds.
+Elapsed time is 0.692920 seconds.
+Epoch : 14  Update : 76000 Train Loss : 0.942555 Val Loss : 0.950416 
+Elapsed time is 2.625722 seconds.
+Elapsed time is 0.696661 seconds.
+Epoch : 14  Update : 77000 Train Loss : 0.929094 Val Loss : 0.953141 
+Elapsed time is 2.595832 seconds.
+Elapsed time is 0.692177 seconds.
+Epoch : 14  Update : 78000 Train Loss : 0.979513 Val Loss : 0.958689 
+Elapsed time is 64.462918 seconds.
+Elapsed time is 2.597321 seconds.
+Elapsed time is 0.691739 seconds.
+Epoch : 15  Update : 79000 Train Loss : 0.958185 Val Loss : 0.965402 
+Elapsed time is 2.596864 seconds.
+Elapsed time is 0.687509 seconds.
+Epoch : 15  Update : 80000 Train Loss : 0.969668 Val Loss : 1.012195 
+Elapsed time is 2.607002 seconds.
+Elapsed time is 0.689371 seconds.
+Epoch : 15  Update : 81000 Train Loss : 0.949217 Val Loss : 0.965193 
+Elapsed time is 2.589115 seconds.
+Elapsed time is 0.688074 seconds.
+Epoch : 15  Update : 82000 Train Loss : 0.959705 Val Loss : 0.984177 
+Elapsed time is 2.598810 seconds.
+Elapsed time is 0.691466 seconds.
+Epoch : 15  Update : 83000 Train Loss : 0.912995 Val Loss : 0.933119 
+Elapsed time is 2.607009 seconds.
+Elapsed time is 0.695731 seconds.
+Epoch : 15  Update : 84000 Train Loss : 0.945547 Val Loss : 0.960239 
+Elapsed time is 67.778215 seconds.
+Elapsed time is 2.621545 seconds.
+Elapsed time is 0.695704 seconds.
+Epoch : 16  Update : 85000 Train Loss : 0.941798 Val Loss : 0.959551 
+Elapsed time is 2.616967 seconds.
+Elapsed time is 0.697921 seconds.
+Epoch : 16  Update : 86000 Train Loss : 0.919994 Val Loss : 0.933562 
+Elapsed time is 2.609865 seconds.
+Elapsed time is 0.696654 seconds.
+Epoch : 16  Update : 87000 Train Loss : 0.971434 Val Loss : 0.993317 
+Elapsed time is 2.613779 seconds.
+Elapsed time is 0.693827 seconds.
+Epoch : 16  Update : 88000 Train Loss : 0.941847 Val Loss : 0.968055 
+Elapsed time is 2.631348 seconds.
+Elapsed time is 0.693858 seconds.
+Epoch : 16  Update : 89000 Train Loss : 0.968079 Val Loss : 0.988670 
+Elapsed time is 2.622138 seconds.
+Elapsed time is 0.693177 seconds.
+Epoch : 16  Update : 90000 Train Loss : 0.943059 Val Loss : 0.959816 
+Elapsed time is 68.129302 seconds.
+Elapsed time is 2.610299 seconds.
+Elapsed time is 0.696584 seconds.
+Epoch : 17  Update : 91000 Train Loss : 0.978696 Val Loss : 0.998513 
+Elapsed time is 2.611739 seconds.
+Elapsed time is 0.693818 seconds.
+Epoch : 17  Update : 92000 Train Loss : 0.932838 Val Loss : 0.940893 
+Elapsed time is 2.619446 seconds.
+Elapsed time is 0.691847 seconds.
+Epoch : 17  Update : 93000 Train Loss : 0.927161 Val Loss : 0.938527 
+Elapsed time is 2.607021 seconds.
+Elapsed time is 0.689240 seconds.
+Epoch : 17  Update : 94000 Train Loss : 0.980414 Val Loss : 0.951406 
+Elapsed time is 2.614400 seconds.
+Elapsed time is 0.691332 seconds.
+Epoch : 17  Update : 95000 Train Loss : 0.940457 Val Loss : 0.946498 
+Elapsed time is 64.736559 seconds.
+Elapsed time is 2.615752 seconds.
+Elapsed time is 0.694687 seconds.
+Epoch : 18  Update : 96000 Train Loss : 0.941221 Val Loss : 0.962017 
+Elapsed time is 2.633399 seconds.
+Elapsed time is 0.697702 seconds.
+Epoch : 18  Update : 97000 Train Loss : 1.033786 Val Loss : 1.061257 
+Elapsed time is 2.618228 seconds.
+Elapsed time is 0.698216 seconds.
+Epoch : 18  Update : 98000 Train Loss : 0.962443 Val Loss : 0.964764 
+Elapsed time is 2.628020 seconds.
+Elapsed time is 0.694568 seconds.
+Epoch : 18  Update : 99000 Train Loss : 0.959701 Val Loss : 0.978893 
+Elapsed time is 2.619043 seconds.
+Elapsed time is 0.698177 seconds.
+Epoch : 18  Update : 100000 Train Loss : 0.965869 Val Loss : 0.992639 
+Elapsed time is 2.630617 seconds.
+Elapsed time is 0.690720 seconds.
+Epoch : 18  Update : 101000 Train Loss : 0.933197 Val Loss : 0.949399 
+Elapsed time is 68.313503 seconds.
+Elapsed time is 2.602689 seconds.
+Elapsed time is 0.693630 seconds.
+Epoch : 19  Update : 102000 Train Loss : 0.930747 Val Loss : 0.956791 
+Elapsed time is 2.601015 seconds.
+Elapsed time is 0.692514 seconds.
+Epoch : 19  Update : 103000 Train Loss : 0.940673 Val Loss : 0.947745 
+Elapsed time is 2.615178 seconds.
+Elapsed time is 0.694602 seconds.
+Epoch : 19  Update : 104000 Train Loss : 0.936180 Val Loss : 0.954257 
+Elapsed time is 2.637419 seconds.
+Elapsed time is 0.691138 seconds.
+Epoch : 19  Update : 105000 Train Loss : 0.974484 Val Loss : 0.972723 
+Elapsed time is 2.602622 seconds.
+Elapsed time is 0.691460 seconds.
+Epoch : 19  Update : 106000 Train Loss : 0.946570 Val Loss : 0.954841 
+Elapsed time is 2.588637 seconds.
+Elapsed time is 0.693637 seconds.
+Epoch : 19  Update : 107000 Train Loss : 1.334609 Val Loss : 1.385860 
+Elapsed time is 67.787765 seconds.
+Elapsed time is 2.604357 seconds.
+Elapsed time is 0.694175 seconds.
+Epoch : 20  Update : 108000 Train Loss : 0.929732 Val Loss : 0.942808 
+Elapsed time is 2.621855 seconds.
+Elapsed time is 0.691565 seconds.
+Epoch : 20  Update : 109000 Train Loss : 0.991724 Val Loss : 0.989740 
+Elapsed time is 2.606401 seconds.
+Elapsed time is 0.694371 seconds.
+Epoch : 20  Update : 110000 Train Loss : 0.942372 Val Loss : 0.950659 
+Elapsed time is 2.616333 seconds.
+Elapsed time is 0.697135 seconds.
+Epoch : 20  Update : 111000 Train Loss : 0.920931 Val Loss : 0.939780 
+Elapsed time is 2.609392 seconds.
+Elapsed time is 0.697031 seconds.
+Epoch : 20  Update : 112000 Train Loss : 0.951092 Val Loss : 0.955972 
+Elapsed time is 64.659859 seconds.
+Training done !!!
+Best val error : 0.930785 ; at epoch : 9 ; with test error : 0.930785 
+size of weight matrix
+
+ans =
+
+           1      157000
+
+
+arch_name =
+
+310L500R4L_l25e-05_rho0.98_eps1e-06_mf0_mvni_mvno_1
+
+training on GPU ... :) 
+Elapsed time is 2.595388 seconds.
+Elapsed time is 0.686696 seconds.
+Epoch : 1  Update : 1000 Train Loss : 0.935129 Val Loss : 0.959203 
+Elapsed time is 0.589670 seconds.
+	 Epoch : 1  Update: 1000 Test Loss : 0.959203 
+Elapsed time is 2.621945 seconds.
+Elapsed time is 0.697846 seconds.
+Epoch : 1  Update : 2000 Train Loss : 0.947269 Val Loss : 0.963242 
+Elapsed time is 2.615288 seconds.
+Elapsed time is 0.694948 seconds.
+Epoch : 1  Update : 3000 Train Loss : 0.922602 Val Loss : 0.943302 
+Elapsed time is 0.599375 seconds.
+	 Epoch : 1  Update: 3000 Test Loss : 0.943302 
+Elapsed time is 2.588445 seconds.
+Elapsed time is 0.682221 seconds.
+Epoch : 1  Update : 4000 Train Loss : 0.934875 Val Loss : 0.959268 
+Elapsed time is 2.563949 seconds.
+Elapsed time is 0.688450 seconds.
+Epoch : 1  Update : 5000 Train Loss : 0.961427 Val Loss : 0.970753 
+Elapsed time is 65.065742 seconds.
+Elapsed time is 2.575604 seconds.
+Elapsed time is 0.689635 seconds.
+Epoch : 2  Update : 6000 Train Loss : 0.902542 Val Loss : 0.927620 
+Elapsed time is 0.589431 seconds.
+	 Epoch : 2  Update: 6000 Test Loss : 0.927620 
+Elapsed time is 2.623993 seconds.
+Elapsed time is 0.694330 seconds.
+Epoch : 2  Update : 7000 Train Loss : 0.899232 Val Loss : 0.923069 
+Elapsed time is 0.598718 seconds.
+	 Epoch : 2  Update: 7000 Test Loss : 0.923069 
+Elapsed time is 2.590761 seconds.
+Elapsed time is 0.679628 seconds.
+Epoch : 2  Update : 8000 Train Loss : 0.900626 Val Loss : 0.917125 
+Elapsed time is 0.587401 seconds.
+	 Epoch : 2  Update: 8000 Test Loss : 0.917125 
+Elapsed time is 2.586888 seconds.
+Elapsed time is 0.687457 seconds.
+Epoch : 2  Update : 9000 Train Loss : 0.930100 Val Loss : 0.954861 
+Elapsed time is 2.590233 seconds.
+Elapsed time is 0.689211 seconds.
+Epoch : 2  Update : 10000 Train Loss : 0.897970 Val Loss : 0.920323 
+Elapsed time is 2.591059 seconds.
+Elapsed time is 0.689507 seconds.
+Epoch : 2  Update : 11000 Train Loss : 0.908241 Val Loss : 0.920326 
+Elapsed time is 69.240739 seconds.
+Elapsed time is 2.617031 seconds.
+Elapsed time is 0.690072 seconds.
+Epoch : 3  Update : 12000 Train Loss : 0.902961 Val Loss : 0.936121 
+Elapsed time is 2.599123 seconds.
+Elapsed time is 0.690765 seconds.
+Epoch : 3  Update : 13000 Train Loss : 0.891907 Val Loss : 0.915691 
+Elapsed time is 0.594307 seconds.
+	 Epoch : 3  Update: 13000 Test Loss : 0.915691 
+Elapsed time is 2.559618 seconds.
+Elapsed time is 0.681995 seconds.
+Epoch : 3  Update : 14000 Train Loss : 0.903414 Val Loss : 0.921447 
+Elapsed time is 2.550309 seconds.
+Elapsed time is 0.683844 seconds.
+Epoch : 3  Update : 15000 Train Loss : 0.900870 Val Loss : 0.925165 
+Elapsed time is 2.570061 seconds.
+Elapsed time is 0.681842 seconds.
+Epoch : 3  Update : 16000 Train Loss : 0.892179 Val Loss : 0.925941 
+Elapsed time is 64.033734 seconds.
+Elapsed time is 2.553175 seconds.
+Elapsed time is 0.682274 seconds.
+Epoch : 4  Update : 17000 Train Loss : 0.919512 Val Loss : 0.943327 
+Elapsed time is 2.553298 seconds.
+Elapsed time is 0.682835 seconds.
+Epoch : 4  Update : 18000 Train Loss : 0.920797 Val Loss : 0.962740 
+Elapsed time is 2.560381 seconds.
+Elapsed time is 0.681608 seconds.
+Epoch : 4  Update : 19000 Train Loss : 0.903013 Val Loss : 0.934142 
+Elapsed time is 2.596267 seconds.
+Elapsed time is 0.683044 seconds.
+Epoch : 4  Update : 20000 Train Loss : 0.893234 Val Loss : 0.923505 
+Elapsed time is 2.555277 seconds.
+Elapsed time is 0.682034 seconds.
+Epoch : 4  Update : 21000 Train Loss : 0.899968 Val Loss : 0.919149 
+Elapsed time is 2.559420 seconds.
+Elapsed time is 0.682511 seconds.
+Epoch : 4  Update : 22000 Train Loss : 0.904354 Val Loss : 0.939109 
+Elapsed time is 66.180966 seconds.
+Elapsed time is 2.554362 seconds.
+Elapsed time is 0.679277 seconds.
+Epoch : 5  Update : 23000 Train Loss : 0.885554 Val Loss : 0.912061 
+Elapsed time is 0.586545 seconds.
+	 Epoch : 5  Update: 23000 Test Loss : 0.912061 
+Elapsed time is 2.613942 seconds.
+Elapsed time is 0.689507 seconds.
+Epoch : 5  Update : 24000 Train Loss : 0.922569 Val Loss : 0.947083 
+Elapsed time is 2.594333 seconds.
+Elapsed time is 0.689950 seconds.
+Epoch : 5  Update : 25000 Train Loss : 0.890255 Val Loss : 0.916724 
+Elapsed time is 2.600003 seconds.
+Elapsed time is 0.690487 seconds.
+Epoch : 5  Update : 26000 Train Loss : 0.891772 Val Loss : 0.928729 
+Elapsed time is 2.588456 seconds.
+Elapsed time is 0.690905 seconds.
+Epoch : 5  Update : 27000 Train Loss : 0.901712 Val Loss : 0.926857 
+Elapsed time is 2.625360 seconds.
+Elapsed time is 0.690184 seconds.
+Epoch : 5  Update : 28000 Train Loss : 0.880832 Val Loss : 0.913389 
+Elapsed time is 68.182028 seconds.
+Elapsed time is 2.598407 seconds.
+Elapsed time is 0.691128 seconds.
+Epoch : 6  Update : 29000 Train Loss : 0.885203 Val Loss : 0.912803 
+Elapsed time is 2.594947 seconds.
+Elapsed time is 0.689187 seconds.
+Epoch : 6  Update : 30000 Train Loss : 0.881909 Val Loss : 0.910145 
+Elapsed time is 0.595558 seconds.
+	 Epoch : 6  Update: 30000 Test Loss : 0.910145 
+Elapsed time is 2.562252 seconds.
+Elapsed time is 0.686284 seconds.
+Epoch : 6  Update : 31000 Train Loss : 0.885511 Val Loss : 0.904168 
+Elapsed time is 0.587744 seconds.
+	 Epoch : 6  Update: 31000 Test Loss : 0.904168 
+Elapsed time is 2.619050 seconds.
+Elapsed time is 0.692021 seconds.
+Epoch : 6  Update : 32000 Train Loss : 0.886558 Val Loss : 0.921980 
+Elapsed time is 2.587660 seconds.
+Elapsed time is 0.690590 seconds.
+Epoch : 6  Update : 33000 Train Loss : 0.880350 Val Loss : 0.909963 
+Elapsed time is 65.463684 seconds.
+Elapsed time is 2.589658 seconds.
+Elapsed time is 0.691230 seconds.
+Epoch : 7  Update : 34000 Train Loss : 0.880542 Val Loss : 0.911670 
+Elapsed time is 2.606152 seconds.
+Elapsed time is 0.688822 seconds.
+Epoch : 7  Update : 35000 Train Loss : 0.904031 Val Loss : 0.940056 
+Elapsed time is 2.631836 seconds.
+Elapsed time is 0.690738 seconds.
+Epoch : 7  Update : 36000 Train Loss : 0.903584 Val Loss : 0.940821 
+Elapsed time is 2.596714 seconds.
+Elapsed time is 0.689895 seconds.
+Epoch : 7  Update : 37000 Train Loss : 0.914217 Val Loss : 0.941164 
+Elapsed time is 2.588492 seconds.
+Elapsed time is 0.689370 seconds.
+Epoch : 7  Update : 38000 Train Loss : 0.875759 Val Loss : 0.909725 
+Elapsed time is 2.602193 seconds.
+Elapsed time is 0.694174 seconds.
+Epoch : 7  Update : 39000 Train Loss : 0.898536 Val Loss : 0.928511 
+Elapsed time is 67.729116 seconds.
+Elapsed time is 2.613865 seconds.
+Elapsed time is 0.690598 seconds.
+Epoch : 8  Update : 40000 Train Loss : 0.887441 Val Loss : 0.913937 
+Elapsed time is 2.598478 seconds.
+Elapsed time is 0.688572 seconds.
+Epoch : 8  Update : 41000 Train Loss : 0.901950 Val Loss : 0.936570 
+Elapsed time is 2.598296 seconds.
+Elapsed time is 0.692538 seconds.
+Epoch : 8  Update : 42000 Train Loss : 0.904252 Val Loss : 0.930027 
+Elapsed time is 2.595837 seconds.
+Elapsed time is 0.689664 seconds.
+Epoch : 8  Update : 43000 Train Loss : 0.892805 Val Loss : 0.924429 
+Elapsed time is 2.621791 seconds.
+Elapsed time is 0.691182 seconds.
+Epoch : 8  Update : 44000 Train Loss : 0.876833 Val Loss : 0.909580 
+Elapsed time is 2.611111 seconds.
+Elapsed time is 0.690298 seconds.
+Epoch : 8  Update : 45000 Train Loss : 0.890423 Val Loss : 0.923074 
+Elapsed time is 67.868603 seconds.
+Elapsed time is 2.584410 seconds.
+Elapsed time is 0.689416 seconds.
+Epoch : 9  Update : 46000 Train Loss : 0.884084 Val Loss : 0.914788 
+Elapsed time is 2.603918 seconds.
+Elapsed time is 0.690007 seconds.
+Epoch : 9  Update : 47000 Train Loss : 0.886207 Val Loss : 0.927470 
+Elapsed time is 2.645353 seconds.
+Elapsed time is 0.689685 seconds.
+Epoch : 9  Update : 48000 Train Loss : 0.893811 Val Loss : 0.932985 
+Elapsed time is 2.597080 seconds.
+Elapsed time is 0.691389 seconds.
+Epoch : 9  Update : 49000 Train Loss : 0.890595 Val Loss : 0.924478 
+Elapsed time is 2.597763 seconds.
+Elapsed time is 0.690463 seconds.
+Epoch : 9  Update : 50000 Train Loss : 0.886116 Val Loss : 0.922833 
+Elapsed time is 64.427448 seconds.
+Elapsed time is 2.588795 seconds.
+Elapsed time is 0.692849 seconds.
+Epoch : 10  Update : 51000 Train Loss : 0.881469 Val Loss : 0.918334 
+Elapsed time is 2.626554 seconds.
+Elapsed time is 0.689305 seconds.
+Epoch : 10  Update : 52000 Train Loss : 0.888075 Val Loss : 0.912663 
+Elapsed time is 2.602804 seconds.
+Elapsed time is 0.694073 seconds.
+Epoch : 10  Update : 53000 Train Loss : 0.882217 Val Loss : 0.910623 
+Elapsed time is 2.604130 seconds.
+Elapsed time is 0.689146 seconds.
+Epoch : 10  Update : 54000 Train Loss : 0.894301 Val Loss : 0.926513 
+Elapsed time is 2.595786 seconds.
+Elapsed time is 0.693830 seconds.
+Epoch : 10  Update : 55000 Train Loss : 0.892762 Val Loss : 0.930333 
+Elapsed time is 2.613304 seconds.
+Elapsed time is 0.694607 seconds.
+Epoch : 10  Update : 56000 Train Loss : 0.915981 Val Loss : 0.939572 
+Elapsed time is 67.792120 seconds.
+Elapsed time is 2.618560 seconds.
+Elapsed time is 0.695033 seconds.
+Epoch : 11  Update : 57000 Train Loss : 0.874185 Val Loss : 0.901564 
+Elapsed time is 0.595623 seconds.
+	 Epoch : 11  Update: 57000 Test Loss : 0.901564 
+Elapsed time is 2.554122 seconds.
+Elapsed time is 0.681452 seconds.
+Epoch : 11  Update : 58000 Train Loss : 0.878752 Val Loss : 0.909861 
+Elapsed time is 2.547645 seconds.
+Elapsed time is 0.678905 seconds.
+Epoch : 11  Update : 59000 Train Loss : 0.875707 Val Loss : 0.913129 
+Elapsed time is 2.571547 seconds.
+Elapsed time is 0.684133 seconds.
+Epoch : 11  Update : 60000 Train Loss : 0.904290 Val Loss : 0.927734 
+Elapsed time is 2.557579 seconds.
+Elapsed time is 0.681083 seconds.
+Epoch : 11  Update : 61000 Train Loss : 0.896668 Val Loss : 0.928169 
+Elapsed time is 63.769102 seconds.
+Elapsed time is 2.553873 seconds.
+Elapsed time is 0.681300 seconds.
+Epoch : 12  Update : 62000 Train Loss : 0.887553 Val Loss : 0.923413 
+Elapsed time is 2.574044 seconds.
+Elapsed time is 0.688294 seconds.
+Epoch : 12  Update : 63000 Train Loss : 0.886997 Val Loss : 0.925509 
+Elapsed time is 2.563378 seconds.
+Elapsed time is 0.680150 seconds.
+Epoch : 12  Update : 64000 Train Loss : 0.874368 Val Loss : 0.908350 
+Elapsed time is 2.547899 seconds.
+Elapsed time is 0.681250 seconds.
+Epoch : 12  Update : 65000 Train Loss : 0.886500 Val Loss : 0.929211 
+Elapsed time is 2.553818 seconds.
+Elapsed time is 0.681996 seconds.
+Epoch : 12  Update : 66000 Train Loss : 0.922249 Val Loss : 0.959852 
+Elapsed time is 2.565829 seconds.
+Elapsed time is 0.684520 seconds.
+Epoch : 12  Update : 67000 Train Loss : 0.916786 Val Loss : 0.948876 
+Elapsed time is 66.224889 seconds.
+Elapsed time is 2.588912 seconds.
+Elapsed time is 0.686817 seconds.
+Epoch : 13  Update : 68000 Train Loss : 0.898071 Val Loss : 0.919999 
+Elapsed time is 2.544074 seconds.
+Elapsed time is 0.679447 seconds.
+Epoch : 13  Update : 69000 Train Loss : 0.919250 Val Loss : 0.957843 
+Elapsed time is 2.550135 seconds.
+Elapsed time is 0.679564 seconds.
+Epoch : 13  Update : 70000 Train Loss : 0.872110 Val Loss : 0.913557 
+Elapsed time is 2.542235 seconds.
+Elapsed time is 0.682474 seconds.
+Epoch : 13  Update : 71000 Train Loss : 0.883410 Val Loss : 0.906130 
+Elapsed time is 2.553252 seconds.
+Elapsed time is 0.681948 seconds.
+Epoch : 13  Update : 72000 Train Loss : 0.887507 Val Loss : 0.919398 
+Elapsed time is 2.553470 seconds.
+Elapsed time is 0.680745 seconds.
+Epoch : 13  Update : 73000 Train Loss : 0.891873 Val Loss : 0.924538 
+Elapsed time is 66.143865 seconds.
+Elapsed time is 2.556107 seconds.
+Elapsed time is 0.681623 seconds.
+Epoch : 14  Update : 74000 Train Loss : 0.898061 Val Loss : 0.936336 
+Elapsed time is 2.551951 seconds.
+Elapsed time is 0.681847 seconds.
+Epoch : 14  Update : 75000 Train Loss : 0.887612 Val Loss : 0.920776 
+Elapsed time is 2.588379 seconds.
+Elapsed time is 0.687055 seconds.
+Epoch : 14  Update : 76000 Train Loss : 0.884223 Val Loss : 0.910899 
+Elapsed time is 2.567609 seconds.
+Elapsed time is 0.687138 seconds.
+Epoch : 14  Update : 77000 Train Loss : 0.905402 Val Loss : 0.934999 
+Elapsed time is 2.581075 seconds.
+Elapsed time is 0.684916 seconds.
+Epoch : 14  Update : 78000 Train Loss : 0.880957 Val Loss : 0.924177 
+Elapsed time is 62.945471 seconds.
+Elapsed time is 2.569772 seconds.
+Elapsed time is 0.684243 seconds.
+Epoch : 15  Update : 79000 Train Loss : 0.892623 Val Loss : 0.937196 
+Elapsed time is 2.564081 seconds.
+Elapsed time is 0.682683 seconds.
+Epoch : 15  Update : 80000 Train Loss : 0.890895 Val Loss : 0.928428 
+Elapsed time is 2.553820 seconds.
+Elapsed time is 0.682084 seconds.
+Epoch : 15  Update : 81000 Train Loss : 0.890879 Val Loss : 0.928587 
+Elapsed time is 2.551394 seconds.
+Elapsed time is 0.682967 seconds.
+Epoch : 15  Update : 82000 Train Loss : 0.894234 Val Loss : 0.929817 
+Elapsed time is 2.550507 seconds.
+Elapsed time is 0.682111 seconds.
+Epoch : 15  Update : 83000 Train Loss : 0.888598 Val Loss : 0.926552 
+Elapsed time is 2.556491 seconds.
+Elapsed time is 0.680802 seconds.
+Epoch : 15  Update : 84000 Train Loss : 0.877523 Val Loss : 0.914707 
+Elapsed time is 66.137779 seconds.
+Elapsed time is 2.578326 seconds.
+Elapsed time is 0.683985 seconds.
+Epoch : 16  Update : 85000 Train Loss : 0.906556 Val Loss : 0.937668 
+Elapsed time is 2.546784 seconds.
+Elapsed time is 0.680588 seconds.
+Epoch : 16  Update : 86000 Train Loss : 0.888103 Val Loss : 0.923512 
+Elapsed time is 2.560910 seconds.
+Elapsed time is 0.681380 seconds.
+Epoch : 16  Update : 87000 Train Loss : 0.896311 Val Loss : 0.934771 
+Elapsed time is 2.566620 seconds.
+Elapsed time is 0.685636 seconds.
+Epoch : 16  Update : 88000 Train Loss : 0.899276 Val Loss : 0.937214 
+Elapsed time is 2.589468 seconds.
+Elapsed time is 0.680771 seconds.
+Epoch : 16  Update : 89000 Train Loss : 0.878279 Val Loss : 0.910842 
+Elapsed time is 2.549818 seconds.
+Elapsed time is 0.683267 seconds.
+Epoch : 16  Update : 90000 Train Loss : 0.895716 Val Loss : 0.936420 
+Elapsed time is 66.316244 seconds.
+Elapsed time is 2.560979 seconds.
+Elapsed time is 0.686209 seconds.
+Epoch : 17  Update : 91000 Train Loss : 0.893480 Val Loss : 0.933657 
+Elapsed time is 2.565622 seconds.
+Elapsed time is 0.687044 seconds.
+Epoch : 17  Update : 92000 Train Loss : 0.878073 Val Loss : 0.916212 
+Elapsed time is 2.575644 seconds.
+Elapsed time is 0.680104 seconds.
+Epoch : 17  Update : 93000 Train Loss : 0.890183 Val Loss : 0.927026 
+Elapsed time is 2.557093 seconds.
+Elapsed time is 0.682422 seconds.
+Epoch : 17  Update : 94000 Train Loss : 0.879645 Val Loss : 0.916479 
+Elapsed time is 2.554297 seconds.
+Elapsed time is 0.683287 seconds.
+Epoch : 17  Update : 95000 Train Loss : 0.892199 Val Loss : 0.927647 
+Elapsed time is 63.030136 seconds.
+Elapsed time is 2.566277 seconds.
+Elapsed time is 0.687175 seconds.
+Epoch : 18  Update : 96000 Train Loss : 0.894044 Val Loss : 0.922239 
+Elapsed time is 2.586628 seconds.
+Elapsed time is 0.686779 seconds.
+Epoch : 18  Update : 97000 Train Loss : 0.912313 Val Loss : 0.938433 
+Elapsed time is 2.575075 seconds.
+Elapsed time is 0.688147 seconds.
+Epoch : 18  Update : 98000 Train Loss : 0.905915 Val Loss : 0.945235 
+Elapsed time is 2.563033 seconds.
+Elapsed time is 0.688851 seconds.
+Epoch : 18  Update : 99000 Train Loss : 0.903040 Val Loss : 0.935950 
+Elapsed time is 2.562820 seconds.
+Elapsed time is 0.683318 seconds.
+Epoch : 18  Update : 100000 Train Loss : 0.886962 Val Loss : 0.918701 
+Elapsed time is 2.590666 seconds.
+Elapsed time is 0.685624 seconds.
+Epoch : 18  Update : 101000 Train Loss : 0.889034 Val Loss : 0.922861 
+Elapsed time is 66.530209 seconds.
+Elapsed time is 2.554759 seconds.
+Elapsed time is 0.681331 seconds.
+Epoch : 19  Update : 102000 Train Loss : 0.895148 Val Loss : 0.935903 
+Elapsed time is 2.542441 seconds.
+Elapsed time is 0.677133 seconds.
+Epoch : 19  Update : 103000 Train Loss : 0.875439 Val Loss : 0.912199 
+Elapsed time is 2.569937 seconds.
+Elapsed time is 0.681447 seconds.
+Epoch : 19  Update : 104000 Train Loss : 0.904227 Val Loss : 0.936112 
+Elapsed time is 2.575203 seconds.
+Elapsed time is 0.679236 seconds.
+Epoch : 19  Update : 105000 Train Loss : 0.914358 Val Loss : 0.950921 
+Elapsed time is 2.560783 seconds.
+Elapsed time is 0.682828 seconds.
+Epoch : 19  Update : 106000 Train Loss : 0.877850 Val Loss : 0.909340 
+Elapsed time is 2.561279 seconds.
+Elapsed time is 0.682138 seconds.
+Epoch : 19  Update : 107000 Train Loss : 0.883967 Val Loss : 0.921200 
+Elapsed time is 66.198729 seconds.
+Elapsed time is 2.556946 seconds.
+Elapsed time is 0.685985 seconds.
+Epoch : 20  Update : 108000 Train Loss : 0.881147 Val Loss : 0.921809 
+Elapsed time is 2.578395 seconds.
+Elapsed time is 0.681946 seconds.
+Epoch : 20  Update : 109000 Train Loss : 0.880021 Val Loss : 0.909870 
+Elapsed time is 2.552680 seconds.
+Elapsed time is 0.680186 seconds.
+Epoch : 20  Update : 110000 Train Loss : 0.877241 Val Loss : 0.905543 
+Elapsed time is 2.549966 seconds.
+Elapsed time is 0.680513 seconds.
+Epoch : 20  Update : 111000 Train Loss : 0.891473 Val Loss : 0.922034 
+Elapsed time is 2.538403 seconds.
+Elapsed time is 0.684879 seconds.
+Epoch : 20  Update : 112000 Train Loss : 0.882048 Val Loss : 0.926693 
+Elapsed time is 62.853346 seconds.
+Training done !!!
+Best val error : 0.901564 ; at epoch : 10 ; with test error : 0.901564 
+size of weight matrix
+
+ans =
+
+           1      157000
+
+
+arch_name =
+
+310L500R4L_l25e-05_rho0.98_eps1e-08_mf0_mvni_mvno_1
+
+training on GPU ... :) 
+Elapsed time is 2.616694 seconds.
+Elapsed time is 0.690631 seconds.
+Epoch : 1  Update : 1000 Train Loss : 0.955286 Val Loss : 0.975296 
+Elapsed time is 0.595312 seconds.
+	 Epoch : 1  Update: 1000 Test Loss : 0.975296 
+Elapsed time is 2.547332 seconds.
+Elapsed time is 0.683147 seconds.
+Epoch : 1  Update : 2000 Train Loss : 0.922908 Val Loss : 0.945383 
+Elapsed time is 0.587416 seconds.
+	 Epoch : 1  Update: 2000 Test Loss : 0.945383 
+Elapsed time is 2.604587 seconds.
+Elapsed time is 0.693317 seconds.
+Epoch : 1  Update : 3000 Train Loss : 0.918693 Val Loss : 0.931687 
+Elapsed time is 0.595040 seconds.
+	 Epoch : 1  Update: 3000 Test Loss : 0.931687 
+Elapsed time is 2.563248 seconds.
+Elapsed time is 0.681773 seconds.
+Epoch : 1  Update : 4000 Train Loss : 0.898272 Val Loss : 0.924301 
+Elapsed time is 0.587226 seconds.
+	 Epoch : 1  Update: 4000 Test Loss : 0.924301 
+Elapsed time is 2.636417 seconds.
+Elapsed time is 0.697802 seconds.
+Epoch : 1  Update : 5000 Train Loss : 0.916995 Val Loss : 0.952006 
+Elapsed time is 66.427746 seconds.
+Elapsed time is 2.615465 seconds.
+Elapsed time is 0.696015 seconds.
+Epoch : 2  Update : 6000 Train Loss : 0.905520 Val Loss : 0.928602 
+Elapsed time is 2.613314 seconds.
+Elapsed time is 0.691141 seconds.
+Epoch : 2  Update : 7000 Train Loss : 0.899607 Val Loss : 0.937269 
+Elapsed time is 2.602801 seconds.
+Elapsed time is 0.690534 seconds.
+Epoch : 2  Update : 8000 Train Loss : 0.894203 Val Loss : 0.919920 
+Elapsed time is 0.595144 seconds.
+	 Epoch : 2  Update: 8000 Test Loss : 0.919920 
+Elapsed time is 2.566357 seconds.
+Elapsed time is 0.678767 seconds.
+Epoch : 2  Update : 9000 Train Loss : 0.931966 Val Loss : 0.944803 
+Elapsed time is 2.558279 seconds.
+Elapsed time is 0.682794 seconds.
+Epoch : 2  Update : 10000 Train Loss : 0.880383 Val Loss : 0.912363 
+Elapsed time is 0.587281 seconds.
+	 Epoch : 2  Update: 10000 Test Loss : 0.912363 
+Elapsed time is 2.596581 seconds.
+Elapsed time is 0.691608 seconds.
+Epoch : 2  Update : 11000 Train Loss : 0.905558 Val Loss : 0.925878 
+Elapsed time is 68.449131 seconds.
+Elapsed time is 2.599380 seconds.
+Elapsed time is 0.690420 seconds.
+Epoch : 3  Update : 12000 Train Loss : 0.903581 Val Loss : 0.939236 
+Elapsed time is 2.624781 seconds.
+Elapsed time is 0.691276 seconds.
+Epoch : 3  Update : 13000 Train Loss : 0.892174 Val Loss : 0.930280 
+Elapsed time is 2.624443 seconds.
+Elapsed time is 0.695354 seconds.
+Epoch : 3  Update : 14000 Train Loss : 0.887680 Val Loss : 0.918938 
+Elapsed time is 2.610289 seconds.
+Elapsed time is 0.695666 seconds.
+Epoch : 3  Update : 15000 Train Loss : 0.878260 Val Loss : 0.908437 
+Elapsed time is 0.599230 seconds.
+	 Epoch : 3  Update: 15000 Test Loss : 0.908437 
+Elapsed time is 2.566808 seconds.
+Elapsed time is 0.684479 seconds.
+Epoch : 3  Update : 16000 Train Loss : 0.886172 Val Loss : 0.919942 
+Elapsed time is 64.845669 seconds.
+Elapsed time is 2.583223 seconds.
+Elapsed time is 0.683102 seconds.
+Epoch : 4  Update : 17000 Train Loss : 0.880344 Val Loss : 0.913421 
+Elapsed time is 2.550346 seconds.
+Elapsed time is 0.683586 seconds.
+Epoch : 4  Update : 18000 Train Loss : 0.866329 Val Loss : 0.910604 
+Elapsed time is 2.554449 seconds.
+Elapsed time is 0.682650 seconds.
+Epoch : 4  Update : 19000 Train Loss : 0.878097 Val Loss : 0.923201 
+Elapsed time is 2.548161 seconds.
+Elapsed time is 0.684529 seconds.
+Epoch : 4  Update : 20000 Train Loss : 0.887844 Val Loss : 0.931552 
+Elapsed time is 2.586394 seconds.
+Elapsed time is 0.682549 seconds.
+Epoch : 4  Update : 21000 Train Loss : 0.877590 Val Loss : 0.909465 
+Elapsed time is 2.562661 seconds.
+Elapsed time is 0.682217 seconds.
+Epoch : 4  Update : 22000 Train Loss : 0.894210 Val Loss : 0.926655 
+Elapsed time is 66.104302 seconds.
+Elapsed time is 2.561110 seconds.
+Elapsed time is 0.682267 seconds.
+Epoch : 5  Update : 23000 Train Loss : 0.878331 Val Loss : 0.918622 
+Elapsed time is 2.567022 seconds.
+Elapsed time is 0.682047 seconds.
+Epoch : 5  Update : 24000 Train Loss : 0.861239 Val Loss : 0.906602 
+Elapsed time is 0.585675 seconds.
+	 Epoch : 5  Update: 24000 Test Loss : 0.906602 
+Elapsed time is 2.627154 seconds.
+Elapsed time is 0.692882 seconds.
+Epoch : 5  Update : 25000 Train Loss : 0.882572 Val Loss : 0.919829 
+Elapsed time is 2.609029 seconds.
+Elapsed time is 0.691018 seconds.
+Epoch : 5  Update : 26000 Train Loss : 0.893654 Val Loss : 0.940139 
+Elapsed time is 2.612996 seconds.
+Elapsed time is 0.691123 seconds.
+Epoch : 5  Update : 27000 Train Loss : 0.869449 Val Loss : 0.918908 
+Elapsed time is 2.610922 seconds.
+Elapsed time is 0.689224 seconds.
+Epoch : 5  Update : 28000 Train Loss : 0.884525 Val Loss : 0.911187 
+Elapsed time is 67.947028 seconds.
+Elapsed time is 2.636336 seconds.
+Elapsed time is 0.693424 seconds.
+Epoch : 6  Update : 29000 Train Loss : 0.869928 Val Loss : 0.919562 
+Elapsed time is 2.618228 seconds.
+Elapsed time is 0.696237 seconds.
+Epoch : 6  Update : 30000 Train Loss : 0.869341 Val Loss : 0.923381 
+Elapsed time is 2.596937 seconds.
+Elapsed time is 0.696505 seconds.
+Epoch : 6  Update : 31000 Train Loss : 0.867113 Val Loss : 0.908596 
+Elapsed time is 2.608109 seconds.
+Elapsed time is 0.693965 seconds.
+Epoch : 6  Update : 32000 Train Loss : 0.866122 Val Loss : 0.923423 
+Elapsed time is 2.651297 seconds.
+Elapsed time is 0.693923 seconds.
+Epoch : 6  Update : 33000 Train Loss : 0.860913 Val Loss : 0.908633 
+Elapsed time is 64.848902 seconds.
+Elapsed time is 2.618959 seconds.
+Elapsed time is 0.696207 seconds.
+Epoch : 7  Update : 34000 Train Loss : 0.863986 Val Loss : 0.916908 
+Elapsed time is 2.616113 seconds.
+Elapsed time is 0.695465 seconds.
+Epoch : 7  Update : 35000 Train Loss : 0.862065 Val Loss : 0.913917 
+Elapsed time is 2.624047 seconds.
+Elapsed time is 0.693451 seconds.
+Epoch : 7  Update : 36000 Train Loss : 0.873718 Val Loss : 0.926494 
+Elapsed time is 2.622938 seconds.
+Elapsed time is 0.687927 seconds.
+Epoch : 7  Update : 37000 Train Loss : 0.873263 Val Loss : 0.933527 
+Elapsed time is 2.589723 seconds.
+Elapsed time is 0.691003 seconds.
+Epoch : 7  Update : 38000 Train Loss : 0.856312 Val Loss : 0.910937 
+Elapsed time is 2.594913 seconds.
+Elapsed time is 0.692683 seconds.
+Epoch : 7  Update : 39000 Train Loss : 0.850671 Val Loss : 0.909745 
+Elapsed time is 68.359016 seconds.
+Elapsed time is 2.597659 seconds.
+Elapsed time is 0.692827 seconds.
+Epoch : 8  Update : 40000 Train Loss : 0.873183 Val Loss : 0.932600 
+Elapsed time is 2.613028 seconds.
+Elapsed time is 0.687638 seconds.
+Epoch : 8  Update : 41000 Train Loss : 0.859621 Val Loss : 0.923022 
+Elapsed time is 2.584978 seconds.
+Elapsed time is 0.686740 seconds.
+Epoch : 8  Update : 42000 Train Loss : 0.856686 Val Loss : 0.917335 
+Elapsed time is 2.600162 seconds.
+Elapsed time is 0.688741 seconds.
+Epoch : 8  Update : 43000 Train Loss : 0.876227 Val Loss : 0.939210 
+Elapsed time is 2.588870 seconds.
+Elapsed time is 0.688679 seconds.
+Epoch : 8  Update : 44000 Train Loss : 0.880774 Val Loss : 0.938817 
+Elapsed time is 2.633758 seconds.
+Elapsed time is 0.691631 seconds.
+Epoch : 8  Update : 45000 Train Loss : 0.846349 Val Loss : 0.907180 
+Elapsed time is 67.724314 seconds.
+Elapsed time is 2.614973 seconds.
+Elapsed time is 0.688076 seconds.
+Epoch : 9  Update : 46000 Train Loss : 0.867514 Val Loss : 0.927763 
+Elapsed time is 2.602475 seconds.
+Elapsed time is 0.693049 seconds.
+Epoch : 9  Update : 47000 Train Loss : 0.852246 Val Loss : 0.925466 
+Elapsed time is 2.604062 seconds.
+Elapsed time is 0.691536 seconds.
+Epoch : 9  Update : 48000 Train Loss : 0.848337 Val Loss : 0.922423 
+Elapsed time is 2.657416 seconds.
+Elapsed time is 0.690632 seconds.
+Epoch : 9  Update : 49000 Train Loss : 0.860277 Val Loss : 0.927256 
+Elapsed time is 2.614859 seconds.
+Elapsed time is 0.692792 seconds.
+Epoch : 9  Update : 50000 Train Loss : 0.841860 Val Loss : 0.913251 
+Elapsed time is 64.642657 seconds.
+Elapsed time is 2.591714 seconds.
+Elapsed time is 0.688506 seconds.
+Epoch : 10  Update : 51000 Train Loss : 0.843741 Val Loss : 0.915489 
+Elapsed time is 2.588439 seconds.
+Elapsed time is 0.692487 seconds.
+Epoch : 10  Update : 52000 Train Loss : 0.862127 Val Loss : 0.941512 
+Elapsed time is 2.626509 seconds.
+Elapsed time is 0.690651 seconds.
+Epoch : 10  Update : 53000 Train Loss : 0.846020 Val Loss : 0.909447 
+Elapsed time is 2.603747 seconds.
+Elapsed time is 0.694064 seconds.
+Epoch : 10  Update : 54000 Train Loss : 0.855792 Val Loss : 0.925687 
+Elapsed time is 2.602547 seconds.
+Elapsed time is 0.691141 seconds.
+Epoch : 10  Update : 55000 Train Loss : 0.847512 Val Loss : 0.925478 
+Elapsed time is 2.588446 seconds.
+Elapsed time is 0.692735 seconds.
+Epoch : 10  Update : 56000 Train Loss : 0.842702 Val Loss : 0.914809 
+Elapsed time is 67.689666 seconds.
+Elapsed time is 2.647178 seconds.
+Elapsed time is 0.693519 seconds.
+Epoch : 11  Update : 57000 Train Loss : 0.847801 Val Loss : 0.921164 
+Elapsed time is 2.636283 seconds.
+Elapsed time is 0.697383 seconds.
+Epoch : 11  Update : 58000 Train Loss : 0.839497 Val Loss : 0.915511 
+Elapsed time is 2.614123 seconds.
+Elapsed time is 0.695754 seconds.
+Epoch : 11  Update : 59000 Train Loss : 0.852319 Val Loss : 0.921780 
+Elapsed time is 2.609009 seconds.
+Elapsed time is 0.686891 seconds.
+Epoch : 11  Update : 60000 Train Loss : 0.868117 Val Loss : 0.956348 
+Elapsed time is 2.634958 seconds.
+Elapsed time is 0.690160 seconds.
+Epoch : 11  Update : 61000 Train Loss : 0.835873 Val Loss : 0.921842 
+Elapsed time is 64.801378 seconds.
+Elapsed time is 2.584222 seconds.
+Elapsed time is 0.688488 seconds.
+Epoch : 12  Update : 62000 Train Loss : 0.841029 Val Loss : 0.917382 
+Elapsed time is 2.583687 seconds.
+Elapsed time is 0.688549 seconds.
+Epoch : 12  Update : 63000 Train Loss : 0.843128 Val Loss : 0.925477 
+Elapsed time is 2.599788 seconds.
+Elapsed time is 0.691716 seconds.
+Epoch : 12  Update : 64000 Train Loss : 0.846408 Val Loss : 0.926023 
+Elapsed time is 2.629594 seconds.
+Elapsed time is 0.688837 seconds.
+Epoch : 12  Update : 65000 Train Loss : 0.849946 Val Loss : 0.930064 
+Elapsed time is 2.604898 seconds.
+Elapsed time is 0.691400 seconds.
+Epoch : 12  Update : 66000 Train Loss : 0.849966 Val Loss : 0.930838 
+Elapsed time is 2.589908 seconds.
+Elapsed time is 0.699134 seconds.
+Epoch : 12  Update : 67000 Train Loss : 0.845382 Val Loss : 0.934029 
+Elapsed time is 67.723955 seconds.
+Elapsed time is 2.605345 seconds.
+Elapsed time is 0.694231 seconds.
+Epoch : 13  Update : 68000 Train Loss : 0.847653 Val Loss : 0.933139 
+Elapsed time is 2.634162 seconds.
+Elapsed time is 0.690900 seconds.
+Epoch : 13  Update : 69000 Train Loss : 0.842488 Val Loss : 0.924766 
+Elapsed time is 2.616756 seconds.
+Elapsed time is 0.696156 seconds.
+Epoch : 13  Update : 70000 Train Loss : 0.845749 Val Loss : 0.932563 
+Elapsed time is 2.615693 seconds.
+Elapsed time is 0.695314 seconds.
+Epoch : 13  Update : 71000 Train Loss : 0.856191 Val Loss : 0.940594 
+Elapsed time is 2.609714 seconds.
+Elapsed time is 0.693713 seconds.
+Epoch : 13  Update : 72000 Train Loss : 0.837404 Val Loss : 0.928421 
+Elapsed time is 2.615218 seconds.
+Elapsed time is 0.692334 seconds.
+Epoch : 13  Update : 73000 Train Loss : 0.845694 Val Loss : 0.938323 
+Elapsed time is 68.147035 seconds.
+Elapsed time is 2.613565 seconds.
+Elapsed time is 0.695624 seconds.
+Epoch : 14  Update : 74000 Train Loss : 0.822065 Val Loss : 0.911169 
+Elapsed time is 2.611230 seconds.
+Elapsed time is 0.696033 seconds.
+Epoch : 14  Update : 75000 Train Loss : 0.840142 Val Loss : 0.935300 
+Elapsed time is 2.606631 seconds.
+Elapsed time is 0.692603 seconds.
+Epoch : 14  Update : 76000 Train Loss : 0.837585 Val Loss : 0.929790 
+Elapsed time is 2.630091 seconds.
+Elapsed time is 0.688933 seconds.
+Epoch : 14  Update : 77000 Train Loss : 0.833180 Val Loss : 0.932479 
+Elapsed time is 2.588233 seconds.
+Elapsed time is 0.691314 seconds.
+Epoch : 14  Update : 78000 Train Loss : 0.844889 Val Loss : 0.938328 
+Elapsed time is 64.591880 seconds.
+Elapsed time is 2.606956 seconds.
+Elapsed time is 0.694808 seconds.
+Epoch : 15  Update : 79000 Train Loss : 0.824982 Val Loss : 0.916438 
+Elapsed time is 2.621824 seconds.
+Elapsed time is 0.696013 seconds.
+Epoch : 15  Update : 80000 Train Loss : 0.827116 Val Loss : 0.929310 
+Elapsed time is 2.644386 seconds.
+Elapsed time is 0.694909 seconds.
+Epoch : 15  Update : 81000 Train Loss : 0.845259 Val Loss : 0.935364 
+Elapsed time is 2.620772 seconds.
+Elapsed time is 0.691597 seconds.
+Epoch : 15  Update : 82000 Train Loss : 0.848865 Val Loss : 0.933415 
+Elapsed time is 2.599121 seconds.
+Elapsed time is 0.691524 seconds.
+Epoch : 15  Update : 83000 Train Loss : 0.843042 Val Loss : 0.951514 
+Elapsed time is 2.611202 seconds.
+Elapsed time is 0.691450 seconds.
+Epoch : 15  Update : 84000 Train Loss : 0.825489 Val Loss : 0.925782 
+Elapsed time is 68.106632 seconds.
+Elapsed time is 2.624677 seconds.
+Elapsed time is 0.692059 seconds.
+Epoch : 16  Update : 85000 Train Loss : 0.830520 Val Loss : 0.935346 
+Elapsed time is 2.622015 seconds.
+Elapsed time is 0.698241 seconds.
+Epoch : 16  Update : 86000 Train Loss : 0.832508 Val Loss : 0.935147 
+Elapsed time is 2.614425 seconds.
+Elapsed time is 0.690032 seconds.
+Epoch : 16  Update : 87000 Train Loss : 0.838549 Val Loss : 0.942702 
+Elapsed time is 2.592621 seconds.
+Elapsed time is 0.688900 seconds.
+Epoch : 16  Update : 88000 Train Loss : 0.840766 Val Loss : 0.945194 
+Elapsed time is 2.628383 seconds.
+Elapsed time is 0.691409 seconds.
+Epoch : 16  Update : 89000 Train Loss : 0.823153 Val Loss : 0.928763 
+Elapsed time is 2.591328 seconds.
+Elapsed time is 0.689929 seconds.
+Epoch : 16  Update : 90000 Train Loss : 0.828646 Val Loss : 0.939760 
+Elapsed time is 67.847601 seconds.
+Elapsed time is 2.603985 seconds.
+Elapsed time is 0.692052 seconds.
+Epoch : 17  Update : 91000 Train Loss : 0.818871 Val Loss : 0.924847 
+Elapsed time is 2.595292 seconds.
+Elapsed time is 0.691027 seconds.
+Epoch : 17  Update : 92000 Train Loss : 0.833948 Val Loss : 0.940677 
+Elapsed time is 2.617346 seconds.
+Elapsed time is 0.688756 seconds.
+Epoch : 17  Update : 93000 Train Loss : 0.819950 Val Loss : 0.927754 
+Elapsed time is 2.600397 seconds.
+Elapsed time is 0.691387 seconds.
+Epoch : 17  Update : 94000 Train Loss : 0.832105 Val Loss : 0.939993 
+Elapsed time is 2.596535 seconds.
+Elapsed time is 0.691094 seconds.
+Epoch : 17  Update : 95000 Train Loss : 0.832853 Val Loss : 0.943593 
+Elapsed time is 64.385817 seconds.
+Elapsed time is 2.581826 seconds.
+Elapsed time is 0.688968 seconds.
+Epoch : 18  Update : 96000 Train Loss : 0.822238 Val Loss : 0.931528 
+Elapsed time is 2.647030 seconds.
+Elapsed time is 0.694347 seconds.
+Epoch : 18  Update : 97000 Train Loss : 0.821919 Val Loss : 0.933158 
+Elapsed time is 2.613188 seconds.
+Elapsed time is 0.691428 seconds.
+Epoch : 18  Update : 98000 Train Loss : 0.809801 Val Loss : 0.926982 
+Elapsed time is 2.602427 seconds.
+Elapsed time is 0.688918 seconds.
+Epoch : 18  Update : 99000 Train Loss : 0.825434 Val Loss : 0.941123 
+Elapsed time is 2.592854 seconds.
+Elapsed time is 0.690573 seconds.
+Epoch : 18  Update : 100000 Train Loss : 0.825098 Val Loss : 0.936597 
+Elapsed time is 2.640369 seconds.
+Elapsed time is 0.692705 seconds.
+Epoch : 18  Update : 101000 Train Loss : 0.826130 Val Loss : 0.937812 
+Elapsed time is 67.966593 seconds.
+Elapsed time is 2.592657 seconds.
+Elapsed time is 0.689537 seconds.
+Epoch : 19  Update : 102000 Train Loss : 0.816393 Val Loss : 0.939300 
+Elapsed time is 2.613279 seconds.
+Elapsed time is 0.695258 seconds.
+Epoch : 19  Update : 103000 Train Loss : 0.821496 Val Loss : 0.944945 
+Elapsed time is 2.605496 seconds.
+Elapsed time is 0.693916 seconds.
+Epoch : 19  Update : 104000 Train Loss : 0.823904 Val Loss : 0.935322 
+Elapsed time is 2.617780 seconds.
+Elapsed time is 0.692480 seconds.
+Epoch : 19  Update : 105000 Train Loss : 0.813929 Val Loss : 0.942904 
+Elapsed time is 2.592598 seconds.
+Elapsed time is 0.692196 seconds.
+Epoch : 19  Update : 106000 Train Loss : 0.814423 Val Loss : 0.938445 
+Elapsed time is 2.590198 seconds.
+Elapsed time is 0.688491 seconds.
+Epoch : 19  Update : 107000 Train Loss : 0.857440 Val Loss : 0.945683 
+Elapsed time is 67.832815 seconds.
+Elapsed time is 2.594074 seconds.
+Elapsed time is 0.688315 seconds.
+Epoch : 20  Update : 108000 Train Loss : 0.818715 Val Loss : 0.945703 
+Elapsed time is 2.616576 seconds.
+Elapsed time is 0.693058 seconds.
+Epoch : 20  Update : 109000 Train Loss : 0.810323 Val Loss : 0.928356 
+Elapsed time is 2.597245 seconds.
+Elapsed time is 0.691665 seconds.
+Epoch : 20  Update : 110000 Train Loss : 0.820061 Val Loss : 0.947986 
+Elapsed time is 2.596200 seconds.
+Elapsed time is 0.690807 seconds.
+Epoch : 20  Update : 111000 Train Loss : 0.819558 Val Loss : 0.948804 
+Elapsed time is 2.595666 seconds.
+Elapsed time is 0.691940 seconds.
+Epoch : 20  Update : 112000 Train Loss : 0.819023 Val Loss : 0.946682 
+Elapsed time is 64.503318 seconds.
+Training done !!!
+Best val error : 0.906602 ; at epoch : 4 ; with test error : 0.906602 
+size of weight matrix
+
+ans =
+
+           1      157000
+
+
+arch_name =
+
+310L500R4L_l25e-05_rho0.95_eps0.0001_mf0_mvni_mvno_1
+
+training on GPU ... :) 
+Elapsed time is 2.562352 seconds.
+Elapsed time is 0.678447 seconds.
+Epoch : 1  Update : 1000 Train Loss : 0.981945 Val Loss : 0.971215 
+Elapsed time is 0.587566 seconds.
+	 Epoch : 1  Update: 1000 Test Loss : 0.971215 
+Elapsed time is 2.604342 seconds.
+Elapsed time is 0.691633 seconds.
+Epoch : 1  Update : 2000 Train Loss : 0.997925 Val Loss : 1.010933 
+Elapsed time is 2.601876 seconds.
+Elapsed time is 0.693835 seconds.
+Epoch : 1  Update : 3000 Train Loss : 0.950524 Val Loss : 0.953480 
+Elapsed time is 0.595439 seconds.
+	 Epoch : 1  Update: 3000 Test Loss : 0.953480 
+Elapsed time is 2.594531 seconds.
+Elapsed time is 0.684957 seconds.
+Epoch : 1  Update : 4000 Train Loss : 0.948889 Val Loss : 0.966343 
+Elapsed time is 2.573503 seconds.
+Elapsed time is 0.687003 seconds.
+Epoch : 1  Update : 5000 Train Loss : 0.944570 Val Loss : 0.958932 
+Elapsed time is 64.876958 seconds.
+Elapsed time is 2.562309 seconds.
+Elapsed time is 0.685774 seconds.
+Epoch : 2  Update : 6000 Train Loss : 1.018129 Val Loss : 1.033442 
+Elapsed time is 2.564231 seconds.
+Elapsed time is 0.687136 seconds.
+Epoch : 2  Update : 7000 Train Loss : 0.936025 Val Loss : 0.945018 
+Elapsed time is 0.590057 seconds.
+	 Epoch : 2  Update: 7000 Test Loss : 0.945018 
+Elapsed time is 2.648238 seconds.
+Elapsed time is 0.697758 seconds.
+Epoch : 2  Update : 8000 Train Loss : 0.949401 Val Loss : 0.970090 
+Elapsed time is 2.617830 seconds.
+Elapsed time is 0.695486 seconds.
+Epoch : 2  Update : 9000 Train Loss : 0.952078 Val Loss : 0.966455 
+Elapsed time is 2.613500 seconds.
+Elapsed time is 0.694532 seconds.
+Epoch : 2  Update : 10000 Train Loss : 0.941639 Val Loss : 0.954458 
+Elapsed time is 2.606823 seconds.
+Elapsed time is 0.692056 seconds.
+Epoch : 2  Update : 11000 Train Loss : 0.943866 Val Loss : 0.962421 
+Elapsed time is 68.282862 seconds.
+Elapsed time is 2.647916 seconds.
+Elapsed time is 0.692816 seconds.
+Epoch : 3  Update : 12000 Train Loss : 0.937444 Val Loss : 0.948386 
+Elapsed time is 2.606521 seconds.
+Elapsed time is 0.698542 seconds.
+Epoch : 3  Update : 13000 Train Loss : 0.957831 Val Loss : 0.982569 
+Elapsed time is 2.618993 seconds.
+Elapsed time is 0.696884 seconds.
+Epoch : 3  Update : 14000 Train Loss : 0.992995 Val Loss : 0.991885 
+Elapsed time is 2.612589 seconds.
+Elapsed time is 0.694296 seconds.
+Epoch : 3  Update : 15000 Train Loss : 1.026444 Val Loss : 1.040061 
+Elapsed time is 2.631253 seconds.
+Elapsed time is 0.695480 seconds.
+Epoch : 3  Update : 16000 Train Loss : 0.968583 Val Loss : 0.958432 
+Elapsed time is 64.885621 seconds.
+Elapsed time is 2.607109 seconds.
+Elapsed time is 0.694605 seconds.
+Epoch : 4  Update : 17000 Train Loss : 0.933080 Val Loss : 0.931005 
+Elapsed time is 0.598470 seconds.
+	 Epoch : 4  Update: 17000 Test Loss : 0.931005 
+Elapsed time is 2.563445 seconds.
+Elapsed time is 0.684205 seconds.
+Epoch : 4  Update : 18000 Train Loss : 0.945559 Val Loss : 0.950811 
+Elapsed time is 2.549047 seconds.
+Elapsed time is 0.685545 seconds.
+Epoch : 4  Update : 19000 Train Loss : 0.950672 Val Loss : 0.969658 
+Elapsed time is 2.564300 seconds.
+Elapsed time is 0.682702 seconds.
+Epoch : 4  Update : 20000 Train Loss : 0.937586 Val Loss : 0.947310 
+Elapsed time is 2.552836 seconds.
+Elapsed time is 0.678894 seconds.
+Epoch : 4  Update : 21000 Train Loss : 0.956343 Val Loss : 0.948635 
+Elapsed time is 2.548343 seconds.
+Elapsed time is 0.681071 seconds.
+Epoch : 4  Update : 22000 Train Loss : 0.939146 Val Loss : 0.935341 
+Elapsed time is 66.871475 seconds.
+Elapsed time is 2.554903 seconds.
+Elapsed time is 0.680127 seconds.
+Epoch : 5  Update : 23000 Train Loss : 0.953802 Val Loss : 0.975357 
+Elapsed time is 2.569389 seconds.
+Elapsed time is 0.677175 seconds.
+Epoch : 5  Update : 24000 Train Loss : 0.948963 Val Loss : 0.962340 
+Elapsed time is 2.540320 seconds.
+Elapsed time is 0.678823 seconds.
+Epoch : 5  Update : 25000 Train Loss : 0.968587 Val Loss : 0.979696 
+Elapsed time is 2.557769 seconds.
+Elapsed time is 0.688385 seconds.
+Epoch : 5  Update : 26000 Train Loss : 0.946962 Val Loss : 0.955891 
+Elapsed time is 2.571822 seconds.
+Elapsed time is 0.687513 seconds.
+Epoch : 5  Update : 27000 Train Loss : 0.970775 Val Loss : 1.008893 
+Elapsed time is 2.589530 seconds.
+Elapsed time is 0.687228 seconds.
+Epoch : 5  Update : 28000 Train Loss : 0.991842 Val Loss : 1.017044 
+Elapsed time is 66.298835 seconds.
+Elapsed time is 2.565489 seconds.
+Elapsed time is 0.683935 seconds.
+Epoch : 6  Update : 29000 Train Loss : 0.931579 Val Loss : 0.951366 
+Elapsed time is 2.564398 seconds.
+Elapsed time is 0.683882 seconds.
+Epoch : 6  Update : 30000 Train Loss : 0.969111 Val Loss : 0.980205 
+Elapsed time is 2.564711 seconds.
+Elapsed time is 0.682040 seconds.
+Epoch : 6  Update : 31000 Train Loss : 0.930262 Val Loss : 0.948727 
+Elapsed time is 2.590230 seconds.
+Elapsed time is 0.682383 seconds.
+Epoch : 6  Update : 32000 Train Loss : 0.957600 Val Loss : 0.972213 
+Elapsed time is 2.572147 seconds.
+Elapsed time is 0.684335 seconds.
+Epoch : 6  Update : 33000 Train Loss : 0.940796 Val Loss : 0.972546 
+Elapsed time is 63.264829 seconds.
+Elapsed time is 2.561362 seconds.
+Elapsed time is 0.682619 seconds.
+Epoch : 7  Update : 34000 Train Loss : 0.963270 Val Loss : 0.989234 
+Elapsed time is 2.553518 seconds.
+Elapsed time is 0.681599 seconds.
+Epoch : 7  Update : 35000 Train Loss : 0.944665 Val Loss : 0.966201 
+Elapsed time is 2.584205 seconds.
+Elapsed time is 0.683314 seconds.
+Epoch : 7  Update : 36000 Train Loss : 0.932281 Val Loss : 0.945123 
+Elapsed time is 2.567676 seconds.
+Elapsed time is 0.685395 seconds.
+Epoch : 7  Update : 37000 Train Loss : 0.941757 Val Loss : 0.947776 
+Elapsed time is 2.560345 seconds.
+Elapsed time is 0.687401 seconds.
+Epoch : 7  Update : 38000 Train Loss : 0.930935 Val Loss : 0.941760 
+Elapsed time is 2.564446 seconds.
+Elapsed time is 0.681607 seconds.
+Epoch : 7  Update : 39000 Train Loss : 0.930324 Val Loss : 0.939772 
+Elapsed time is 66.265225 seconds.
+Elapsed time is 2.565140 seconds.
+Elapsed time is 0.681032 seconds.
+Epoch : 8  Update : 40000 Train Loss : 0.949553 Val Loss : 0.953568 
+Elapsed time is 2.572360 seconds.
+Elapsed time is 0.685612 seconds.
+Epoch : 8  Update : 41000 Train Loss : 0.986199 Val Loss : 1.011538 
+Elapsed time is 2.559637 seconds.
+Elapsed time is 0.686798 seconds.
+Epoch : 8  Update : 42000 Train Loss : 0.950193 Val Loss : 0.957753 
+Elapsed time is 2.571959 seconds.
+Elapsed time is 0.685410 seconds.
+Epoch : 8  Update : 43000 Train Loss : 0.956446 Val Loss : 0.975403 
+Elapsed time is 2.579246 seconds.
+Elapsed time is 0.682345 seconds.
+Epoch : 8  Update : 44000 Train Loss : 0.922794 Val Loss : 0.937019 
+Elapsed time is 2.574498 seconds.
+Elapsed time is 0.688415 seconds.
+Epoch : 8  Update : 45000 Train Loss : 0.928236 Val Loss : 0.944625 
+Elapsed time is 66.392444 seconds.
+Elapsed time is 2.565644 seconds.
+Elapsed time is 0.687446 seconds.
+Epoch : 9  Update : 46000 Train Loss : 1.039433 Val Loss : 1.074632 
+Elapsed time is 2.558776 seconds.
+Elapsed time is 0.685565 seconds.
+Epoch : 9  Update : 47000 Train Loss : 0.929225 Val Loss : 0.954588 
+Elapsed time is 2.589747 seconds.
+Elapsed time is 0.683568 seconds.
+Epoch : 9  Update : 48000 Train Loss : 1.025764 Val Loss : 1.056219 
+Elapsed time is 2.569532 seconds.
+Elapsed time is 0.686190 seconds.
+Epoch : 9  Update : 49000 Train Loss : 0.940484 Val Loss : 0.937239 
+Elapsed time is 2.562323 seconds.
+Elapsed time is 0.687151 seconds.
+Epoch : 9  Update : 50000 Train Loss : 0.939376 Val Loss : 0.942537 
+Elapsed time is 63.160303 seconds.
+Elapsed time is 2.571803 seconds.
+Elapsed time is 0.684296 seconds.
+Epoch : 10  Update : 51000 Train Loss : 0.936435 Val Loss : 0.951814 
+Elapsed time is 2.595437 seconds.
+Elapsed time is 0.684552 seconds.
+Epoch : 10  Update : 52000 Train Loss : 0.912394 Val Loss : 0.925811 
+Elapsed time is 0.590017 seconds.
+	 Epoch : 10  Update: 52000 Test Loss : 0.925811 
+Elapsed time is 2.597564 seconds.
+Elapsed time is 0.690352 seconds.
+Epoch : 10  Update : 53000 Train Loss : 0.935271 Val Loss : 0.948920 
+Elapsed time is 2.598764 seconds.
+Elapsed time is 0.697404 seconds.
+Epoch : 10  Update : 54000 Train Loss : 1.002318 Val Loss : 1.003944 
+Elapsed time is 2.614917 seconds.
+Elapsed time is 0.693717 seconds.
+Epoch : 10  Update : 55000 Train Loss : 0.938923 Val Loss : 0.951222 
+Elapsed time is 2.651942 seconds.
+Elapsed time is 0.694715 seconds.
+Epoch : 10  Update : 56000 Train Loss : 0.955187 Val Loss : 0.957664 
+Elapsed time is 68.319775 seconds.
+Elapsed time is 2.608540 seconds.
+Elapsed time is 0.697571 seconds.
+Epoch : 11  Update : 57000 Train Loss : 0.947576 Val Loss : 0.952835 
+Elapsed time is 2.598045 seconds.
+Elapsed time is 0.696428 seconds.
+Epoch : 11  Update : 58000 Train Loss : 0.979764 Val Loss : 1.011045 
+Elapsed time is 2.607618 seconds.
+Elapsed time is 0.695420 seconds.
+Epoch : 11  Update : 59000 Train Loss : 0.951332 Val Loss : 0.958455 
+Elapsed time is 2.629703 seconds.
+Elapsed time is 0.694621 seconds.
+Epoch : 11  Update : 60000 Train Loss : 0.939956 Val Loss : 0.955024 
+Elapsed time is 2.605418 seconds.
+Elapsed time is 0.692440 seconds.
+Epoch : 11  Update : 61000 Train Loss : 0.963566 Val Loss : 0.982077 
+Elapsed time is 64.766540 seconds.
+Elapsed time is 2.618702 seconds.
+Elapsed time is 0.693650 seconds.
+Epoch : 12  Update : 62000 Train Loss : 0.913207 Val Loss : 0.928264 
+Elapsed time is 2.603769 seconds.
+Elapsed time is 0.697123 seconds.
+Epoch : 12  Update : 63000 Train Loss : 0.966686 Val Loss : 0.987431 
+Elapsed time is 2.640404 seconds.
+Elapsed time is 0.693391 seconds.
+Epoch : 12  Update : 64000 Train Loss : 0.973427 Val Loss : 0.975556 
+Elapsed time is 2.615330 seconds.
+Elapsed time is 0.694603 seconds.
+Epoch : 12  Update : 65000 Train Loss : 0.931564 Val Loss : 0.948094 
+Elapsed time is 2.606015 seconds.
+Elapsed time is 0.693381 seconds.
+Epoch : 12  Update : 66000 Train Loss : 0.966410 Val Loss : 0.990271 
+Elapsed time is 2.605573 seconds.
+Elapsed time is 0.693345 seconds.
+Epoch : 12  Update : 67000 Train Loss : 1.007700 Val Loss : 1.040476 
+Elapsed time is 68.167700 seconds.
+Elapsed time is 2.633880 seconds.
+Elapsed time is 0.693937 seconds.
+Epoch : 13  Update : 68000 Train Loss : 0.928808 Val Loss : 0.933116 
+Elapsed time is 2.597185 seconds.
+Elapsed time is 0.691706 seconds.
+Epoch : 13  Update : 69000 Train Loss : 0.935459 Val Loss : 0.952753 
+Elapsed time is 2.600565 seconds.
+Elapsed time is 0.689593 seconds.
+Epoch : 13  Update : 70000 Train Loss : 0.917355 Val Loss : 0.934013 
+Elapsed time is 2.608719 seconds.
+Elapsed time is 0.696183 seconds.
+Epoch : 13  Update : 71000 Train Loss : 0.950798 Val Loss : 0.960772 
+Elapsed time is 2.638321 seconds.
+Elapsed time is 0.692775 seconds.
+Epoch : 13  Update : 72000 Train Loss : 0.989304 Val Loss : 1.012179 
+Elapsed time is 2.611857 seconds.
+Elapsed time is 0.694267 seconds.
+Epoch : 13  Update : 73000 Train Loss : 0.923869 Val Loss : 0.945652 
+Elapsed time is 68.085420 seconds.
+Elapsed time is 2.621738 seconds.
+Elapsed time is 0.695672 seconds.
+Epoch : 14  Update : 74000 Train Loss : 0.964186 Val Loss : 0.980120 
+Elapsed time is 2.626436 seconds.
+Elapsed time is 0.692016 seconds.
+Epoch : 14  Update : 75000 Train Loss : 0.925264 Val Loss : 0.939515 
+Elapsed time is 2.661381 seconds.
+Elapsed time is 0.699794 seconds.
+Epoch : 14  Update : 76000 Train Loss : 0.942911 Val Loss : 0.958890 
+Elapsed time is 2.603427 seconds.
+Elapsed time is 0.689143 seconds.
+Epoch : 14  Update : 77000 Train Loss : 0.963357 Val Loss : 0.980872 
+Elapsed time is 2.616340 seconds.
+Elapsed time is 0.695434 seconds.
+Epoch : 14  Update : 78000 Train Loss : 0.930911 Val Loss : 0.948318 
+Elapsed time is 64.983114 seconds.
+Elapsed time is 2.603431 seconds.
+Elapsed time is 0.692732 seconds.
+Epoch : 15  Update : 79000 Train Loss : 0.956609 Val Loss : 0.950491 
+Elapsed time is 2.648043 seconds.
+Elapsed time is 0.695767 seconds.
+Epoch : 15  Update : 80000 Train Loss : 0.991052 Val Loss : 1.023577 
+Elapsed time is 2.614225 seconds.
+Elapsed time is 0.689582 seconds.
+Epoch : 15  Update : 81000 Train Loss : 0.942157 Val Loss : 0.952887 
+Elapsed time is 2.598007 seconds.
+Elapsed time is 0.690248 seconds.
+Epoch : 15  Update : 82000 Train Loss : 0.940513 Val Loss : 0.946216 
+Elapsed time is 2.595110 seconds.
+Elapsed time is 0.690492 seconds.
+Epoch : 15  Update : 83000 Train Loss : 0.985287 Val Loss : 1.000296 
+Elapsed time is 2.615054 seconds.
+Elapsed time is 0.689456 seconds.
+Epoch : 15  Update : 84000 Train Loss : 0.959657 Val Loss : 0.960673 
+Elapsed time is 68.009330 seconds.
+Elapsed time is 2.607781 seconds.
+Elapsed time is 0.691595 seconds.
+Epoch : 16  Update : 85000 Train Loss : 0.940840 Val Loss : 0.945095 
+Elapsed time is 2.603235 seconds.
+Elapsed time is 0.692442 seconds.
+Epoch : 16  Update : 86000 Train Loss : 0.940896 Val Loss : 0.944542 
+Elapsed time is 2.602997 seconds.
+Elapsed time is 0.691787 seconds.
+Epoch : 16  Update : 87000 Train Loss : 0.939591 Val Loss : 0.956775 
+Elapsed time is 2.619947 seconds.
+Elapsed time is 0.690599 seconds.
+Epoch : 16  Update : 88000 Train Loss : 0.919386 Val Loss : 0.944958 
+Elapsed time is 2.596338 seconds.
+Elapsed time is 0.689841 seconds.
+Epoch : 16  Update : 89000 Train Loss : 0.926642 Val Loss : 0.934054 
+Elapsed time is 2.604112 seconds.
+Elapsed time is 0.707941 seconds.
+Epoch : 16  Update : 90000 Train Loss : 0.942222 Val Loss : 0.953081 
+Elapsed time is 68.544768 seconds.
+Elapsed time is 2.612518 seconds.
+Elapsed time is 0.692772 seconds.
+Epoch : 17  Update : 91000 Train Loss : 0.909868 Val Loss : 0.926887 
+Elapsed time is 2.664248 seconds.
+Elapsed time is 0.693548 seconds.
+Epoch : 17  Update : 92000 Train Loss : 0.950245 Val Loss : 0.964765 
+Elapsed time is 2.606819 seconds.
+Elapsed time is 0.692576 seconds.
+Epoch : 17  Update : 93000 Train Loss : 0.962578 Val Loss : 0.990832 
+Elapsed time is 2.592370 seconds.
+Elapsed time is 0.688965 seconds.
+Epoch : 17  Update : 94000 Train Loss : 0.933060 Val Loss : 0.955904 
+Elapsed time is 2.590465 seconds.
+Elapsed time is 0.688706 seconds.
+Epoch : 17  Update : 95000 Train Loss : 0.945305 Val Loss : 0.951497 
+Elapsed time is 64.715049 seconds.
+Elapsed time is 2.655413 seconds.
+Elapsed time is 0.696691 seconds.
+Epoch : 18  Update : 96000 Train Loss : 0.963263 Val Loss : 0.976570 
+Elapsed time is 2.625394 seconds.
+Elapsed time is 0.694434 seconds.
+Epoch : 18  Update : 97000 Train Loss : 0.938311 Val Loss : 0.947495 
+Elapsed time is 2.602400 seconds.
+Elapsed time is 0.692197 seconds.
+Epoch : 18  Update : 98000 Train Loss : 0.949231 Val Loss : 0.964125 
+Elapsed time is 2.593871 seconds.
+Elapsed time is 0.689274 seconds.
+Epoch : 18  Update : 99000 Train Loss : 0.993071 Val Loss : 1.015422 
+Elapsed time is 2.628581 seconds.
+Elapsed time is 0.692146 seconds.
+Epoch : 18  Update : 100000 Train Loss : 0.970556 Val Loss : 0.993732 
+Elapsed time is 2.593985 seconds.
+Elapsed time is 0.690556 seconds.
+Epoch : 18  Update : 101000 Train Loss : 0.928468 Val Loss : 0.940074 
+Elapsed time is 68.030747 seconds.
+Elapsed time is 2.593600 seconds.
+Elapsed time is 0.691905 seconds.
+Epoch : 19  Update : 102000 Train Loss : 0.941999 Val Loss : 0.952967 
+Elapsed time is 2.604191 seconds.
+Elapsed time is 0.691912 seconds.
+Epoch : 19  Update : 103000 Train Loss : 0.930374 Val Loss : 0.949455 
+Elapsed time is 2.633553 seconds.
+Elapsed time is 0.692401 seconds.
+Epoch : 19  Update : 104000 Train Loss : 0.922478 Val Loss : 0.944809 
+Elapsed time is 2.590717 seconds.
+Elapsed time is 0.690156 seconds.
+Epoch : 19  Update : 105000 Train Loss : 0.936603 Val Loss : 0.953290 
+Elapsed time is 2.599007 seconds.
+Elapsed time is 0.690395 seconds.
+Epoch : 19  Update : 106000 Train Loss : 0.956482 Val Loss : 0.989747 
+Elapsed time is 2.581141 seconds.
+Elapsed time is 0.686903 seconds.
+Epoch : 19  Update : 107000 Train Loss : 0.951858 Val Loss : 0.968797 
+Elapsed time is 67.820073 seconds.
+Elapsed time is 2.606219 seconds.
+Elapsed time is 0.688420 seconds.
+Epoch : 20  Update : 108000 Train Loss : 0.952558 Val Loss : 0.966281 
+Elapsed time is 2.583688 seconds.
+Elapsed time is 0.689109 seconds.
+Epoch : 20  Update : 109000 Train Loss : 1.008999 Val Loss : 1.046551 
+Elapsed time is 2.587249 seconds.
+Elapsed time is 0.692959 seconds.
+Epoch : 20  Update : 110000 Train Loss : 0.934912 Val Loss : 0.956708 
+Elapsed time is 2.601160 seconds.
+Elapsed time is 0.690607 seconds.
+Epoch : 20  Update : 111000 Train Loss : 0.933026 Val Loss : 0.957760 
+Elapsed time is 2.621167 seconds.
+Elapsed time is 0.691436 seconds.
+Epoch : 20  Update : 112000 Train Loss : 1.143867 Val Loss : 1.121891 
+Elapsed time is 64.379928 seconds.
+Training done !!!
+Best val error : 0.925811 ; at epoch : 9 ; with test error : 0.925811 
+size of weight matrix
+
+ans =
+
+           1      157000
+
+
+arch_name =
+
+310L500R4L_l25e-05_rho0.95_eps1e-06_mf0_mvni_mvno_1
+
+training on GPU ... :) 
+Elapsed time is 2.537423 seconds.
+Elapsed time is 0.679831 seconds.
+Epoch : 1  Update : 1000 Train Loss : 0.934327 Val Loss : 0.938189 
+Elapsed time is 0.586012 seconds.
+	 Epoch : 1  Update: 1000 Test Loss : 0.938189 
+Elapsed time is 2.599195 seconds.
+Elapsed time is 0.695333 seconds.
+Epoch : 1  Update : 2000 Train Loss : 0.943211 Val Loss : 0.947459 
+Elapsed time is 2.642255 seconds.
+Elapsed time is 0.690984 seconds.
+Epoch : 1  Update : 3000 Train Loss : 0.914336 Val Loss : 0.937338 
+Elapsed time is 0.594910 seconds.
+	 Epoch : 1  Update: 3000 Test Loss : 0.937338 
+Elapsed time is 2.542522 seconds.
+Elapsed time is 0.681784 seconds.
+Epoch : 1  Update : 4000 Train Loss : 0.919772 Val Loss : 0.945190 
+Elapsed time is 2.558414 seconds.
+Elapsed time is 0.684305 seconds.
+Epoch : 1  Update : 5000 Train Loss : 0.904264 Val Loss : 0.925080 
+Elapsed time is 0.585936 seconds.
+	 Epoch : 1  Update: 5000 Test Loss : 0.925080 
+Elapsed time is 65.293879 seconds.
+Elapsed time is 2.593059 seconds.
+Elapsed time is 0.688673 seconds.
+Epoch : 2  Update : 6000 Train Loss : 0.913747 Val Loss : 0.927744 
+Elapsed time is 2.619888 seconds.
+Elapsed time is 0.692912 seconds.
+Epoch : 2  Update : 7000 Train Loss : 0.898072 Val Loss : 0.922546 
+Elapsed time is 0.597917 seconds.
+	 Epoch : 2  Update: 7000 Test Loss : 0.922546 
+Elapsed time is 2.568054 seconds.
+Elapsed time is 0.684799 seconds.
+Epoch : 2  Update : 8000 Train Loss : 0.907521 Val Loss : 0.932323 
+Elapsed time is 2.559660 seconds.
+Elapsed time is 0.685387 seconds.
+Epoch : 2  Update : 9000 Train Loss : 0.914257 Val Loss : 0.940475 
+Elapsed time is 2.575350 seconds.
+Elapsed time is 0.686857 seconds.
+Epoch : 2  Update : 10000 Train Loss : 0.904969 Val Loss : 0.934659 
+Elapsed time is 2.589617 seconds.
+Elapsed time is 0.683772 seconds.
+Epoch : 2  Update : 11000 Train Loss : 0.893841 Val Loss : 0.914106 
+Elapsed time is 0.586846 seconds.
+	 Epoch : 2  Update: 11000 Test Loss : 0.914106 
+Elapsed time is 68.064985 seconds.
+Elapsed time is 2.600223 seconds.
+Elapsed time is 0.693871 seconds.
+Epoch : 3  Update : 12000 Train Loss : 0.906366 Val Loss : 0.925890 
+Elapsed time is 2.600822 seconds.
+Elapsed time is 0.691451 seconds.
+Epoch : 3  Update : 13000 Train Loss : 0.897301 Val Loss : 0.913909 
+Elapsed time is 0.595173 seconds.
+	 Epoch : 3  Update: 13000 Test Loss : 0.913909 
+Elapsed time is 2.553142 seconds.
+Elapsed time is 0.682957 seconds.
+Epoch : 3  Update : 14000 Train Loss : 0.897571 Val Loss : 0.923470 
+Elapsed time is 2.568445 seconds.
+Elapsed time is 0.681081 seconds.
+Epoch : 3  Update : 15000 Train Loss : 0.891526 Val Loss : 0.917089 
+Elapsed time is 2.546057 seconds.
+Elapsed time is 0.680290 seconds.
+Epoch : 3  Update : 16000 Train Loss : 0.912313 Val Loss : 0.926027 
+Elapsed time is 64.040684 seconds.
+Elapsed time is 2.543754 seconds.
+Elapsed time is 0.680779 seconds.
+Epoch : 4  Update : 17000 Train Loss : 0.889698 Val Loss : 0.925235 
+Elapsed time is 2.548157 seconds.
+Elapsed time is 0.682082 seconds.
+Epoch : 4  Update : 18000 Train Loss : 0.890382 Val Loss : 0.916348 
+Elapsed time is 2.602621 seconds.
+Elapsed time is 0.689290 seconds.
+Epoch : 4  Update : 19000 Train Loss : 0.916594 Val Loss : 0.941513 
+Elapsed time is 2.564568 seconds.
+Elapsed time is 0.684177 seconds.
+Epoch : 4  Update : 20000 Train Loss : 0.889191 Val Loss : 0.914699 
+Elapsed time is 2.564190 seconds.
+Elapsed time is 0.686400 seconds.
+Epoch : 4  Update : 21000 Train Loss : 0.897893 Val Loss : 0.925531 
+Elapsed time is 2.561195 seconds.
+Elapsed time is 0.684164 seconds.
+Epoch : 4  Update : 22000 Train Loss : 0.896335 Val Loss : 0.929550 
+Elapsed time is 66.349391 seconds.
+Elapsed time is 2.599431 seconds.
+Elapsed time is 0.686034 seconds.
+Epoch : 5  Update : 23000 Train Loss : 0.887454 Val Loss : 0.910713 
+Elapsed time is 0.589845 seconds.
+	 Epoch : 5  Update: 23000 Test Loss : 0.910713 
+Elapsed time is 2.611088 seconds.
+Elapsed time is 0.694587 seconds.
+Epoch : 5  Update : 24000 Train Loss : 0.892487 Val Loss : 0.931637 
+Elapsed time is 2.601664 seconds.
+Elapsed time is 0.690460 seconds.
+Epoch : 5  Update : 25000 Train Loss : 0.889481 Val Loss : 0.925707 
+Elapsed time is 2.606311 seconds.
+Elapsed time is 0.694500 seconds.
+Epoch : 5  Update : 26000 Train Loss : 0.878408 Val Loss : 0.910323 
+Elapsed time is 0.597705 seconds.
+	 Epoch : 5  Update: 26000 Test Loss : 0.910323 
+Elapsed time is 2.597432 seconds.
+Elapsed time is 0.686728 seconds.
+Epoch : 5  Update : 27000 Train Loss : 0.898326 Val Loss : 0.928627 
+Elapsed time is 2.558638 seconds.
+Elapsed time is 0.683956 seconds.
+Epoch : 5  Update : 28000 Train Loss : 0.882312 Val Loss : 0.923146 
+Elapsed time is 68.668777 seconds.
+Elapsed time is 2.571098 seconds.
+Elapsed time is 0.684099 seconds.
+Epoch : 6  Update : 29000 Train Loss : 0.886992 Val Loss : 0.921051 
+Elapsed time is 2.571030 seconds.
+Elapsed time is 0.686200 seconds.
+Epoch : 6  Update : 30000 Train Loss : 0.894500 Val Loss : 0.929004 
+Elapsed time is 2.578759 seconds.
+Elapsed time is 0.684566 seconds.
+Epoch : 6  Update : 31000 Train Loss : 0.907699 Val Loss : 0.948672 
+Elapsed time is 2.565837 seconds.
+Elapsed time is 0.685328 seconds.
+Epoch : 6  Update : 32000 Train Loss : 0.911662 Val Loss : 0.949521 
+Elapsed time is 2.567297 seconds.
+Elapsed time is 0.686430 seconds.
+Epoch : 6  Update : 33000 Train Loss : 0.903121 Val Loss : 0.933056 
+Elapsed time is 63.148145 seconds.
+Elapsed time is 2.572266 seconds.
+Elapsed time is 0.686976 seconds.
+Epoch : 7  Update : 34000 Train Loss : 0.883799 Val Loss : 0.918438 
+Elapsed time is 2.601570 seconds.
+Elapsed time is 0.688769 seconds.
+Epoch : 7  Update : 35000 Train Loss : 0.882590 Val Loss : 0.912768 
+Elapsed time is 2.564352 seconds.
+Elapsed time is 0.685046 seconds.
+Epoch : 7  Update : 36000 Train Loss : 0.870441 Val Loss : 0.905954 
+Elapsed time is 0.588445 seconds.
+	 Epoch : 7  Update: 36000 Test Loss : 0.905954 
+Elapsed time is 2.612038 seconds.
+Elapsed time is 0.694927 seconds.
+Epoch : 7  Update : 37000 Train Loss : 0.882656 Val Loss : 0.911365 
+Elapsed time is 2.612326 seconds.
+Elapsed time is 0.694900 seconds.
+Epoch : 7  Update : 38000 Train Loss : 0.873683 Val Loss : 0.911421 
+Elapsed time is 2.651898 seconds.
+Elapsed time is 0.696911 seconds.
+Epoch : 7  Update : 39000 Train Loss : 0.880313 Val Loss : 0.911121 
+Elapsed time is 68.121098 seconds.
+Elapsed time is 2.617801 seconds.
+Elapsed time is 0.689160 seconds.
+Epoch : 8  Update : 40000 Train Loss : 0.909585 Val Loss : 0.948654 
+Elapsed time is 2.602863 seconds.
+Elapsed time is 0.690001 seconds.
+Epoch : 8  Update : 41000 Train Loss : 0.891728 Val Loss : 0.926620 
+Elapsed time is 2.583561 seconds.
+Elapsed time is 0.690420 seconds.
+Epoch : 8  Update : 42000 Train Loss : 0.899537 Val Loss : 0.938023 
+Elapsed time is 2.623089 seconds.
+Elapsed time is 0.689984 seconds.
+Epoch : 8  Update : 43000 Train Loss : 0.880347 Val Loss : 0.915438 
+Elapsed time is 2.600238 seconds.
+Elapsed time is 0.689177 seconds.
+Epoch : 8  Update : 44000 Train Loss : 0.876142 Val Loss : 0.909786 
+Elapsed time is 2.607704 seconds.
+Elapsed time is 0.694347 seconds.
+Epoch : 8  Update : 45000 Train Loss : 0.889063 Val Loss : 0.917724 
+Elapsed time is 68.123165 seconds.
+Elapsed time is 2.604108 seconds.
+Elapsed time is 0.691545 seconds.
+Epoch : 9  Update : 46000 Train Loss : 0.884164 Val Loss : 0.919880 
+Elapsed time is 2.644383 seconds.
+Elapsed time is 0.695055 seconds.
+Epoch : 9  Update : 47000 Train Loss : 0.922244 Val Loss : 0.935292 
+Elapsed time is 2.598213 seconds.
+Elapsed time is 0.692613 seconds.
+Epoch : 9  Update : 48000 Train Loss : 0.892408 Val Loss : 0.928990 
+Elapsed time is 2.596339 seconds.
+Elapsed time is 0.690317 seconds.
+Epoch : 9  Update : 49000 Train Loss : 0.876712 Val Loss : 0.905247 
+Elapsed time is 0.594953 seconds.
+	 Epoch : 9  Update: 49000 Test Loss : 0.905247 
+Elapsed time is 2.555819 seconds.
+Elapsed time is 0.682935 seconds.
+Epoch : 9  Update : 50000 Train Loss : 0.892856 Val Loss : 0.927447 
+Elapsed time is 64.729896 seconds.
+Elapsed time is 2.587018 seconds.
+Elapsed time is 0.684538 seconds.
+Epoch : 10  Update : 51000 Train Loss : 0.886466 Val Loss : 0.929447 
+Elapsed time is 2.553964 seconds.
+Elapsed time is 0.683679 seconds.
+Epoch : 10  Update : 52000 Train Loss : 0.892218 Val Loss : 0.928269 
+Elapsed time is 2.568601 seconds.
+Elapsed time is 0.684670 seconds.
+Epoch : 10  Update : 53000 Train Loss : 0.880584 Val Loss : 0.912547 
+Elapsed time is 2.572940 seconds.
+Elapsed time is 0.685972 seconds.
+Epoch : 10  Update : 54000 Train Loss : 0.883211 Val Loss : 0.922704 
+Elapsed time is 2.598865 seconds.
+Elapsed time is 0.688197 seconds.
+Epoch : 10  Update : 55000 Train Loss : 0.879427 Val Loss : 0.915896 
+Elapsed time is 2.559382 seconds.
+Elapsed time is 0.687133 seconds.
+Epoch : 10  Update : 56000 Train Loss : 0.899118 Val Loss : 0.938663 
+Elapsed time is 66.398392 seconds.
+Elapsed time is 2.572152 seconds.
+Elapsed time is 0.684960 seconds.
+Epoch : 11  Update : 57000 Train Loss : 0.891436 Val Loss : 0.928700 
+Elapsed time is 2.569722 seconds.
+Elapsed time is 0.685209 seconds.
+Epoch : 11  Update : 58000 Train Loss : 0.894416 Val Loss : 0.936285 
+Elapsed time is 2.577132 seconds.
+Elapsed time is 0.681133 seconds.
+Epoch : 11  Update : 59000 Train Loss : 0.906054 Val Loss : 0.937930 
+Elapsed time is 2.563206 seconds.
+Elapsed time is 0.681171 seconds.
+Epoch : 11  Update : 60000 Train Loss : 0.871725 Val Loss : 0.911032 
+Elapsed time is 2.556286 seconds.
+Elapsed time is 0.684451 seconds.
+Epoch : 11  Update : 61000 Train Loss : 0.883258 Val Loss : 0.916466 
+Elapsed time is 63.104842 seconds.
+Elapsed time is 2.566689 seconds.
+Elapsed time is 0.685367 seconds.
+Epoch : 12  Update : 62000 Train Loss : 0.877404 Val Loss : 0.909788 
+Elapsed time is 2.578249 seconds.
+Elapsed time is 0.688560 seconds.
+Epoch : 12  Update : 63000 Train Loss : 0.889381 Val Loss : 0.924623 
+Elapsed time is 2.559040 seconds.
+Elapsed time is 0.684209 seconds.
+Epoch : 12  Update : 64000 Train Loss : 0.886881 Val Loss : 0.915040 
+Elapsed time is 2.564002 seconds.
+Elapsed time is 0.686609 seconds.
+Epoch : 12  Update : 65000 Train Loss : 0.876674 Val Loss : 0.919125 
+Elapsed time is 2.572980 seconds.
+Elapsed time is 0.685846 seconds.
+Epoch : 12  Update : 66000 Train Loss : 0.871846 Val Loss : 0.908898 
+Elapsed time is 2.574044 seconds.
+Elapsed time is 0.685313 seconds.
+Epoch : 12  Update : 67000 Train Loss : 0.877587 Val Loss : 0.910676 
+Elapsed time is 66.459137 seconds.
+Elapsed time is 2.560930 seconds.
+Elapsed time is 0.686583 seconds.
+Epoch : 13  Update : 68000 Train Loss : 0.894706 Val Loss : 0.921798 
+Elapsed time is 2.555316 seconds.
+Elapsed time is 0.686315 seconds.
+Epoch : 13  Update : 69000 Train Loss : 0.892447 Val Loss : 0.932701 
+Elapsed time is 2.559203 seconds.
+Elapsed time is 0.684467 seconds.
+Epoch : 13  Update : 70000 Train Loss : 0.872642 Val Loss : 0.916250 
+Elapsed time is 2.586364 seconds.
+Elapsed time is 0.685138 seconds.
+Epoch : 13  Update : 71000 Train Loss : 0.872754 Val Loss : 0.920816 
+Elapsed time is 2.565637 seconds.
+Elapsed time is 0.688719 seconds.
+Epoch : 13  Update : 72000 Train Loss : 0.890135 Val Loss : 0.925598 
+Elapsed time is 2.562586 seconds.
+Elapsed time is 0.683781 seconds.
+Epoch : 13  Update : 73000 Train Loss : 0.888937 Val Loss : 0.924274 
+Elapsed time is 66.383047 seconds.
+Elapsed time is 2.565743 seconds.
+Elapsed time is 0.685895 seconds.
+Epoch : 14  Update : 74000 Train Loss : 0.924283 Val Loss : 0.954821 
+Elapsed time is 2.566127 seconds.
+Elapsed time is 0.686003 seconds.
+Epoch : 14  Update : 75000 Train Loss : 0.890550 Val Loss : 0.925338 
+Elapsed time is 2.580723 seconds.
+Elapsed time is 0.684153 seconds.
+Epoch : 14  Update : 76000 Train Loss : 0.875416 Val Loss : 0.918387 
+Elapsed time is 2.566869 seconds.
+Elapsed time is 0.686039 seconds.
+Epoch : 14  Update : 77000 Train Loss : 0.887341 Val Loss : 0.935645 
+Elapsed time is 2.556147 seconds.
+Elapsed time is 0.685953 seconds.
+Epoch : 14  Update : 78000 Train Loss : 0.883341 Val Loss : 0.925522 
+Elapsed time is 63.227706 seconds.
+Elapsed time is 2.567688 seconds.
+Elapsed time is 0.687077 seconds.
+Epoch : 15  Update : 79000 Train Loss : 0.889759 Val Loss : 0.929012 
+Elapsed time is 2.574767 seconds.
+Elapsed time is 0.684762 seconds.
+Epoch : 15  Update : 80000 Train Loss : 0.881697 Val Loss : 0.926292 
+Elapsed time is 2.578571 seconds.
+Elapsed time is 0.686243 seconds.
+Epoch : 15  Update : 81000 Train Loss : 0.879640 Val Loss : 0.923199 
+Elapsed time is 2.569060 seconds.
+Elapsed time is 0.685641 seconds.
+Epoch : 15  Update : 82000 Train Loss : 0.892420 Val Loss : 0.936282 
+Elapsed time is 2.557783 seconds.
+Elapsed time is 0.684203 seconds.
+Epoch : 15  Update : 83000 Train Loss : 0.893159 Val Loss : 0.939448 
+Elapsed time is 2.579235 seconds.
+Elapsed time is 0.683254 seconds.
+Epoch : 15  Update : 84000 Train Loss : 0.885291 Val Loss : 0.926694 
+Elapsed time is 66.624309 seconds.
+Elapsed time is 2.562462 seconds.
+Elapsed time is 0.681497 seconds.
+Epoch : 16  Update : 85000 Train Loss : 0.915233 Val Loss : 0.947157 
+Elapsed time is 2.565930 seconds.
+Elapsed time is 0.683469 seconds.
+Epoch : 16  Update : 86000 Train Loss : 0.877416 Val Loss : 0.916655 
+Elapsed time is 2.569067 seconds.
+Elapsed time is 0.686251 seconds.
+Epoch : 16  Update : 87000 Train Loss : 0.887034 Val Loss : 0.923607 
+Elapsed time is 2.586137 seconds.
+Elapsed time is 0.687015 seconds.
+Epoch : 16  Update : 88000 Train Loss : 0.907579 Val Loss : 0.966055 
+Elapsed time is 2.561334 seconds.
+Elapsed time is 0.684835 seconds.
+Epoch : 16  Update : 89000 Train Loss : 0.919710 Val Loss : 0.968709 
+Elapsed time is 2.570400 seconds.
+Elapsed time is 0.685687 seconds.
+Epoch : 16  Update : 90000 Train Loss : 0.887855 Val Loss : 0.930110 
+Elapsed time is 66.531969 seconds.
+Elapsed time is 2.574606 seconds.
+Elapsed time is 0.684538 seconds.
+Epoch : 17  Update : 91000 Train Loss : 0.887388 Val Loss : 0.935834 
+Elapsed time is 2.598885 seconds.
+Elapsed time is 0.683899 seconds.
+Epoch : 17  Update : 92000 Train Loss : 0.891791 Val Loss : 0.934649 
+Elapsed time is 2.555801 seconds.
+Elapsed time is 0.685580 seconds.
+Epoch : 17  Update : 93000 Train Loss : 0.881753 Val Loss : 0.940970 
+Elapsed time is 2.560870 seconds.
+Elapsed time is 0.685770 seconds.
+Epoch : 17  Update : 94000 Train Loss : 0.930873 Val Loss : 0.952904 
+Elapsed time is 2.568729 seconds.
+Elapsed time is 0.685551 seconds.
+Epoch : 17  Update : 95000 Train Loss : 0.877315 Val Loss : 0.920341 
+Elapsed time is 63.581782 seconds.
+Elapsed time is 2.597004 seconds.
+Elapsed time is 0.686485 seconds.
+Epoch : 18  Update : 96000 Train Loss : 0.893306 Val Loss : 0.939338 
+Elapsed time is 2.558296 seconds.
+Elapsed time is 0.684120 seconds.
+Epoch : 18  Update : 97000 Train Loss : 0.887607 Val Loss : 0.934483 
+Elapsed time is 2.563568 seconds.
+Elapsed time is 0.682298 seconds.
+Epoch : 18  Update : 98000 Train Loss : 0.876975 Val Loss : 0.920463 
+Elapsed time is 2.565824 seconds.
+Elapsed time is 0.685488 seconds.
+Epoch : 18  Update : 99000 Train Loss : 0.915263 Val Loss : 0.957227 
+Elapsed time is 2.577264 seconds.
+Elapsed time is 0.683011 seconds.
+Epoch : 18  Update : 100000 Train Loss : 0.891775 Val Loss : 0.947599 
+Elapsed time is 2.545212 seconds.
+Elapsed time is 0.679997 seconds.
+Epoch : 18  Update : 101000 Train Loss : 0.896796 Val Loss : 0.928568 
+Elapsed time is 66.331890 seconds.
+Elapsed time is 2.554230 seconds.
+Elapsed time is 0.680748 seconds.
+Epoch : 19  Update : 102000 Train Loss : 0.892753 Val Loss : 0.937827 
+Elapsed time is 2.546017 seconds.
+Elapsed time is 0.682826 seconds.
+Epoch : 19  Update : 103000 Train Loss : 0.884930 Val Loss : 0.931934 
+Elapsed time is 2.567796 seconds.
+Elapsed time is 0.685925 seconds.
+Epoch : 19  Update : 104000 Train Loss : 0.897773 Val Loss : 0.940615 
+Elapsed time is 2.552965 seconds.
+Elapsed time is 0.680019 seconds.
+Epoch : 19  Update : 105000 Train Loss : 0.888489 Val Loss : 0.927504 
+Elapsed time is 2.549013 seconds.
+Elapsed time is 0.683090 seconds.
+Epoch : 19  Update : 106000 Train Loss : 0.873524 Val Loss : 0.912364 
+Elapsed time is 2.548802 seconds.
+Elapsed time is 0.678892 seconds.
+Epoch : 19  Update : 107000 Train Loss : 0.874286 Val Loss : 0.914157 
+Elapsed time is 65.951693 seconds.
+Elapsed time is 2.582816 seconds.
+Elapsed time is 0.679925 seconds.
+Epoch : 20  Update : 108000 Train Loss : 0.873397 Val Loss : 0.921302 
+Elapsed time is 2.551297 seconds.
+Elapsed time is 0.683743 seconds.
+Epoch : 20  Update : 109000 Train Loss : 0.883426 Val Loss : 0.922473 
+Elapsed time is 2.560894 seconds.
+Elapsed time is 0.682945 seconds.
+Epoch : 20  Update : 110000 Train Loss : 0.902613 Val Loss : 0.940356 
+Elapsed time is 2.559402 seconds.
+Elapsed time is 0.684806 seconds.
+Epoch : 20  Update : 111000 Train Loss : 0.884064 Val Loss : 0.930807 
+Elapsed time is 2.581969 seconds.
+Elapsed time is 0.682613 seconds.
+Epoch : 20  Update : 112000 Train Loss : 0.874295 Val Loss : 0.916019 
+Elapsed time is 62.943048 seconds.
+Training done !!!
+Best val error : 0.905247 ; at epoch : 8 ; with test error : 0.905247 
+size of weight matrix
+
+ans =
+
+           1      157000
+
+
+arch_name =
+
+310L500R4L_l25e-05_rho0.95_eps1e-08_mf0_mvni_mvno_1
+
+training on GPU ... :) 
+Elapsed time is 2.596297 seconds.
+Elapsed time is 0.692125 seconds.
+Epoch : 1  Update : 1000 Train Loss : 0.933788 Val Loss : 0.955944 
+Elapsed time is 0.595128 seconds.
+	 Epoch : 1  Update: 1000 Test Loss : 0.955944 
+Elapsed time is 2.545898 seconds.
+Elapsed time is 0.682894 seconds.
+Epoch : 1  Update : 2000 Train Loss : 0.931255 Val Loss : 0.952248 
+Elapsed time is 0.585707 seconds.
+	 Epoch : 1  Update: 2000 Test Loss : 0.952248 
+Elapsed time is 2.585878 seconds.
+Elapsed time is 0.692665 seconds.
+Epoch : 1  Update : 3000 Train Loss : 0.923349 Val Loss : 0.948385 
+Elapsed time is 0.594494 seconds.
+	 Epoch : 1  Update: 3000 Test Loss : 0.948385 
+Elapsed time is 2.565925 seconds.
+Elapsed time is 0.681450 seconds.
+Epoch : 1  Update : 4000 Train Loss : 0.916469 Val Loss : 0.944989 
+Elapsed time is 0.585303 seconds.
+	 Epoch : 1  Update: 4000 Test Loss : 0.944989 
+Elapsed time is 2.592584 seconds.
+Elapsed time is 0.689346 seconds.
+Epoch : 1  Update : 5000 Train Loss : 0.903075 Val Loss : 0.930025 
+Elapsed time is 0.594547 seconds.
+	 Epoch : 1  Update: 5000 Test Loss : 0.930025 
+Elapsed time is 66.695323 seconds.
+Elapsed time is 2.543819 seconds.
+Elapsed time is 0.680800 seconds.
+Epoch : 2  Update : 6000 Train Loss : 0.898619 Val Loss : 0.925775 
+Elapsed time is 0.587084 seconds.
+	 Epoch : 2  Update: 6000 Test Loss : 0.925775 
+Elapsed time is 2.592692 seconds.
+Elapsed time is 0.688264 seconds.
+Epoch : 2  Update : 7000 Train Loss : 0.910593 Val Loss : 0.945666 
+Elapsed time is 2.627330 seconds.
+Elapsed time is 0.693391 seconds.
+Epoch : 2  Update : 8000 Train Loss : 0.893245 Val Loss : 0.929403 
+Elapsed time is 2.603479 seconds.
+Elapsed time is 0.694639 seconds.
+Epoch : 2  Update : 9000 Train Loss : 0.901186 Val Loss : 0.922931 
+Elapsed time is 0.597780 seconds.
+	 Epoch : 2  Update: 9000 Test Loss : 0.922931 
+Elapsed time is 2.600214 seconds.
+Elapsed time is 0.695017 seconds.
+Epoch : 2  Update : 10000 Train Loss : 0.890279 Val Loss : 0.911366 
+Elapsed time is 0.599337 seconds.
+	 Epoch : 2  Update: 10000 Test Loss : 0.911366 
+Elapsed time is 2.611491 seconds.
+Elapsed time is 0.694190 seconds.
+Epoch : 2  Update : 11000 Train Loss : 0.903750 Val Loss : 0.932377 
+Elapsed time is 69.805255 seconds.
+Elapsed time is 2.658139 seconds.
+Elapsed time is 0.697057 seconds.
+Epoch : 3  Update : 12000 Train Loss : 0.902649 Val Loss : 0.930926 
+Elapsed time is 2.623975 seconds.
+Elapsed time is 0.690820 seconds.
+Epoch : 3  Update : 13000 Train Loss : 0.890469 Val Loss : 0.918584 
+Elapsed time is 2.607546 seconds.
+Elapsed time is 0.691662 seconds.
+Epoch : 3  Update : 14000 Train Loss : 0.889781 Val Loss : 0.922458 
+Elapsed time is 2.607341 seconds.
+Elapsed time is 0.701031 seconds.
+Epoch : 3  Update : 15000 Train Loss : 0.905977 Val Loss : 0.940482 
+Elapsed time is 2.637778 seconds.
+Elapsed time is 0.689580 seconds.
+Epoch : 3  Update : 16000 Train Loss : 0.893741 Val Loss : 0.926913 
+Elapsed time is 64.882436 seconds.
+Elapsed time is 2.594748 seconds.
+Elapsed time is 0.689881 seconds.
+Epoch : 4  Update : 17000 Train Loss : 0.904993 Val Loss : 0.951179 
+Elapsed time is 2.587561 seconds.
+Elapsed time is 0.688020 seconds.
+Epoch : 4  Update : 18000 Train Loss : 0.890706 Val Loss : 0.926417 
+Elapsed time is 2.611222 seconds.
+Elapsed time is 0.693608 seconds.
+Epoch : 4  Update : 19000 Train Loss : 0.883270 Val Loss : 0.921089 
+Elapsed time is 2.649089 seconds.
+Elapsed time is 0.692987 seconds.
+Epoch : 4  Update : 20000 Train Loss : 0.879850 Val Loss : 0.914493 
+Elapsed time is 2.627442 seconds.
+Elapsed time is 0.698093 seconds.
+Epoch : 4  Update : 21000 Train Loss : 0.882719 Val Loss : 0.916106 
+Elapsed time is 2.616341 seconds.
+Elapsed time is 0.696199 seconds.
+Epoch : 4  Update : 22000 Train Loss : 0.875352 Val Loss : 0.909394 
+Elapsed time is 0.598289 seconds.
+	 Epoch : 4  Update: 22000 Test Loss : 0.909394 
+Elapsed time is 68.530521 seconds.
+Elapsed time is 2.579111 seconds.
+Elapsed time is 0.687779 seconds.
+Epoch : 5  Update : 23000 Train Loss : 0.892400 Val Loss : 0.931575 
+Elapsed time is 2.578650 seconds.
+Elapsed time is 0.684578 seconds.
+Epoch : 5  Update : 24000 Train Loss : 0.891100 Val Loss : 0.926854 
+Elapsed time is 2.552747 seconds.
+Elapsed time is 0.683946 seconds.
+Epoch : 5  Update : 25000 Train Loss : 0.892838 Val Loss : 0.920590 
+Elapsed time is 2.565106 seconds.
+Elapsed time is 0.682118 seconds.
+Epoch : 5  Update : 26000 Train Loss : 0.879861 Val Loss : 0.912859 
+Elapsed time is 2.564202 seconds.
+Elapsed time is 0.685960 seconds.
+Epoch : 5  Update : 27000 Train Loss : 0.876153 Val Loss : 0.920576 
+Elapsed time is 2.586610 seconds.
+Elapsed time is 0.686515 seconds.
+Epoch : 5  Update : 28000 Train Loss : 0.868256 Val Loss : 0.907837 
+Elapsed time is 0.589190 seconds.
+	 Epoch : 5  Update: 28000 Test Loss : 0.907837 
+Elapsed time is 67.139798 seconds.
+Elapsed time is 2.620782 seconds.
+Elapsed time is 0.697166 seconds.
+Epoch : 6  Update : 29000 Train Loss : 0.864852 Val Loss : 0.911671 
+Elapsed time is 2.615949 seconds.
+Elapsed time is 0.694000 seconds.
+Epoch : 6  Update : 30000 Train Loss : 0.876726 Val Loss : 0.926908 
+Elapsed time is 2.612034 seconds.
+Elapsed time is 0.692084 seconds.
+Epoch : 6  Update : 31000 Train Loss : 0.864151 Val Loss : 0.912268 
+Elapsed time is 2.648737 seconds.
+Elapsed time is 0.695241 seconds.
+Epoch : 6  Update : 32000 Train Loss : 0.877997 Val Loss : 0.925041 
+Elapsed time is 2.627007 seconds.
+Elapsed time is 0.694019 seconds.
+Epoch : 6  Update : 33000 Train Loss : 0.881909 Val Loss : 0.926704 
+Elapsed time is 65.442839 seconds.
+Elapsed time is 2.616115 seconds.
+Elapsed time is 0.691640 seconds.
+Epoch : 7  Update : 34000 Train Loss : 0.884371 Val Loss : 0.935183 
+Elapsed time is 2.623671 seconds.
+Elapsed time is 0.690643 seconds.
+Epoch : 7  Update : 35000 Train Loss : 0.862410 Val Loss : 0.907795 
+Elapsed time is 0.596946 seconds.
+	 Epoch : 7  Update: 35000 Test Loss : 0.907795 
+Elapsed time is 2.569375 seconds.
+Elapsed time is 0.687175 seconds.
+Epoch : 7  Update : 36000 Train Loss : 0.876283 Val Loss : 0.915496 
+Elapsed time is 2.585796 seconds.
+Elapsed time is 0.686916 seconds.
+Epoch : 7  Update : 37000 Train Loss : 0.878123 Val Loss : 0.933622 
+Elapsed time is 2.570085 seconds.
+Elapsed time is 0.682944 seconds.
+Epoch : 7  Update : 38000 Train Loss : 0.867307 Val Loss : 0.914323 
+Elapsed time is 2.577296 seconds.
+Elapsed time is 0.685343 seconds.
+Epoch : 7  Update : 39000 Train Loss : 0.867220 Val Loss : 0.920143 
+Elapsed time is 67.464246 seconds.
+Elapsed time is 2.581229 seconds.
+Elapsed time is 0.685163 seconds.
+Epoch : 8  Update : 40000 Train Loss : 0.863834 Val Loss : 0.923016 
+Elapsed time is 2.568861 seconds.
+Elapsed time is 0.683718 seconds.
+Epoch : 8  Update : 41000 Train Loss : 0.889615 Val Loss : 0.925106 
+Elapsed time is 2.559307 seconds.
+Elapsed time is 0.682517 seconds.
+Epoch : 8  Update : 42000 Train Loss : 0.853076 Val Loss : 0.908736 
+Elapsed time is 2.549014 seconds.
+Elapsed time is 0.682868 seconds.
+Epoch : 8  Update : 43000 Train Loss : 0.876901 Val Loss : 0.920302 
+Elapsed time is 2.592103 seconds.
+Elapsed time is 0.687544 seconds.
+Epoch : 8  Update : 44000 Train Loss : 0.862226 Val Loss : 0.919858 
+Elapsed time is 2.569914 seconds.
+Elapsed time is 0.685312 seconds.
+Epoch : 8  Update : 45000 Train Loss : 0.868771 Val Loss : 0.919999 
+Elapsed time is 66.433511 seconds.
+Elapsed time is 2.565808 seconds.
+Elapsed time is 0.687598 seconds.
+Epoch : 9  Update : 46000 Train Loss : 0.860939 Val Loss : 0.918553 
+Elapsed time is 2.570318 seconds.
+Elapsed time is 0.686379 seconds.
+Epoch : 9  Update : 47000 Train Loss : 0.856746 Val Loss : 0.916452 
+Elapsed time is 2.578829 seconds.
+Elapsed time is 0.689207 seconds.
+Epoch : 9  Update : 48000 Train Loss : 0.861572 Val Loss : 0.917725 
+Elapsed time is 2.567936 seconds.
+Elapsed time is 0.685457 seconds.
+Epoch : 9  Update : 49000 Train Loss : 0.856680 Val Loss : 0.917863 
+Elapsed time is 2.570767 seconds.
+Elapsed time is 0.686092 seconds.
+Epoch : 9  Update : 50000 Train Loss : 0.859394 Val Loss : 0.920628 
+Elapsed time is 63.280098 seconds.
+Elapsed time is 2.558857 seconds.
+Elapsed time is 0.684964 seconds.
+Epoch : 10  Update : 51000 Train Loss : 0.859593 Val Loss : 0.919204 
+Elapsed time is 2.586866 seconds.
+Elapsed time is 0.686942 seconds.
+Epoch : 10  Update : 52000 Train Loss : 0.857431 Val Loss : 0.920941 
+Elapsed time is 2.574504 seconds.
+Elapsed time is 0.687827 seconds.
+Epoch : 10  Update : 53000 Train Loss : 0.859169 Val Loss : 0.921142 
+Elapsed time is 2.573127 seconds.
+Elapsed time is 0.687087 seconds.
+Epoch : 10  Update : 54000 Train Loss : 0.849967 Val Loss : 0.908150 
+Elapsed time is 2.552962 seconds.
+Elapsed time is 0.684301 seconds.
+Epoch : 10  Update : 55000 Train Loss : 0.852115 Val Loss : 0.916294 
+Elapsed time is 2.579928 seconds.
+Elapsed time is 0.684790 seconds.
+Epoch : 10  Update : 56000 Train Loss : 0.853040 Val Loss : 0.925556 
+Elapsed time is 66.487260 seconds.
+Elapsed time is 2.563954 seconds.
+Elapsed time is 0.685104 seconds.
+Epoch : 11  Update : 57000 Train Loss : 0.853885 Val Loss : 0.921568 
+Elapsed time is 2.571837 seconds.
+Elapsed time is 0.686222 seconds.
+Epoch : 11  Update : 58000 Train Loss : 0.853437 Val Loss : 0.919434 
+Elapsed time is 2.556991 seconds.
+Elapsed time is 0.684110 seconds.
+Epoch : 11  Update : 59000 Train Loss : 0.837045 Val Loss : 0.901955 
+Elapsed time is 0.588622 seconds.
+	 Epoch : 11  Update: 59000 Test Loss : 0.901955 
+Elapsed time is 2.643999 seconds.
+Elapsed time is 0.690790 seconds.
+Epoch : 11  Update : 60000 Train Loss : 0.848785 Val Loss : 0.911650 
+Elapsed time is 2.605088 seconds.
+Elapsed time is 0.693606 seconds.
+Epoch : 11  Update : 61000 Train Loss : 0.847561 Val Loss : 0.915357 
+Elapsed time is 64.554672 seconds.
+Elapsed time is 2.609420 seconds.
+Elapsed time is 0.693135 seconds.
+Epoch : 12  Update : 62000 Train Loss : 0.842793 Val Loss : 0.915590 
+Elapsed time is 2.598131 seconds.
+Elapsed time is 0.694632 seconds.
+Epoch : 12  Update : 63000 Train Loss : 0.841734 Val Loss : 0.913778 
+Elapsed time is 2.632270 seconds.
+Elapsed time is 0.692038 seconds.
+Epoch : 12  Update : 64000 Train Loss : 0.852689 Val Loss : 0.927528 
+Elapsed time is 2.602075 seconds.
+Elapsed time is 0.692854 seconds.
+Epoch : 12  Update : 65000 Train Loss : 0.844764 Val Loss : 0.915287 
+Elapsed time is 2.609551 seconds.
+Elapsed time is 0.692197 seconds.
+Epoch : 12  Update : 66000 Train Loss : 0.848271 Val Loss : 0.915710 
+Elapsed time is 2.602477 seconds.
+Elapsed time is 0.692126 seconds.
+Epoch : 12  Update : 67000 Train Loss : 0.852468 Val Loss : 0.926023 
+Elapsed time is 68.009977 seconds.
+Elapsed time is 2.624588 seconds.
+Elapsed time is 0.689861 seconds.
+Epoch : 13  Update : 68000 Train Loss : 0.860410 Val Loss : 0.926139 
+Elapsed time is 2.597228 seconds.
+Elapsed time is 0.690070 seconds.
+Epoch : 13  Update : 69000 Train Loss : 0.860085 Val Loss : 0.926122 
+Elapsed time is 2.614999 seconds.
+Elapsed time is 0.696092 seconds.
+Epoch : 13  Update : 70000 Train Loss : 0.848843 Val Loss : 0.920424 
+Elapsed time is 2.613867 seconds.
+Elapsed time is 0.696041 seconds.
+Epoch : 13  Update : 71000 Train Loss : 0.848632 Val Loss : 0.916941 
+Elapsed time is 2.657643 seconds.
+Elapsed time is 0.693345 seconds.
+Epoch : 13  Update : 72000 Train Loss : 0.853040 Val Loss : 0.933530 
+Elapsed time is 2.603770 seconds.
+Elapsed time is 0.689204 seconds.
+Epoch : 13  Update : 73000 Train Loss : 0.840655 Val Loss : 0.920678 
+Elapsed time is 68.018595 seconds.
+Elapsed time is 2.589356 seconds.
+Elapsed time is 0.686766 seconds.
+Epoch : 14  Update : 74000 Train Loss : 0.860106 Val Loss : 0.939313 
+Elapsed time is 2.596924 seconds.
+Elapsed time is 0.690878 seconds.
+Epoch : 14  Update : 75000 Train Loss : 0.865028 Val Loss : 0.937963 
+Elapsed time is 2.639582 seconds.
+Elapsed time is 0.697493 seconds.
+Epoch : 14  Update : 76000 Train Loss : 0.839523 Val Loss : 0.917882 
+Elapsed time is 2.615011 seconds.
+Elapsed time is 0.695043 seconds.
+Epoch : 14  Update : 77000 Train Loss : 0.850042 Val Loss : 0.928762 
+Elapsed time is 2.629339 seconds.
+Elapsed time is 0.696362 seconds.
+Epoch : 14  Update : 78000 Train Loss : 0.843910 Val Loss : 0.919809 
+Elapsed time is 64.741556 seconds.
+Elapsed time is 2.612654 seconds.
+Elapsed time is 0.689287 seconds.
+Epoch : 15  Update : 79000 Train Loss : 0.843529 Val Loss : 0.933487 
+Elapsed time is 2.673191 seconds.
+Elapsed time is 0.695672 seconds.
+Epoch : 15  Update : 80000 Train Loss : 0.838944 Val Loss : 0.915794 
+Elapsed time is 2.616478 seconds.
+Elapsed time is 0.691448 seconds.
+Epoch : 15  Update : 81000 Train Loss : 0.845629 Val Loss : 0.921899 
+Elapsed time is 2.584544 seconds.
+Elapsed time is 0.690769 seconds.
+Epoch : 15  Update : 82000 Train Loss : 0.850248 Val Loss : 0.937984 
+Elapsed time is 2.590042 seconds.
+Elapsed time is 0.688669 seconds.
+Epoch : 15  Update : 83000 Train Loss : 0.854742 Val Loss : 0.927888 
+Elapsed time is 2.640023 seconds.
+Elapsed time is 0.693412 seconds.
+Epoch : 15  Update : 84000 Train Loss : 0.853483 Val Loss : 0.934758 
+Elapsed time is 68.008379 seconds.
+Elapsed time is 2.595426 seconds.
+Elapsed time is 0.691446 seconds.
+Epoch : 16  Update : 85000 Train Loss : 0.846116 Val Loss : 0.932847 
+Elapsed time is 2.586460 seconds.
+Elapsed time is 0.690089 seconds.
+Epoch : 16  Update : 86000 Train Loss : 0.838326 Val Loss : 0.923926 
+Elapsed time is 2.583583 seconds.
+Elapsed time is 0.688991 seconds.
+Epoch : 16  Update : 87000 Train Loss : 0.834334 Val Loss : 0.916887 
+Elapsed time is 2.633398 seconds.
+Elapsed time is 0.693490 seconds.
+Epoch : 16  Update : 88000 Train Loss : 0.853504 Val Loss : 0.946080 
+Elapsed time is 2.612395 seconds.
+Elapsed time is 0.689173 seconds.
+Epoch : 16  Update : 89000 Train Loss : 0.834822 Val Loss : 0.927479 
+Elapsed time is 2.605175 seconds.
+Elapsed time is 0.690361 seconds.
+Epoch : 16  Update : 90000 Train Loss : 0.832144 Val Loss : 0.920917 
+Elapsed time is 67.765299 seconds.
+Elapsed time is 2.598277 seconds.
+Elapsed time is 0.689080 seconds.
+Epoch : 17  Update : 91000 Train Loss : 0.838573 Val Loss : 0.914024 
+Elapsed time is 2.634585 seconds.
+Elapsed time is 0.693050 seconds.
+Epoch : 17  Update : 92000 Train Loss : 0.854337 Val Loss : 0.936949 
+Elapsed time is 2.598873 seconds.
+Elapsed time is 0.689865 seconds.
+Epoch : 17  Update : 93000 Train Loss : 0.832209 Val Loss : 0.927090 
+Elapsed time is 2.584979 seconds.
+Elapsed time is 0.688351 seconds.
+Epoch : 17  Update : 94000 Train Loss : 0.832551 Val Loss : 0.923118 
+Elapsed time is 2.591525 seconds.
+Elapsed time is 0.690646 seconds.
+Epoch : 17  Update : 95000 Train Loss : 0.835985 Val Loss : 0.928706 
+Elapsed time is 64.470901 seconds.
+Elapsed time is 2.609266 seconds.
+Elapsed time is 0.689162 seconds.
+Epoch : 18  Update : 96000 Train Loss : 0.838258 Val Loss : 0.926917 
+Elapsed time is 2.592150 seconds.
+Elapsed time is 0.691794 seconds.
+Epoch : 18  Update : 97000 Train Loss : 0.838851 Val Loss : 0.936763 
+Elapsed time is 2.601672 seconds.
+Elapsed time is 0.691991 seconds.
+Epoch : 18  Update : 98000 Train Loss : 0.826670 Val Loss : 0.916443 
+Elapsed time is 2.606606 seconds.
+Elapsed time is 0.688893 seconds.
+Epoch : 18  Update : 99000 Train Loss : 0.844024 Val Loss : 0.939748 
+Elapsed time is 2.633966 seconds.
+Elapsed time is 0.693904 seconds.
+Epoch : 18  Update : 100000 Train Loss : 0.835094 Val Loss : 0.924762 
+Elapsed time is 2.590721 seconds.
+Elapsed time is 0.692066 seconds.
+Epoch : 18  Update : 101000 Train Loss : 0.842626 Val Loss : 0.934575 
+Elapsed time is 67.832577 seconds.
+Elapsed time is 2.596218 seconds.
+Elapsed time is 0.689351 seconds.
+Epoch : 19  Update : 102000 Train Loss : 0.840928 Val Loss : 0.940972 
+Elapsed time is 2.585466 seconds.
+Elapsed time is 0.689339 seconds.
+Epoch : 19  Update : 103000 Train Loss : 0.827763 Val Loss : 0.922215 
+Elapsed time is 2.614535 seconds.
+Elapsed time is 0.688962 seconds.
+Epoch : 19  Update : 104000 Train Loss : 0.823355 Val Loss : 0.917841 
+Elapsed time is 2.591783 seconds.
+Elapsed time is 0.691516 seconds.
+Epoch : 19  Update : 105000 Train Loss : 0.831996 Val Loss : 0.935882 
+Elapsed time is 2.594658 seconds.
+Elapsed time is 0.691573 seconds.
+Epoch : 19  Update : 106000 Train Loss : 0.832995 Val Loss : 0.925552 
+Elapsed time is 2.592514 seconds.
+Elapsed time is 0.690198 seconds.
+Epoch : 19  Update : 107000 Train Loss : 0.831923 Val Loss : 0.934308 
+Elapsed time is 67.713697 seconds.
+Elapsed time is 2.637212 seconds.
+Elapsed time is 0.695528 seconds.
+Epoch : 20  Update : 108000 Train Loss : 0.833166 Val Loss : 0.925928 
+Elapsed time is 2.602464 seconds.
+Elapsed time is 0.689142 seconds.
+Epoch : 20  Update : 109000 Train Loss : 0.840717 Val Loss : 0.936192 
+Elapsed time is 2.596524 seconds.
+Elapsed time is 0.690367 seconds.
+Epoch : 20  Update : 110000 Train Loss : 0.825298 Val Loss : 0.922941 
+Elapsed time is 2.592520 seconds.
+Elapsed time is 0.690223 seconds.
+Epoch : 20  Update : 111000 Train Loss : 0.826206 Val Loss : 0.923122 
+Elapsed time is 2.635156 seconds.
+Elapsed time is 0.696561 seconds.
+Epoch : 20  Update : 112000 Train Loss : 0.829417 Val Loss : 0.936907 
+Elapsed time is 64.630130 seconds.
+Training done !!!
+Best val error : 0.901955 ; at epoch : 10 ; with test error : 0.901955 
+>> >> 
