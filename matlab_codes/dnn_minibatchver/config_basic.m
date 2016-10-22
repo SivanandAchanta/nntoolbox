@@ -46,9 +46,8 @@ addpath(strcat('../general_neuralnet_modules/','loss_functions/'));
 addpath(strcat('../general_neuralnet_modules/','optim_methods/'));
 
 datadir = '../matfiles/';
-feat_name = 'f0';
-wtdir = strcat('../wt/',feat_name,'/');
-errdir = strcat('../err/',feat_name,'/');
+wtdir = '../wt/';
+errdir = '../err/';
 
 % NN params settings
 numepochs = 20; % Number of Epochs
@@ -61,7 +60,36 @@ wtinit_meth = 'yi'; % 'yi - yoshua init, rw - random walk init , si - sparse ini
 l1 = 0; % l1 regularization penalty coefficent settings
 l2_vec = [0.0]; % l2 regularization penalty coefficent settings
 check_valfreq = 5; % check validation loss for every "N" updates
-gradCheckFlag = 1;
+gradCheckFlag = 0;
+in_nml_meth = 'mvni';
+out_nml_meth = 'mvno';
+
+train_batchsize = 200;
+val_batchsize = 1000;
+test_batchsize = 1000;
+
+if strcmp(in_nml_meth,'mvni')
+   intmvnf = 1;
+   intmmnf = 0;
+elseif strcmp(in_nml_meth,'mmni')
+   intmvnf = 0;
+   intmmnf = 1;
+else
+   intmvnf = 0;
+   intmmnf = 0;
+end
+
+if strcmp(out_nml_meth,'mvno')
+   outtmvnf = 1;
+   outtmmnf = 0;
+elseif strcmp(out_nml_meth,'mmno')
+   outtmvnf = 0;
+   outtmmnf = 1;
+else
+   outtmvnf = 0;
+   outtmmnf = 0;
+end
+
 
 if gradCheckFlag
     invec = [1:5];
@@ -69,9 +97,6 @@ if gradCheckFlag
     
     din = length(invec);
     dout = length(outvec);
-    
-    in_nml_meth = 'mvni';
-    out_nml_meth = 'mvno';
     
 end
 

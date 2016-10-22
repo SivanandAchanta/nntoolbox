@@ -81,89 +81,28 @@ end
 [Nin,din] = size(train_batchdata)
 [Nout,dout] = size(train_batchtargets)
 
-% Input feature normalization
 if intmvnf
-    disp('Normalizing input feats using mean variance normalization ...')
-    
     m = m/Nin;
     v = sqrt(v/(Nin-1) - m.^2);
     save(strcat(datadir,'mvni.mat'),'m','v');
     
-    mini = min(train_batchdata) - 0.1;
-    maxi = max(train_batchdata) - mini + 0.1;
-    save(strcat(datadir,'maxmini.mat'),'maxi','mini');
-    
-    for i = mvnivec
-        I1 = bsxfun(@minus,train_batchdata(:,i),m(:,i));
-        I1 = bsxfun(@rdivide,I1,v(:,i)+1e-5);
-        train_batchdata(:,i) = I1;
-    end
-    
-    clear I1;
-end
-
-if intmmnf
-    disp('Normalizing input feats using min max normalization ...')
-    
-    m = m/Nin;
-    v = sqrt(v/(Nin-1) - m.^2);
-    save(strcat(datadir,'mvni.mat'),'m','v');
-    
-    mini = min(train_batchdata) - 0.1;
-    maxi = max(train_batchdata) - mini + 0.1;
-    save(strcat(datadir,'maxmini.mat'),'maxi','mini');
-    
-    for i = mvnivec
-        I1 = bsxfun(@minus,train_batchdata(:,i),mini(:,i));
-        I1 = bsxfun(@rdivide,I1,maxi(:,i)+1e-5);
-        train_batchdata(:,i) = I1;
-    end
-    
-    clear I1;
+    I1 = bsxfun(@minus,train_batchdata(:,mvnivec),m(:,mvnivec));
+    I1 = bsxfun(@rdivide,I1,v(:,mvnivec)+1e-5);
+    train_batchdata(:,mvnivec) = I1;
 end
 train_batchdata = train_batchdata(:,invec);
 
-% Output features normaization
 if outtmvnf
-    disp('Normalizing output feats using mean variance normalization ...');
-    
     mo = mean(train_batchtargets);
     vo = std(train_batchtargets);
     save(strcat(datadir,'mvno.mat'),'mo','vo');
-    
     minv = min(train_batchtargets) - 0.1;
     maxv = max(train_batchtargets) - minv + 0.1;
+    I1 = bsxfun(@minus,train_batchtargets,minv);
+    I1 = bsxfun(@rdivide,I1,maxv);
+    train_batchtargets = I1;
     save(strcat(datadir,'maxmino.mat'),'maxv','minv');
-    
-    for i = 1:dout
-        I1 = bsxfun(@minus,train_batchtargets(:,i),mo(:,i));
-        I1 = bsxfun(@rdivide,I1,vo(:,i)+1e-5);
-        train_batchtargets(:,i) = I1;
-    end
-    
-    clear I1
 end
-
-if outtmmnf
-    disp('Normalizing output feats using min max normalization ...');
-    
-    mo = mean(train_batchtargets);
-    vo = std(train_batchtargets);
-    save(strcat(datadir,'mvno.mat'),'mo','vo');
-    
-    minv = min(train_batchtargets) - 0.1;
-    maxv = max(train_batchtargets) - minv + 0.1;
-    save(strcat(datadir,'maxmino.mat'),'maxv','minv');
-    
-    for i = 1:dout
-        I1 = bsxfun(@minus,train_batchtargets(:,i),minv(:,i));
-        I1 = bsxfun(@rdivide,I1,maxv(:,i));
-        train_batchtargets(:,i) = I1;
-    end
-    
-    clear I1
-end
-
 train_batchtargets = train_batchtargets(:,outvec);
 
 totnum=size(train_batchdata,1);
@@ -175,6 +114,7 @@ randomorder=randperm(totnum);
 train_batchdata = train_batchdata(randomorder,:);
 train_batchtargets = train_batchtargets(randomorder,:);
 
+train_batchsize = trn_bs;
 Ntrain = size(train_batchdata,1);
 remsamps = mod(Ntrain,train_batchsize);
 Ntrain = Ntrain - remsamps;
@@ -202,30 +142,15 @@ if intmvnf
     I1 = bsxfun(@minus,val_batchdata(:,mvnivec),m(:,mvnivec));
     I1 = bsxfun(@rdivide,I1,v(:,mvnivec)+1e-5);
     val_batchdata(:,mvnivec) = I1;
-    clear I1
 end
-
-if intmmnf
-    I1 = bsxfun(@minus,val_batchdata(:,mvnivec),mini(:,mvnivec));
-    I1 = bsxfun(@rdivide,I1,maxi(:,mvnivec)+1e-5);
-    val_batchdata(:,mvnivec) = I1;
-    clear I1
-end
-
+clear I1;
 val_batchdata = val_batchdata(:,invec);
 
-val_batchtargets = single(targets);
+val_batchtargets = single(targets(:,outvec));
 if outtmvnf
-    I1 = bsxfun(@minus,val_batchtargets,mo);
-    I1 = bsxfun(@rdivide,I1,vo+1e-5);
-    val_batchtargets = I1;
-end
-
-if outtmmnf
     I1 = bsxfun(@minus,val_batchtargets,minv);
     I1 = bsxfun(@rdivide,I1,maxv);
     val_batchtargets = I1;
-    clear I1
 end
 val_batchtargets = single(val_batchtargets(:,outvec));
 clv = clv(:)';
@@ -262,31 +187,15 @@ if intmvnf
     I1 = bsxfun(@minus,test_batchdata(:,mvnivec),m(:,mvnivec));
     I1 = bsxfun(@rdivide,I1,v(:,mvnivec)+1e-5);
     test_batchdata(:,mvnivec) = I1;
-    clear I1
 end
-
-if intmmnf
-    I1 = bsxfun(@minus,test_batchdata(:,mvnivec),mini(:,mvnivec));
-    I1 = bsxfun(@rdivide,I1,maxi(:,mvnivec)+1e-5);
-    test_batchdata(:,mvnivec) = I1;
-    clear I1
-end
-
-
+clear I1;
 test_batchdata = test_batchdata(:,invec);
 
-test_batchtargets = single(targets);
+test_batchtargets = single(targets(:,outvec));
 if outtmvnf
-    I1 = bsxfun(@minus,test_batchtargets,mo);
-    I1 = bsxfun(@rdivide,I1,vo+1e-5);
-    test_batchtargets = I1;
-    clear I1
-end
-if outtmmnf
     I1 = bsxfun(@minus,test_batchtargets,minv);
     I1 = bsxfun(@rdivide,I1,maxv);
     test_batchtargets = I1;
-    clear I1
 end
 test_batchtargets = single(test_batchtargets(:,outvec));
 clv = clv(:)';
@@ -318,13 +227,13 @@ test_batchtargets = single(test_batchtargets);
 clear testdata testtargets;
 
 disp('size of train i/o data');
-[train_batchsize,din,train_numbats] = size(train_batchdata)
-[train_batchsize,dout,train_numbats] = size(train_batchtargets)
+[trn_bs,din,train_numbats] = size(train_batchdata)
+[trn_bs,dout,train_numbats] = size(train_batchtargets)
 
 disp('size of validation i/o data');
-[val_batchsize,~,val_numbats] = size(val_batchdata)
-[val_batchsize,~,val_numbats] = size(val_batchtargets)
+[val_bs,~,val_numbats] = size(val_batchdata)
+[val_bs,~,val_numbats] = size(val_batchtargets)
 
 disp('size of test i/o data');
-[test_batchsize,~,test_numbats] = size(test_batchdata)
-[test_batchsize,~,test_numbats] = size(test_batchtargets)
+[test_bs,~,test_numbats] = size(test_batchdata)
+[test_bs,~,test_numbats] = size(test_batchtargets)

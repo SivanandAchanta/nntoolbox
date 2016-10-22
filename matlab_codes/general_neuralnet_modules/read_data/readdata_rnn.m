@@ -79,6 +79,7 @@ for i = 1:nb
     train_batchdata = single([train_batchdata;data]);
     train_batchtargets = single([train_batchtargets;targets]);
     
+    clv = clv(:)';
     temp_clv = [temp_clv clv];
     
     clear data targets clv
@@ -86,10 +87,6 @@ end
 
 [Nin,din] = size(train_batchdata);
 [Nout,dout] = size(train_batchtargets);
-
-train_batchtargets(train_batchtargets(:,233)==0,232) = 0;
-disp(length(find(train_batchtargets(:,233)==0)))
-disp(length(find(train_batchtargets(:,232)==0)))
 
 train_clv = [1 temp_clv];
 train_clv = cumsum(train_clv);
@@ -215,10 +212,6 @@ end
 val_batchdata = val_batchdata(:,invec);
 
 val_batchtargets = single(targets);
-val_batchtargets(val_batchtargets(:,233)==0,232) = 0;
-length(find(val_batchtargets(:,233)==0))
-length(find(val_batchtargets(:,232)==0))
-
 if outtmvnf
     I1 = bsxfun(@minus,val_batchtargets,mo);
     I1 = bsxfun(@rdivide,I1,vo+1e-5);
@@ -233,6 +226,7 @@ if outtmmnf
 end
 
 val_batchtargets = single(val_batchtargets(:,outvec));
+clv = clv(:)';
 val_clv = cumsum([1 clv]);
 val_numbats = length(val_clv) - 1;
 clear data targets clv
@@ -269,10 +263,6 @@ end
 test_batchdata = test_batchdata(:,invec);
 
 test_batchtargets = single(targets);
-test_batchtargets(test_batchtargets(:,233)==0,232) = 0;
-length(find(test_batchtargets(:,233)==0))
-length(find(test_batchtargets(:,232)==0))
-
 if outtmvnf
     I1 = bsxfun(@minus,test_batchtargets,mo);
     I1 = bsxfun(@rdivide,I1,vo+1e-5);
@@ -287,6 +277,7 @@ if outtmmnf
 end
 
 test_batchtargets = single(test_batchtargets(:,outvec));
+clv = clv(:)';
 test_clv = cumsum([1 clv]);
 test_numbats = length(test_clv) - 1;
 clear data targets clv

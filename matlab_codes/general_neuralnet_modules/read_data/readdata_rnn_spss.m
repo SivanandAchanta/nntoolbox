@@ -1,57 +1,64 @@
-%%#########################################################################
-%%                                                                       ##
-%%                                                                       ##
-%%                       IIIT Hyderabad, India                           ##
-%%                      Copyright (c) 2014-2015                          ##
-%%                        All Rights Reserved.                           ##
-%%                                                                       ##
-%%  Permission is hereby granted, free of charge, to use and distribute  ##
-%%  this software and its documentation without restriction, including   ##
-%%  without limitation the rights to use, copy, modify, merge, publish,  ##
-%%  distribute, sublicense, and/or sell copies of this work, and to      ##
-%%  permit persons to whom this work is furnished to do so, subject to   ##
-%%  the following conditions:                                            ##
-%%   1. The code must retain the above copyright notice, this list of    ##
-%%      conditions and the following disclaimer.                         ##
-%%   2. Any modifications must be clearly marked as such.                ##
-%%   3. Original authors' names are not deleted.                         ##
-%%   4. The authors' names are not used to endorse or promote products   ##
-%%      derived from this software without specific prior written        ##
-%%      permission.                                                      ##
-%%                                                                       ##
-%%  IIIT HYDERABAD AND THE CONTRIBUTORS TO THIS WORK                     ##
-%%  DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING      ##
-%%  ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT   ##
-%%  SHALL IIIT HYDERABAD NOR THE CONTRIBUTORS BE LIABLE                  ##
-%%  FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    ##
-%%  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN   ##
-%%  AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,          ##
-%%  ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF       ##
-%%  THIS SOFTWARE.                                                       ##
-%%                                                                       ##
-%%#########################################################################
-%%                                                                       ##
-%%          Author :  Sivanand Achanta (sivanand.a@research.iiit.ac.in)  ##
-%%          Date   :  Jun. 2015                                          ##
-%%                                                                       ##
-%%#########################################################################
+%{
+###########################################################################
+##                                                                       ##
+##                                                                       ##
+##                       IIIT Hyderabad, India                           ##
+##                      Copyright (c) 2015                               ##
+##                        All Rights Reserved.                           ##
+##                                                                       ##
+##  Permission is hereby granted, free of charge, to use and distribute  ##
+##  this software and its documentation without restriction, including   ##
+##  without limitation the rights to use, copy, modify, merge, publish,  ##
+##  distribute, sublicense, and/or sell copies of this work, and to      ##
+##  permit persons to whom this work is furnished to do so, subject to   ##
+##  the following conditions:                                            ##
+##   1. The code must retain the above copyright notice, this list of    ##
+##      conditions and the following disclaimer.                         ##
+##   2. Any modifications must be clearly marked as such.                ##
+##   3. Original authors' names are not deleted.                         ##
+##   4. The authors' names are not used to endorse or promote products   ##
+##      derived from this software without specific prior written        ##
+##      permission.                                                      ##
+##                                                                       ##
+##  IIIT HYDERABAD AND THE CONTRIBUTORS TO THIS WORK                     ##
+##  DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING      ##
+##  ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT   ##
+##  SHALL IIIT HYDERABAD NOR THE CONTRIBUTORS BE LIABLE                  ##
+##  FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    ##
+##  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN   ##
+##  AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,          ##
+##  ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF       ##
+##  THIS SOFTWARE.                                                       ##
+##                                                                       ##
+###########################################################################
+##                                                                       ##
+##          Author :  Sivanand Achanta (sivanand.a@research.iiit.ac.in)  ##
+##          Date   :  Jul. 2015                                          ##
+##                                                                       ##
+###########################################################################
+%}
+
+%clear all; close all; clc;
 
 
+%% Step 1 : Make Training data
 temp_clv = [];
 train_batchdata = [];
 train_batchtargets = [];
 m = 0;
 v = 0;
-intmvnf = 1;
-outtmvnf = 1;
+
+nb = dir(strcat(datadir,'train*'));
+nb = length(nb);
 
 for i = 1:nb
-    i
+    
+    fprintf('Loading batch %d ... \n',i);
     load(strcat(datadir,'train',num2str(i),'.mat'));
     
     % Step1: make training data
     data = single(data);
-    targets = single(targets(:,outvec));
+    targets = single(targets);
     
     if sum(sum(isnan(data)))
         disp('there are NaN eles in data');
@@ -69,8 +76,8 @@ for i = 1:nb
         v = v + sum(data.^2);
     end
     
-    train_batchdata = [train_batchdata;data];
-    train_batchtargets = [train_batchtargets;targets];
+    train_batchdata = single([train_batchdata;data]);
+    train_batchtargets = single([train_batchtargets;targets]);
     
     clv = clv(:)';
     temp_clv = [temp_clv clv];
@@ -78,8 +85,16 @@ for i = 1:nb
     clear data targets clv
 end
 
-[Nin,din] = size(train_batchdata)
-[Nout,dout] = size(train_batchtargets)
+[Nin,din] = size(train_batchdata);
+[Nout,dout] = size(train_batchtargets);
+
+train_batchtargets(train_batchtargets(:,233)==0,232) = 0;
+disp(length(find(train_batchtargets(:,233)==0)))
+disp(length(find(train_batchtargets(:,232)==0)))
+
+train_clv = [1 temp_clv];
+train_clv = cumsum(train_clv);
+train_numbats = length(train_clv) - 1;
 
 % Input feature normalization
 if intmvnf
@@ -121,6 +136,7 @@ if intmmnf
     
     clear I1;
 end
+
 train_batchdata = train_batchdata(:,invec);
 
 % Output features normaization
@@ -166,18 +182,8 @@ end
 
 train_batchtargets = train_batchtargets(:,outvec);
 
-totnum=size(train_batchdata,1);
-fprintf(1, 'Size of the training dataset= %5d \n', totnum);
-rng(0); %so we know the permutation of the training data
-randomorder=randperm(totnum);
-
-% randomize the full training set
-train_batchdata = train_batchdata(randomorder,:);
-train_batchtargets = train_batchtargets(randomorder,:);
-
-Ntrain = size(train_batchdata,1);
-remsamps = mod(Ntrain,train_batchsize);
-Ntrain = Ntrain - remsamps;
+totnum = size(train_batchdata,1);
+fprintf(1, 'Size of the training dataset %5d \n', totnum);
 
 if sum(sum(isnan(train_batchdata)))
     disp('there are NaN eles in train data');
@@ -189,13 +195,8 @@ if sum(sum(isnan(train_batchtargets)))
     pause
 end
 
-train_batchdata = makebatchdata_v2(train_batchdata(1:Ntrain,:),train_batchsize) ;
-train_batchtargets = makebatchdata_v2(train_batchtargets(1:Ntrain,:),train_batchsize) ;
-train_batchdata = single(train_batchdata);
-train_batchtargets = single(train_batchtargets);
+%% Step 2 : Make Validation data
 
-
-% Step2: make validation data
 load(strcat(datadir,'val.mat'));
 val_batchdata = single(data);
 if intmvnf
@@ -215,6 +216,10 @@ end
 val_batchdata = val_batchdata(:,invec);
 
 val_batchtargets = single(targets);
+val_batchtargets(val_batchtargets(:,233)==0,232) = 0;
+length(find(val_batchtargets(:,233)==0))
+length(find(val_batchtargets(:,232)==0))
+
 if outtmvnf
     I1 = bsxfun(@minus,val_batchtargets,mo);
     I1 = bsxfun(@rdivide,I1,vo+1e-5);
@@ -227,15 +232,12 @@ if outtmmnf
     val_batchtargets = I1;
     clear I1
 end
+
 val_batchtargets = single(val_batchtargets(:,outvec));
 clv = clv(:)';
 val_clv = cumsum([1 clv]);
 val_numbats = length(val_clv) - 1;
 clear data targets clv
-
-Nval = size(val_batchdata,1);
-remsamps = mod(Nval,val_batchsize);
-Nval = Nval - remsamps;
 
 if sum(sum(isnan(val_batchdata)))
     disp('there are NaN eles in val data');
@@ -247,16 +249,9 @@ if sum(sum(isnan(val_batchtargets)))
     pause
 end
 
-valdata = val_batchdata(1:Nval,:);
-valtargets = val_batchtargets(1:Nval,:);
-[val_batchdata,val_batchtargets] = makebatchdata(valdata,valtargets,val_batchsize) ;
-val_batchdata = single(val_batchdata);
-val_batchtargets = single(val_batchtargets);
+%% Step 3 : Make Test data
 
-clear valdata valtargets;
-
-% Step3: make test data
-load(strcat(datadir,'test.mat'));
+load(strcat(datadir,'val.mat'));
 test_batchdata = single(data);
 if intmvnf
     I1 = bsxfun(@minus,test_batchdata(:,mvnivec),m(:,mvnivec));
@@ -276,6 +271,10 @@ end
 test_batchdata = test_batchdata(:,invec);
 
 test_batchtargets = single(targets);
+test_batchtargets(test_batchtargets(:,233)==0,232) = 0;
+length(find(test_batchtargets(:,233)==0))
+length(find(test_batchtargets(:,232)==0))
+
 if outtmvnf
     I1 = bsxfun(@minus,test_batchtargets,mo);
     I1 = bsxfun(@rdivide,I1,vo+1e-5);
@@ -288,16 +287,12 @@ if outtmmnf
     test_batchtargets = I1;
     clear I1
 end
+
 test_batchtargets = single(test_batchtargets(:,outvec));
 clv = clv(:)';
 test_clv = cumsum([1 clv]);
 test_numbats = length(test_clv) - 1;
 clear data targets clv
-
-
-Ntest = size(test_batchdata,1);
-remsamps = mod(Ntest,test_batchsize);
-Ntest = Ntest - remsamps;
 
 if sum(sum(isnan(test_batchdata)))
     disp('there are NaN eles in test data');
@@ -309,22 +304,12 @@ if sum(sum(isnan(test_batchtargets)))
     pause
 end
 
-testdata = single(test_batchdata(1:Ntest,:));
-testtargets = single(test_batchtargets(1:Ntest,:));
-[test_batchdata,test_batchtargets] = makebatchdata(testdata,testtargets,test_batchsize) ;
-test_batchdata = single(test_batchdata);
-test_batchtargets = single(test_batchtargets);
-
-clear testdata testtargets;
-
 disp('size of train i/o data');
-[train_batchsize,din,train_numbats] = size(train_batchdata)
-[train_batchsize,dout,train_numbats] = size(train_batchtargets)
+[Nin,din] = size(train_batchdata)
+[Nout,dout] = size(train_batchtargets)
 
-disp('size of validation i/o data');
-[val_batchsize,~,val_numbats] = size(val_batchdata)
-[val_batchsize,~,val_numbats] = size(val_batchtargets)
+disp('Number of Train, Validation and Test Batches ...')
+train_numbats
+val_numbats
+test_numbats
 
-disp('size of test i/o data');
-[test_batchsize,~,test_numbats] = size(test_batchdata)
-[test_batchsize,~,test_numbats] = size(test_batchtargets)

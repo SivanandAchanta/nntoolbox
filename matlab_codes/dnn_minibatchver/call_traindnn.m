@@ -41,8 +41,7 @@
 clear all; close all; clc;
 
 % Load configuration file
-config
-% config_basic
+config_basic
 
 % Step 1 : Read data
 readdata_dnn

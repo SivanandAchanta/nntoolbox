@@ -14,7 +14,7 @@ for li = 1:numbats
     
     % compute error
     [otl] = get_otl(batchsize,nl,nlv);
-    ol_mat = reshape(ol(1,otl(end-1):otl(end)-1),bs,nl(end));
+    ol_mat = reshape(ol(1,otl(end-1):otl(end)-1),batchsize,nl(end));
     
     switch cfn
         case 'nll'
