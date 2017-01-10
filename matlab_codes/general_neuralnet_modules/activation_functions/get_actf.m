@@ -1,4 +1,4 @@
-function [ac] = get_actf(f,pac,a_tanh,b_tanh)
+function [ac] = get_actf(f,pac,a_tanh,b_tanh,varargin)
 
 switch f
     case 'N'
@@ -13,10 +13,13 @@ switch f
         ac = max(0,pac);
         ac(pac<=0) = exp(pac(pac<=0))-1;
     case 'P'
-        abyb = a_p./b_p;
+        apelu = varargin{1};
+        bpelu = varargin{2};
+        
+        abyb = apelu./bpelu;
         ac = abyb.*(max(0,pac));
-        ac_bp = pac./b_p;
-        ac(pac<=0) = a_p(pac<=0).*(exp(ac_bp(pac<=0))-1);        
+        ac_bp = pac./bpelu;
+        ac(pac<=0) = apelu(pac<=0).*(exp(ac_bp(pac<=0))-1);
     case 'M' % Softmax layer
         intout = exp(pac);
         ac = bsxfun(@rdivide,intout,sum(intout,2));

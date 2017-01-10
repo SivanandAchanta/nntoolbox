@@ -1,4 +1,4 @@
-function [der_f] = get_derf(nl,f,hcm,sl,a_tanh,b_tanh,bby2a)
+function [der_f,varargout] = get_derf(nl,f,hcm,sl,a_tanh,b_tanh,bby2a,varargin)
 
 switch f
     case 'N'
@@ -11,10 +11,30 @@ switch f
         der_f           = ones(sl,nl).*(hcm > 0);
         der_f(hcm<=0)   = hcm(hcm<=0) + 1;
     case 'Q'
-        der_f           = ones(sl,nl).*(hcm > 0).*(hcm < 20);        
+        der_f           = ones(sl,nl).*(hcm > 0).*(hcm < 20);
     case 'P'
-        der_f           = ones(sl,nl).*(hcm > 0);
-        der_f(hcm<=0)   = hcm(hcm<=0) + 1;
+        apelu = varargin{1};
+        bpelu = varargin{2};
+        
+        abyb = apelu./bpelu;
+        der_f = bsxfun(@times,ones(sl,nl),abyb').*(hcm > 0);
+        t1 = bsxfun(@plus,hcm,apelu');
+        t2 = bsxfun(@rdivide,t1,bpelu');
+        der_f(hcm<0) = t2(hcm<0);
+        
+        dhcm_ap = bsxfun(@rdivide,hcm,apelu');
+        varargout{1} = dhcm_ap;
+        
+        t3 = bsxfun(@rdivide,-hcm,bpelu');
+        t1bya = bsxfun(@rdivide,t1,apelu');
+        t1bya(t1bya<=0) = 1e-8;
+        xbyb = log(t1bya);
+        thcm4 = -xbyb.*t2;
+        
+        dhcm_bp = t3;
+        dhcm_bp(hcm<0) = thcm4(hcm<0);
+        varargout{2} = dhcm_bp;
+        
     case 'M' % Softmax layer
         der_f           = (hcm.*(1 - hcm));
     case 'L'

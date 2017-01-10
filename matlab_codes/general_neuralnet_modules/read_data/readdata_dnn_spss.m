@@ -42,8 +42,6 @@ train_batchdata = [];
 train_batchtargets = [];
 m = 0;
 v = 0;
-intmvnf = 1;
-outtmvnf = 1;
 
 for i = 1:nb
     i

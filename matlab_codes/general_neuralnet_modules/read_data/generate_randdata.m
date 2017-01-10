@@ -1,9 +1,9 @@
 % generate random data for testing (numerical gradient matching)
 
-train_numbats = 10;
+train_numbats = 1;
 val_numbats = 2;
 test_numbats = 2;
-sl = 100;
+sl = 30;
 
 [train_batchdata,train_batchtargets,train_clv] = gen_randdata(train_numbats,din,dout,sl,ol_type);
 [val_batchdata,val_batchtargets,val_clv] = gen_randdata(val_numbats,din,dout,sl,ol_type);

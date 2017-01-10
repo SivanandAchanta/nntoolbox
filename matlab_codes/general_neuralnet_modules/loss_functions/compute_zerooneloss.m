@@ -10,7 +10,8 @@ function [me] = compute_zerooneloss(PO,AO)
 
 [~,pidx] = max(PO,[],2);
 [~,aidx] = max(AO,[],2);
-
+% pidx
+% aidx
 me = mean(pidx ~= aidx);
 
 
