@@ -1,4 +1,9 @@
-function [der_f,varargout] = get_derf(nl,f,hcm,sl,a_tanh,b_tanh,bby2a,varargin)
+function [der_f,varargout] = get_derf(nl,f,hcm,sl,varargin)
+
+% set params of nonlinearity
+a_tanh = 1.7159;
+b_tanh = 2/3;
+bby2a = (b_tanh/(2*a_tanh));
 
 switch f
     case 'N'

@@ -1,10 +1,16 @@
-function [ac] = get_actf(f,pac,a_tanh,b_tanh,varargin)
+function [ac] = get_actf(f,pac,varargin)
+% set params of nonlinearity
+a_tanh = 1.7159;
+b_tanh = 2/3;
+bby2a = (b_tanh/(2*a_tanh));
 
 switch f
     case 'N'
         ac = a_tanh*tanh(b_tanh*pac);
     case 'S'
         ac = 1./(1+(a_tanh*exp(-(b_tanh*pac))));
+    case 'sigm'
+        ac = 1./(1+(exp(-(pac))));
     case 'R' % ReLU components
         ac = max(0,pac);
     case 'Q'
