@@ -1,0 +1,8 @@
+tacotron_v1:
+
+architecture details:
+Enc - prenet , 4 - highway layers, 1-blstm
+Att - 2 - ll
+Dec - prenet , 3 - lstm, 1 - ll
+
+

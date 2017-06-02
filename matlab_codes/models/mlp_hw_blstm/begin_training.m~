@@ -1,0 +1,19 @@
+% weight initialization
+[p_f_1] = wt_init_ll(p,gpu_flag,nout,nin,so,wtdir,wtinit_meth,sgd_type);
+[p_f_2] = wt_init_ll(p,gpu_flag,nout,nin,so,wtdir,wtinit_meth,sgd_type);
+
+[p_h_1] = wt_init_hl(p,gpu_flag,nout,nin,si,btbf,wtdir,wtinit_meth,sgd_type);
+[p_h_2] = wt_init_hl(p,gpu_flag,nout,nin,si,btbf,wtdir,wtinit_meth,sgd_type);
+[p_h_3] = wt_init_hl(p,gpu_flag,nout,nin,si,btbf,wtdir,wtinit_meth,sgd_type);
+[p_h_4] = wt_init_hl(p,gpu_flag,nout,nin,si,btbf,wtdir,wtinit_meth,sgd_type);
+
+[p_lf_1] = wt_init_lstm(p,nout,nin,si,fb_init,wtdir,wtinit_meth,sgd_type);
+[p_lb_1] = wt_init_lstm(p,nout,nin,si,fb_init,wtdir,wtinit_meth,sgd_type);
+
+[p_f_1] = wt_init_ll(p,gpu_flag,nout,nin,so,wtdir,wtinit_meth,sgd_type);
+
+% get full arch_name
+get_fullarchname
+
+% train the model
+train_lstm

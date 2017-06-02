@@ -8,8 +8,8 @@ switch sgd_type
         
     case 'adadelta'
         
-        [GW, GpmsgW, GpmsxW, GpdW] = adadelta(rho, eps_hp, mf, gW, GpmsgW, GpmsxW, GpdW, GW);
-        [Gb, Gpmsgb, Gpmsxb, Gpdb] = adadelta(rho, eps_hp, mf, gb, Gpmsgb, Gpmsxb, Gpdb, Gb);
+        [GW, GpmsgW, GpmsxW, GpdW] = adadelta(rho_hp, eps_hp, mf, gW, GpmsgW, GpmsxW, GpdW, GW);
+        [Gb, Gpmsgb, Gpmsxb, Gpdb] = adadelta(rho_hp, eps_hp, mf, gb, Gpmsgb, Gpmsxb, Gpdb, Gb);
         
     case 'adam'
         

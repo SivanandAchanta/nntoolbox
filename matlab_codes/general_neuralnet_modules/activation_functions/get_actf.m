@@ -1,8 +1,12 @@
 function [ac] = get_actf(f,pac,varargin)
+
+% pac - N x d
+% ac - N x d
+
 % set params of nonlinearity
 a_tanh = 1.7159;
 b_tanh = 2/3;
-bby2a = (b_tanh/(2*a_tanh));
+
 
 switch f
     case 'N'

@@ -1,0 +1,2 @@
+%Wi = (GWi);Wfr = (GWfr);U = (GU); bh = (Gbh); bo = (Gbo);
+save(strcat(wtdir,'W_',arch_name,'.mat'),'Gpi_1','Gp_rf_1','Gp_rb_1','Gp_rf_2','Gp_rb_2','Gp_rf_3','Gp_rb_3','Gp_rf_4','Gp_rf_4','Gpo_1','Gpo_2');

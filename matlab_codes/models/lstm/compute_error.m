@@ -1,23 +1,23 @@
-function [tot_err] = compute_error(batch_data,Wz,Rz,bz,Wi,Ri,pi,bi,Wf,Rf,pf,bf,Wo,Ro,po,bo,nl,sl,ff,U,bu,numbats,cfn)
+function [tot_err] = compute_error(data,targets,clv,numbats,Wz,Rz,bz,Wi,Ri,pi,bi,Wf,Rf,pf,bf,Wo,Ro,po,bo,U,bu,ff,nl,cfn)
 
 tot_err = 0;
+gpu_flag = 0;
 
 for li  = 1:numbats
     
-    X   = get_X(batch_data,li);
+    [X,Y,sl] = get_XY_seqver(data, targets, clv, (1:numbats), li, gpu_flag);
     
     % Forward Pass
-    [~,~,~,~,~,~,~,ym] = fp_lstmsg_test(Wz,Rz,bz,Wi,Ri,pi,bi,Wf,Rf,pf,bf,Wo,Ro,po,bo,nl,sl,ff,U,bu);
+    [~,~,~,~,~,~,~,ol_mat] = fp_lstm(X,Wz,Rz,bz,Wi,Ri,pi,bi,Wf,Rf,pf,bf,Wo,Ro,po,bo,nl,sl,ff,U,bu);
     
     % Cost Funtion
     switch cfn
+        case 'nll'
+            me = compute_zerooneloss(ol_mat,Y);
         case 'ls'
-            J   = mean(sum(power((X - ym),2),2));
-        case  'nll'
-            J   = mean(sum((-X.*log(ym)),2));
-            
+            me = compute_nmlMSE(ol_mat,Y);
     end
-    
-    tot_err     = tot_err + J/numbats;
+ 
+    tot_err     = tot_err + me/numbats;
     
 end

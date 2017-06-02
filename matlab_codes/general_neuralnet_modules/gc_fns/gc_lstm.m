@@ -1,0 +1,9 @@
+function [p] = gc_lstm(p,gcth)
+[p.gWz]  = gc(p.gWz,gcth);
+[p.gRz]  = gc(p.gRz,gcth);
+[p.gWi]  = gc(p.gWi,gcth);
+[p.gRi]  = gc(p.gRi,gcth);
+[p.gWf]  = gc(p.gWf,gcth);
+[p.gRf]  = gc(p.gRf,gcth);
+[p.gWo]  = gc(p.gWo,gcth);
+[p.gRo]  = gc(p.gRo,gcth);

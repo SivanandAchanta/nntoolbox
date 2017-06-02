@@ -38,21 +38,20 @@
 ###########################################################################
 %}
 
-clear all; close all; 
-%clc;
+clear all; close all; clc;
 
 % Load configuration file
-config_spss
-% config
+config
 
 % Step 1 : Read data
-readdata_rnn
-% generate_randdata
-train_test_numbats = round(train_numbats/2);
+if gradCheckFlag
+    generate_randdata
+else
+    readdata_rnn
+end
 
 % Step 2 : Set architecture
-arch_name1 = strcat(arch_name1,num2str(dout),ol_type);
-arch_init
+arch_setup_step
 
 % set hyper params
 switch sgd_type
@@ -65,29 +64,10 @@ switch sgd_type
         
         for l2 = l2_vec
             for lr = lr_vec
-                for mf = mf_vec
-                    
-                    % Step 4 : Weight initialization
-                    wt_init
-                    
-                    arch_name2 = strcat('_l2',num2str(l2),'_lr',num2str(lr),'_mf',num2str(mf),'_',wtinit_meth,'_',in_nml_meth,'_',out_nml_meth);
-                    arch_name = strcat(arch_name1,arch_name2,'_',num2str(nwt))
-                    
-                    if gpu_flag
-                        disp('training on GPU !!! :) ');
-                        Gb = gpuArray(b);  GW = gpuArray(W);
-                        Gpdb = gpuArray(zeros(size(b)));  GpdW = gpuArray(zeros(size(W)));
-                    else
-                        disp('training on CPU ... ');
-                        Gb = b;  GW = W;
-                        Gpdb = zeros(size(b));  GpdW = zeros(size(W));
-                    end
-                    
-                    trainer
-                    
+                for mf = mf_vec                    
+                    begin_training                    
                 end
             end
-            
         end
         
         
@@ -99,39 +79,13 @@ switch sgd_type
         disp('training with ADA-DELTA optimizer ...');
         
         for l2 = l2_vec
-            for rho = rho_vec
+            for rho_hp = rho_vec
                 for eps_hp = eps_vec
-                    for mf = mf_vec
-                        
-                        % Step 4 : Weight initialization
-                        wt_init
-                        
-                        arch_name2 = strcat('_l2',num2str(l2),'_rho',num2str(rho),'_eps',num2str(eps_hp),'_mf',num2str(mf),'_',in_nml_meth,'_',out_nml_meth);
-                        arch_name = strcat(arch_name1,arch_name2,'_',num2str(nwt))
-                        
-                        if gpu_flag
-                            disp('training on GPU ... :) ');
-                            Gb = gpuArray(b);
-                            GW = gpuArray(W);
-                            Gpdb = gpuArray(zeros(size(b)));  GpdW = gpuArray(zeros(size(W)));
-                            Gpmsgb = gpuArray(zeros(1,btl(end)-1));  GpmsgW = gpuArray(zeros(1,wtl(end)-1));
-                            Gpmsxb = gpuArray(zeros(1,btl(end)-1));  GpmsxW = gpuArray(zeros(1,wtl(end)-1));
-                            
-                        else
-                            disp('training on CPU ... ');
-                            Gb = b;  GW = W;
-                            Gpdb = zeros(size(b));  GpdW = zeros(size(W));
-                            Gpmsgb = zeros(1,btl(end)-1);  GpmsgW = zeros(1,wtl(end)-1);
-                            Gpmsxb = zeros(1,btl(end)-1);  GpmsxW = zeros(1,wtl(end)-1);
-                            
-                        end
-                        
-                        trainer
-                        
+                    for mf = mf_vec                        
+                        begin_training                        
                     end
                 end
-            end
-            
+            end            
         end
         
     case 'adam'
@@ -144,33 +98,8 @@ switch sgd_type
         for l2 = l2_vec
             for alpha = alpha_vec
                 for beta1 = beta1_vec
-                    for beta2 = beta2_vec
-                        
-                        % Step 4 : Weight initialization
-                        wt_init
-                        
-                        arch_name2 = strcat('_l2',num2str(l2),'alpha',num2str(alpha),'_b1',num2str(beta1),'_b2',num2str(beta2),'_',wtinit_meth,'_',in_nml_meth,'_',out_nml_meth);
-                        arch_name = strcat(arch_name1,arch_name2,'_',num2str(nwt))
-                        
-                        if gpu_flag
-                            fprintf('training on GPU !!! :) \n');
-                            Gb = gpuArray(b);
-                            GW = gpuArray(W);
-                            Gpmb = gpuArray(zeros(1,btl(end)-1));
-                            GpmW = gpuArray(zeros(1,wtl(end)-1));
-                            Gpvb = gpuArray(zeros(1,btl(end)-1));
-                            GpvW = gpuArray(zeros(1,wtl(end)-1));
-                            
-                        else
-                            disp('training on CPU ... ');
-                            Gb = b;  GW = W;
-                            Gpmb = zeros(1,btl(end)-1);  GpmW = zeros(1,wtl(end)-1);
-                            Gpvb = zeros(1,btl(end)-1);  GpvW = zeros(1,wtl(end)-1);
-                            
-                        end
-                        
-                        trainer
-                        
+                    for beta2 = beta2_vec                        
+                        begin_training
                     end
                 end
             end

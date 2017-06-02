@@ -1,0 +1,9 @@
+[gWz]  = gc(gWz,gcth);
+[gRz]  = gc(gRz,gcth);
+[gWi]  = gc(gWi,gcth);
+[gRi]  = gc(gRi,gcth);
+[gWf]  = gc(gWf,gcth);
+[gRf]  = gc(gRf,gcth);
+[gWo]  = gc(gWo,gcth);
+[gRo]  = gc(gRo,gcth);
+[gU]   = gc(gU,gcth);

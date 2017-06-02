@@ -47,20 +47,20 @@ switch wtinit_meth
         Wi = si*randn(nl(1),nl(2));
         Wfr = ri*eye(nl(2));
         U = so*randn(nl(2),nl(3));
-                
+        
     case 'lw'
         % Load pre-stored weights ... (Note architecture name must be specified !!!)
-        % arch_name = '247L250R78L_rnn_di_l20_lr0.0001_mf0.3_gc1_si0.01_ri0.1_so0.01_rnn_mvni_mvno_50' 
+        % arch_name = '247L250R78L_rnn_di_l20_lr0.0001_mf0.3_gc1_si0.01_ri0.1_so0.01_rnn_mvni_mvno_50'
         % arch_name = '247L500R78L_rnn_di_l20_lr0.001_mf0.3_gc1_si0.01_ri0.01_so0.01_rnn_mvni_mvno_34'
         % arch_name = '247L300N78L_rnn_di_l20_lr0.03_mf0.3_gc1_si0.01_ri0.1_so0.01_rnn_mvni_mvno_37'
         arch_name = '247L500E150L_rnn_di_l20_lr0.003_mf0.3_gc1_si0.01_ri0.1_so0.01_rnn_mvni_mvno_40'
- 
+        
         load(strcat(wtdir,'W_',arch_name,'.mat'))
         Wi = Wi';
-	U = U';
-	bh = bh';
-	bo = bo';
-
+        U = U';
+        bh = bh';
+        bo = bo';
+        
         
     case 'yi'
         % Yoshua Initialization Scheme
@@ -99,7 +99,7 @@ switch wtinit_meth
         Wfr = g*maxweight*randn(nl(2),nl(2));
         maxweight = 1/nl(3);
         U = maxweight*randn(nl(2),nl(3));
-
+        
     case 'np'
         
         maxweight = 1/nl(1);
@@ -108,16 +108,16 @@ switch wtinit_meth
         else
             g = 1.2;
         end
-
+        
         Wi = maxweight*g*randn(nl(1),nl(2));
-
+        
         R = randn(nl(2));
         A = 1/nl(2)*(R'*R);
         e = abs(eigs(A,1,'lm',opts))
         Wfr = A/e;
         e = abs(eigs(Wfr,1,'lm',opts))
-        clear R A e        
-        U = so*randn(nl(2),nl(3)); 
+        clear R A e
+        U = so*randn(nl(2),nl(3));
 end
 
 Wi = Wi';
@@ -132,3 +132,54 @@ size(bh)
 size(Wfr)
 size(U)
 size(bo)
+
+
+switch sgd_type
+    case 'sgdcm'
+        if gpu_flag
+            GWi = gpuArray(Wi);  GWfr = gpuArray(Wfr); GU = gpuArray(U); Gbh = gpuArray(bh); Gbo = gpuArray(bo);
+            GpdWi = gpuArray(zeros(size(Wi)));  GpdWfr = gpuArray(zeros(size(Wfr))); GpdU = gpuArray(zeros(size(U)));
+            Gpdbh = gpuArray(zeros(size(bh))); Gpdbo = gpuArray(zeros(size(bo)));
+        else
+            GWi = Wi;  GWfr = Wfr; GU = U; Gbh = bh; Gbo = bo;
+            GpdWi = zeros(size(Wi));  GpdWfr = zeros(size(Wfr)); GpdU = zeros(size(U));
+            Gpdbh = zeros(size(bh)); Gpdbo = zeros(size(bo));
+        end
+        
+        
+        
+    case 'adadelta'
+        if gpu_flag
+            GWi = gpuArray(Wi);  GWfr = gpuArray(Wfr); GU = gpuArray(U); Gbh = gpuArray(bh); Gbo = gpuArray(bo);
+            GpdWi = gpuArray(zeros(size(Wi)));  GpdWfr = gpuArray(zeros(size(Wfr))); GpdU = gpuArray(zeros(size(U)));
+            Gpdbh = gpuArray(zeros(size(bh))); Gpdbo = gpuArray(zeros(size(bo)));
+            GpmsgWi = gpuArray(zeros(size(Wi)));  GpmsgWfr = gpuArray(zeros(size(Wfr))); GpmsgU = gpuArray(zeros(size(U)));
+            Gpmsgbh = gpuArray(zeros(size(bh))); Gpmsgbo = gpuArray(zeros(size(bo)));
+            GpmsxWi = gpuArray(zeros(size(Wi)));  GpmsxWfr = gpuArray(zeros(size(Wfr))); GpmsxU = gpuArray(zeros(size(U)));
+            Gpmsxbh = gpuArray(zeros(size(bh))); Gpmsxbo = gpuArray(zeros(size(bo)));
+        else
+            GWi = Wi;  GWfr = Wfr; GU = U; Gbh = bh; Gbo = bo;
+            GpdWi = zeros(size(Wi));  GpdWfr = zeros(size(Wfr)); GpdU = zeros(size(U));
+            Gpdbh = zeros(size(bh)); Gpdbo = zeros(size(bo));
+            GpmsgWi = zeros(size(Wi));  GpmsgWfr = zeros(size(Wfr)); GpmsgU = zeros(size(U));
+            Gpmsgbh = zeros(size(bh)); Gpmsgbo = zeros(size(bo));
+            GpmsxWi = zeros(size(Wi));  GpmsxWfr = zeros(size(Wfr)); GpmsxU = zeros(size(U));
+            Gpmsxbh = zeros(size(bh)); Gpmsxbo = zeros(size(bo));
+        end
+        
+    case 'adam'
+        if gpu_flag
+            GWi = gpuArray(Wi);  GWfr = gpuArray(Wfr); GU = gpuArray(U); Gbh = gpuArray(bh); Gbo = gpuArray(bo);
+            GpmWi = gpuArray(zeros(size(Wi)));  GpmWfr = gpuArray(zeros(size(Wfr))); GpmU = gpuArray(zeros(size(U)));
+            Gpmbh = gpuArray(zeros(size(bh))); Gpmbo = gpuArray(zeros(size(bo)));
+            GpvWi = gpuArray(zeros(size(Wi)));  GpvWfr = gpuArray(zeros(size(Wfr))); GpvU = gpuArray(zeros(size(U)));
+            Gpvbh = gpuArray(zeros(size(bh))); Gpvbo = gpuArray(zeros(size(bo)));
+        else
+            GWi = Wi;  GWfr = Wfr; GU = U; Gbh = bh; Gbo = bo;
+            GpmWi = zeros(size(Wi));  GpmWfr = zeros(size(Wfr)); GpmU = zeros(size(U));
+            Gpmbh = zeros(size(bh)); Gpmbo = zeros(size(bo));
+            GpvWi = zeros(size(Wi));  GpvWfr = zeros(size(Wfr)); GpvU = zeros(size(U));
+            Gpvbh = zeros(size(bh)); Gpvbo = zeros(size(bo));
+        end
+        
+end

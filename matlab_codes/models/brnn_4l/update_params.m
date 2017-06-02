@@ -1,0 +1,11 @@
+[Gpi_1] = update_params_ll(Gpi_1,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[Gp_rf_1] = update_params_rnn(Gp_rf_1,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[Gp_rb_1] = update_params_rnn(Gp_rb_1,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[Gp_rf_2] = update_params_rnn(Gp_rf_2,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[Gp_rb_2] = update_params_rnn(Gp_rb_2,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[Gp_rf_3] = update_params_rnn(Gp_rf_3,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[Gp_rb_3] = update_params_rnn(Gp_rb_3,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[Gp_rf_4] = update_params_rnn(Gp_rf_4,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[Gp_rb_4] = update_params_rnn(Gp_rb_4,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[Gpo_1] = update_params_ll_ow(Gpo_1,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[Gpo_2] = update_params_ll(Gpo_2,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);

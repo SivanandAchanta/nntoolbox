@@ -1,0 +1,11 @@
+[Gpi_1] = gc_ll(Gpi_1,gcth);
+[Gp_rf_1] = gc_rnn(Gp_rf_1,gcth);
+[Gp_rb_1] = gc_rnn(Gp_rb_1,gcth);
+[Gp_rf_2] = gc_rnn(Gp_rf_2,gcth);
+[Gp_rb_2] = gc_rnn(Gp_rb_2,gcth);
+[Gp_rf_3] = gc_rnn(Gp_rf_3,gcth);
+[Gp_rb_3] = gc_rnn(Gp_rb_3,gcth);
+[Gp_rf_4] = gc_rnn(Gp_rf_4,gcth);
+[Gp_rb_4] = gc_rnn(Gp_rb_4,gcth);
+[Gpo_1] = gc_ll(Gpo_1,gcth);
+[Gpo_2] = gc_ll(Gpo_2,gcth);

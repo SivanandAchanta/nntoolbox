@@ -1,0 +1,72 @@
+function [gWn] = compute_NumericalGrad(W,Wt,b,bt,p2,p3,X,Y,f,nl,sl,cfn,W_toCheck,argno,gpu_flag,lno)
+
+
+W1 = W;
+W2 = Wt;
+W3 = b;
+W4 = bt;
+
+% perturbation magnitude at x
+h = 1e-5;
+
+% Compute the numerical gradient
+[nr,nc]  = size(W_toCheck);
+
+if gpu_flag
+    gWn      = gpuArray(zeros(nr,nc));
+else
+    gWn      = (zeros(nr,nc));
+end
+
+for cc = 1:nc
+    for cr = 1:nr
+        
+        switch argno
+            case 1
+                W1 = W_toCheck; W1(cr,cc) = W1(cr,cc) + h;
+            case 2
+                W2 = W_toCheck; W2(cr,cc) = W2(cr,cc) + h;        
+            case 3
+                W3 = W_toCheck; W3(cr,cc) = W3(cr,cc) + h;
+            case 4
+                W4 = W_toCheck; W4(cr,cc) = W4(cr,cc) + h;        
+                
+        end
+        
+        if 
+        p1.W = W1;
+        p1.Wt = W2;
+        p1.b = W3;
+        p1.bt = W4;
+        
+        [f_xph] = compute_Fofx(X,Y,p1,p2,p3,f,nl,sl,cfn);
+        
+        switch argno
+            case 1
+                W1 = W_toCheck; W1(cr,cc) = W1(cr,cc) - h;
+            case 2
+                W2 = W_toCheck; W2(cr,cc) = W2(cr,cc) - h;        
+            case 3
+                W3 = W_toCheck; W3(cr,cc) = W3(cr,cc) - h;
+            case 4
+                W4 = W_toCheck; W4(cr,cc) = W4(cr,cc) - h;        
+            case 5
+                W5 = W_toCheck; W5(cr,cc) = W5(cr,cc) - h;
+            case 6
+                W6 = W_toCheck; W6(cr,cc) = W6(cr,cc) - h;
+                
+        end
+        
+        p1.W = W1;
+        p1.Wt = W2;
+        p1.b = W3;
+        p1.bt = W4;
+        
+        [f_xnh] = compute_Fofx(X,Y,p1,p2,p3,f,nl,sl,cfn);
+        
+        gWn(cr,cc) = (f_xph-f_xnh)/(2*h);
+    end
+end
+
+
+end
