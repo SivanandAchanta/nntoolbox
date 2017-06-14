@@ -24,7 +24,11 @@ switch wtinit_meth
         Wc = si*randn(nout,nin);
         Rc = ri*randn(nout,nout);
         bc = zeros(nout,1);
-        
+
+    otherwise
+
+        fprintf('Please enter any of the above initialization methods \n');
+        return        
 end
 p.Wz = Wz;
 p.Rz = Rz;

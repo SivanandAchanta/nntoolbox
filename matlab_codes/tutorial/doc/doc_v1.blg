@@ -1,0 +1,164 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: doc_v1.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: /home/sivanand/Dropbox/drafts/mybib.bib
+You're missing a field part---line 24 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ :    eid = 
+ :          ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 145 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ :    eid = 
+ :          ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 157 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ :    eid = 
+ :          ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 558 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ :    
+ :    %Publisher = {JMLR Workshop and Conference Proceedings},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 920 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : % pages = {submitted to}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1055 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : %     volume={1},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1090 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ :   
+ :   %publisher = {ISCA},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1098 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : %  publisher = {Association for Computational Linguistics},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1174 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ :   
+ :   %pdf = {http://www.cstr.inf.ed.ac.uk/downloads/publications/2011/watts_yamagishi_king_2011.pdf},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1195 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : %   publisher={IEEE}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1234 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : %   title={Formant analysis and synthesis using hidden Markov models},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1279 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : @article{rosen,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1666 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ :   
+ :   %pages={857--860},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1786 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : %   organization={Citeseer}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1793 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : %   organization={Citeseer}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1801 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : %   publisher = {ISCA},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1818 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : %     publisher = {ISCA},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1827 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : % volume={4},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1851 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : % publisher    = {International Speech Communication Association},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1977 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ : 
+ : %   pages={2524--2528},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1995 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ :   
+ :   %organization={IEEE}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2416 of file /home/sivanand/Dropbox/drafts/mybib.bib
+ :   
+ :   booktitle={Proc. LREC},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 2 entries,
+            4039 wiz_defined-function locations,
+            823 strings with 7790 characters,
+and the built_in function-call counts, 1497 in all, are:
+= -- 100
+> -- 70
+< -- 2
++ -- 34
+- -- 17
+* -- 97
+:= -- 257
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 104
+empty$ -- 103
+format.name$ -- 19
+if$ -- 308
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 27
+newline$ -- 33
+num.names$ -- 2
+pop$ -- 69
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 102
+stack$ -- 0
+substring$ -- 2
+swap$ -- 76
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 2
+warning$ -- 0
+while$ -- 2
+width$ -- 3
+write$ -- 46
+(There were 22 error messages)

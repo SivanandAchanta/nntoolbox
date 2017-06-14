@@ -106,7 +106,11 @@ switch wtinit_meth
         maxweight = 1/nout;
         p.Wt = g*maxweight*randn(nout,nout);
         maxweight = 1/nl(3);
-        
+
+    otherwise
+
+        fprintf('Please enter any of the above initialization methods \n');
+        return        
         
 end
 

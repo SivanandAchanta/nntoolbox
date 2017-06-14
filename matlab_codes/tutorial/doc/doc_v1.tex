@@ -1,0 +1,84 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\title{The Speech Processing Lab NN Toolkit (SPLNNTK)}
+\author{Sivanand Achanta}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+%\begin{abstract}
+%\end{abstract}
+\newpage
+
+\section{Introduction}
+The goal of building this toolkit is to make a wide variety of neural network (NN) architectures accessible to those who are more familiar with MATLAB/OCTAVE than other programming languages like python. This document describes various features of the toolkit and also how to train different models. 
+
+The following architectures are present in the toolkit.
+\begin{itemize}
+\item DNN
+\item RNN
+\item GRU
+\item LSTM
+\item Highway Layer
+\item CBHG \cite{cbhg}
+\item Tacotron (seq2seq) \cite{tacotron}
+\end{itemize}
+
+
+
+\section{Directory Structure}
+There are three main directories in the toolkit.
+\begin{itemize}
+\item general\_neuralnet\_modules
+\item models
+\item tutorial
+\end{itemize}
+
+\subsection{general\_neuralnet\_modules:}
+This directory has functions that are useful as building blocks to all neural architectures. There are several sub-directories in this folder a brief description of each of them is given below.
+
+\begin{enumerate}
+\item[] activation\_functions
+\item[] attention\_functions
+\item[] configninit\_fns
+\item[] fp\_bp\_fns
+\item[] gc\_fns
+\item[] generate\_data
+\item[] get\_oplayer\_error
+\item[] get\_XY
+\item[] gradient\_operations
+\item[] layer\_index\_functions
+\item[] loss\_functions
+\item[] make\_batches
+\item[] normalization\_functions
+\item[] optim\_methods
+\item[] read\_data
+\item[] update\_params\_fns
+\item[] weight\_operations
+\item[] wtinit\_fns
+\end{enumerate}
+
+\subsection{models:}
+This directory is mainly for developers. Back-propagation check using numerical gradients is carried out for each of the neural architectures before moving them to tutorial directory.
+
+\subsection{tutorial:}
+This is the working directory useful for training and testing NNs.
+
+\begin{itemize}
+\item generic : contains general call functions for training neural net (mostly these are architecture independent)
+\item basic : contains DNN, RNN, DRNN (2layers), LSTM, LSTM-2l, GRU, GRU-2l, BLSTM, HL
+\item adv : contains CBHG, Tacotron (seq2seq)
+\end{itemize}
+
+\section{Example Run}
+
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{/home/sivanand/Dropbox/drafts/mybib}
+
+\end{document}

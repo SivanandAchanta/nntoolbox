@@ -32,8 +32,7 @@ switch wtinit_meth
         if set_specradflag
             p.Wfr = p.Wfr*(specrad/abs(eigs(p.Wfr,1,'lm',opts)));
         end
-        
-        
+           
     case 'di'
         % Sparse Initialization
         
@@ -41,6 +40,16 @@ switch wtinit_meth
         scale_in = 1/nout;
         scale_hid = 1/nout;
         
+        p.Wi = si*randn(nin,nout);
+        p.Wfr = ri*eye(nout);
+
+    case 'gi'
+        % Sparse Initialization
+
+        % "A Simple Way to Initialize RNNs using ReLp.U,", Q.V.Le, N.Jaitly and GEH
+        scale_in = 1/nout;
+        scale_hid = 1/nout;
+
         p.Wi = si*randn(nin,nout);
         p.Wfr = ri*eye(nout);
         
@@ -75,6 +84,7 @@ switch wtinit_meth
         p.Wi = maxweight*randn(nin,nout);
         maxweight = sqrt(2/nout);
         p.Wfr = maxweight*randn(nout,nout);
+
     case 'rw'
         % Ref : "Random Walk Initalization for training very deep FFNNs" and "A Simple Way to Initalize Recurrent Neural Nets"
         
@@ -108,6 +118,12 @@ switch wtinit_meth
         p.Wfr = A/e;
         e = abs(eigs(p.Wfr,1,'lm',opts))
         clear R A e
+
+     otherwise
+
+        fprintf('Please enter any of the above initialization methods \n');
+        return
+
         
 end
 

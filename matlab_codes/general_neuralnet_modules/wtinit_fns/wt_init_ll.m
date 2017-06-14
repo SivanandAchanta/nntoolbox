@@ -64,6 +64,12 @@ switch wtinit_meth
         
     case 'np'
         p.U = so*randn(nin,nout);
+
+    otherwise
+
+        fprintf('Please enter any of the above initialization methods \n');
+        return
+
 end
 
 p.U = p.U';

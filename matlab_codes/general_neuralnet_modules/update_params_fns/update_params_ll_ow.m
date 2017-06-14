@@ -7,7 +7,7 @@ switch sgd_type
         
     case 'adadelta'
         
-        [p.U, p.pmsgU, p.pmsxU, p.pdU] = adadelta(rho_hp, eps_hp, mf, p.gU, p.pmsgU, p.pmsxU, p.pdU, p.U);
+        [p.U, p.pmsgU, p.pmxgU, p.pdU] = adadelta(rho_hp, eps_hp, mf, p.gU, p.pmsgU, p.pmxgU, p.pdU, p.U);
         
     case 'adam'
         

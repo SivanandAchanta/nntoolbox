@@ -31,7 +31,11 @@ switch wtinit_meth
         pi = zeros(nout,1);
         pf = zeros(nout,1);
         po = zeros(nout,1);
-        
+
+    otherwise
+
+        fprintf('Please enter any of the above initialization methods \n');
+        return        
 end
 
 p.Wz = Wz;

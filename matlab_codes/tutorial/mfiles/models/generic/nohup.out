@@ -1,0 +1,376 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016a (9.0.0.341360) 64-bit (glnxa64)
+                             February 11, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> >> >> >> >> >> 
+model_name =
+
+hl
+
+
+numepochs =
+
+    10
+
+
+gpu_flag =
+
+     0
+
+
+sgd_type =
+
+sgdcm
+
+
+arch_name1 =
+
+257N257N
+
+
+ol_type =
+
+L
+
+
+cfn =
+
+ls
+
+
+wtinit_meth =
+
+gi
+
+
+check_valfreq =
+
+    10
+
+
+gradCheckFlag =
+
+     0
+
+
+train_test_ratio =
+
+    10
+
+
+gcth_vec =
+
+     1
+
+
+l1_vec =
+
+     0
+
+
+l2_vec =
+
+     0
+
+
+dp =
+
+    0.5000
+
+
+in_nml_meth =
+
+mvni
+
+
+out_nml_meth =
+
+mvno
+
+
+datadir =
+
+../../../matfiles_16KHz/
+
+[Warning: Directory already exists.] 
+[> In config_basic (line 46)] 
+[Warning: Directory already exists.] 
+[> In config_basic (line 47)] 
+>> >> >> Loading batch 1 ... 
+Normalizing input feats using mean variance normalization ...
+Normalizing output feats using mean variance normalization ...
+Size of the training dataset   800 
+size of train i/o data
+
+Nin =
+
+   800
+
+
+din =
+
+   257
+
+
+Nout =
+
+   800
+
+
+dout =
+
+   257
+
+Number of Train, Validation and Test Batches ...
+
+train_numbats =
+
+     8
+
+
+val_numbats =
+
+     1
+
+
+test_numbats =
+
+     1
+
+>> >> >> 
+arch_name1 =
+
+257L257N257N257L
+
+>> >> >> size of weight matrices
+
+ans =
+
+   257   257
+
+
+ans =
+
+   257     1
+
+
+ans =
+
+   257   257
+
+
+ans =
+
+   257     1
+
+size of weight matrices
+
+ans =
+
+   257   257
+
+
+ans =
+
+   257     1
+
+
+ans =
+
+   257   257
+
+
+ans =
+
+   257     1
+
+size of weight matrices
+
+ans =
+
+   257   257
+
+
+ans =
+
+   257     1
+
+
+arch_name =
+
+257L257N257N257L_hl_gi_lr0.1_mf0_si0.1_so0.1_btbf0_gi_57
+
+Time taken for Epoch : 1 is 0.365224 sec 
+Elapsed time is 0.012414 seconds.
+Elapsed time is 0.003938 seconds.
+Epoch : 2 Update : 10  Train Loss : 0.644004 Val Loss : 1.445411 
+Elapsed time is 0.004440 seconds.
+	 Update : 10  Test Loss : 1.445411 
+Elapsed time is 0.141820 seconds.
+Time taken for Epoch : 2 is 0.227018 sec 
+Elapsed time is 0.007064 seconds.
+Elapsed time is 0.004438 seconds.
+Epoch : 3 Update : 20  Train Loss : 0.598447 Val Loss : 1.417321 
+Elapsed time is 0.002712 seconds.
+	 Update : 20  Test Loss : 1.417321 
+Elapsed time is 0.136191 seconds.
+Time taken for Epoch : 3 is 0.216436 sec 
+Elapsed time is 0.004158 seconds.
+Elapsed time is 0.002943 seconds.
+Epoch : 4 Update : 30  Train Loss : 0.556944 Val Loss : 1.463345 
+Elapsed time is 0.003212 seconds.
+Time taken for Epoch : 4 is 0.065759 sec 
+Elapsed time is 0.004730 seconds.
+Elapsed time is 0.002688 seconds.
+Epoch : 5 Update : 40  Train Loss : 0.524186 Val Loss : 1.513411 
+Elapsed time is 0.002956 seconds.
+Time taken for Epoch : 5 is 0.069167 sec 
+Time taken for Epoch : 6 is 0.058754 sec 
+Elapsed time is 0.004097 seconds.
+Elapsed time is 0.003279 seconds.
+Epoch : 7 Update : 50  Train Loss : 0.440923 Val Loss : 1.577443 
+Elapsed time is 0.003702 seconds.
+Time taken for Epoch : 7 is 0.066058 sec 
+Elapsed time is 0.003884 seconds.
+Elapsed time is 0.002869 seconds.
+Epoch : 8 Update : 60  Train Loss : 0.414984 Val Loss : 1.636732 
+Elapsed time is 0.003043 seconds.
+Time taken for Epoch : 8 is 0.075624 sec 
+Elapsed time is 0.004464 seconds.
+Elapsed time is 0.002733 seconds.
+Epoch : 9 Update : 70  Train Loss : 0.317197 Val Loss : 1.689239 
+Elapsed time is 0.002897 seconds.
+Time taken for Epoch : 9 is 0.068139 sec 
+Elapsed time is 0.003930 seconds.
+Elapsed time is 0.002467 seconds.
+Epoch : 10 Update : 80  Train Loss : 0.299442 Val Loss : 1.732571 
+Elapsed time is 0.002624 seconds.
+Time taken for Epoch : 10 is 0.069147 sec 
+Best loss obtained at Epoch : 3; Val Loss: 1.417321   Test Loss: 1.417321 
+size of weight matrices
+
+ans =
+
+   257   257
+
+
+ans =
+
+   257     1
+
+
+ans =
+
+   257   257
+
+
+ans =
+
+   257     1
+
+size of weight matrices
+
+ans =
+
+   257   257
+
+
+ans =
+
+   257     1
+
+
+ans =
+
+   257   257
+
+
+ans =
+
+   257     1
+
+size of weight matrices
+
+ans =
+
+   257   257
+
+
+ans =
+
+   257     1
+
+
+arch_name =
+
+257L257N257N257L_hl_gi_lr0.01_mf0_si0.1_so0.1_btbf0_gi_58
+
+Time taken for Epoch : 1 is 0.059356 sec 
+Elapsed time is 0.004150 seconds.
+Elapsed time is 0.002382 seconds.
+Epoch : 2 Update : 10  Train Loss : 1.923783 Val Loss : 2.137951 
+Elapsed time is 0.002326 seconds.
+	 Update : 10  Test Loss : 2.137951 
+Elapsed time is 0.133811 seconds.
+Time taken for Epoch : 2 is 0.200295 sec 
+Elapsed time is 0.004560 seconds.
+Elapsed time is 0.002398 seconds.
+Epoch : 3 Update : 20  Train Loss : 1.483224 Val Loss : 1.949008 
+Elapsed time is 0.002937 seconds.
+	 Update : 20  Test Loss : 1.949008 
+Elapsed time is 0.135386 seconds.
+Time taken for Epoch : 3 is 0.201635 sec 
+Elapsed time is 0.011785 seconds.
+Elapsed time is 0.002714 seconds.
+Epoch : 4 Update : 30  Train Loss : 1.320924 Val Loss : 1.832868 
+Elapsed time is 0.003164 seconds.
+	 Update : 30  Test Loss : 1.832868 
+Elapsed time is 0.137695 seconds.
+Time taken for Epoch : 4 is 0.215162 sec 
+Elapsed time is 0.004057 seconds.
+Elapsed time is 0.002357 seconds.
+Epoch : 5 Update : 40  Train Loss : 1.206237 Val Loss : 1.753271 
+Elapsed time is 0.002455 seconds.
+	 Update : 40  Test Loss : 1.753271 
+Elapsed time is 0.134959 seconds.
+Time taken for Epoch : 5 is 0.199347 sec 
+Time taken for Epoch : 6 is 0.059468 sec 
+Elapsed time is 0.003890 seconds.
+Elapsed time is 0.002380 seconds.
+Epoch : 7 Update : 50  Train Loss : 1.053873 Val Loss : 1.699418 
+Elapsed time is 0.004572 seconds.
+	 Update : 50  Test Loss : 1.699418 
+Elapsed time is 0.136846 seconds.
+Time taken for Epoch : 7 is 0.207642 sec 
+Elapsed time is 0.003875 seconds.
+Elapsed time is 0.002667 seconds.
+Epoch : 8 Update : 60  Train Loss : 0.999283 Val Loss : 1.658760 
+Elapsed time is 0.002358 seconds.
+	 Update : 60  Test Loss : 1.658760 
+Elapsed time is 0.133973 seconds.
+Time taken for Epoch : 8 is 0.203007 sec 
+Elapsed time is 0.004049 seconds.
+Elapsed time is 0.002389 seconds.
+Epoch : 9 Update : 70  Train Loss : 0.953384 Val Loss : 1.628864 
+Elapsed time is 0.002342 seconds.
+	 Update : 70  Test Loss : 1.628864 
+Elapsed time is 0.135291 seconds.
+Time taken for Epoch : 9 is 0.204787 sec 
+Elapsed time is 0.003899 seconds.
+Elapsed time is 0.002693 seconds.
+Epoch : 10 Update : 80  Train Loss : 0.915917 Val Loss : 1.606483 
+Elapsed time is 0.002405 seconds.
+	 Update : 80  Test Loss : 1.606483 
+Elapsed time is 0.135981 seconds.
+Time taken for Epoch : 10 is 0.202573 sec 
+Best loss obtained at Epoch : 10; Val Loss: 1.606483   Test Loss: 1.606483 
+>> >> 
