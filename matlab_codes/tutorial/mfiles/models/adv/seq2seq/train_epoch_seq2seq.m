@@ -4,7 +4,11 @@ for i = 1:train_numbats
     num_up = num_up + 1;
     
     % get data
-    [X,Y,Yp,sl_enc,sl_dec] = get_XY_seq2seq(train_batchdata, train_batchtargets, train_clv_s, train_clv_t, rp, i);
+    [X,Y,Yp,sl_enc,sl_dec] = get_XY_seq2seq_opembedding(train_batchdata, train_batchtargets, train_clv_s, train_clv_t, rp, i, Em);
+    
+    if sl_enc > 1000
+       continue
+    end
     
     % fp and bp
     fp_model

@@ -40,9 +40,11 @@ dec_rnn_ip_2 = [hfmd2 cm];
 
 % Final Output Layer
 ac = p_f_4_1_dec.U*hfmd3';        
-ym1 = bsxfun(@plus,ac,p_f_4_1_dec.bu)';
-ac = p_f_4_2_dec.U*hfmd3';        
-ym2 = bsxfun(@plus,ac,p_f_4_2_dec.bu)';
+ac = bsxfun(@plus,ac,p_f_4_1_dec.bu)';
+ym1 = get_actf(f(end),ac);
 
-ym = [ym1 ym2];
+%ac = p_f_4_2_dec.U*hfmd3';        
+%ym2 = bsxfun(@plus,ac,p_f_4_2_dec.bu)';
+
+ym = [ym1];
 

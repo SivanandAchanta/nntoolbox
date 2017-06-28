@@ -1,0 +1,8 @@
+seq2seq with attention:
+
+architecture details:
+Enc - 1/2/3 blstm layers
+Att - 2 - ll
+Dec - 3 - lstm, 1 - ll
+
+

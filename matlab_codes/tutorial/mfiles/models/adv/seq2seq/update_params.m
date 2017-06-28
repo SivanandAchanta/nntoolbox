@@ -22,7 +22,7 @@ end
 
 % attention
 [p_f_3_0] = update_params_ll_ob(p_f_3_0,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
-[p_f_3_1] = update_params_ll_ow(p_f_3_1,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+[p_f_3_1] = update_params_ll(p_f_3_1,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
 [p_f_3_2] = update_params_ll_ow(p_f_3_2,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
 
 % decoder
@@ -30,4 +30,4 @@ end
 [p_lf_2_dec] = update_params_lstm(p_lf_2_dec,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
 [p_lf_3_dec] = update_params_lstm(p_lf_3_dec,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
 [p_f_4_1_dec] = update_params_ll(p_f_4_1_dec,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
-[p_f_4_2_dec] = update_params_ll(p_f_4_2_dec,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);
+%[p_f_4_2_dec] = update_params_ll(p_f_4_2_dec,sgd_type,lr,mf,rho_hp,eps_hp,alpha,beta1,beta2,lam,num_up);

@@ -53,14 +53,8 @@ ym_flat = zeros(2*sl_dec,dout);
 ym_flat(1:2:end,:) = ym1;
 ym_flat(2:2:end,:) = ym2;
 
-% 2 - feedforward layers with dropout (pre-net)
-hm_f_1_N2 = fp_cpu_ll(ym_flat,p_f_1_N2,f(1));
-[hm_f_1_N2,dm_f_1_N2] = fp_dropout(hm_f_1_N2,dp(1),nl(2));
-hm_f_2_N2 = fp_cpu_ll(hm_f_1_N2,p_f_2_N2,f(2));
-[hm_f_2_N2,dm_f_2_N2] = fp_dropout(hm_f_2_N2,dp(2),nl(3));
-
 % Convolution bank 
-hm_c_1_N2 = fp_clb(hm_f_2_N2,p_c_1_N2,K_conv_l1,C_conv_l1,nl(7),'R',2*sl_dec);
+hm_c_1_N2 = fp_clb(ym_flat,p_c_1_N2,K_conv_l1,C_conv_l1,nl(7),'R',2*sl_dec);
 hm_c_2_N2 = fp_cl(hm_c_1_N2,p_c_2_N2.U,K_conv_l2,C_conv_l2,K_conv_l1*C_conv_l1,'R',2*sl_dec);
 hm_c_3_N2 = fp_cl(hm_c_2_N2,p_c_3_N2.U,K_conv_l2,C_conv_l2,C_conv_l2,'L',2*sl_dec);
 hm_c_4_N2 = hm_c_3_N2 + ym_flat; % residual modification
