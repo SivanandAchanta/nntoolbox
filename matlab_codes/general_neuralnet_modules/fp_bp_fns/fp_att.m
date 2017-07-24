@@ -19,9 +19,11 @@ for k = 1:sl_dec
     
     % linear combination of annotation matrix
     c_k = H*alpha_k';
-    
+
     % store vectors for T time steps
     bm(k,:) = e_kj;
     sm(k,:) = alpha_k;
+
+    
     cm(k,:) = c_k';
 end
