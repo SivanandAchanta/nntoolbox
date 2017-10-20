@@ -1,0 +1,12 @@
+Namespace(audio_feats_ext='.fb', b1=0.9, b2=0.99, dp=0.5, embedding_flag=False, etc_dir='../../etc/', feats_dir='../../feats/', gcth=0.0, hs1=250, hs2=500, load_wts=True, log_folder='../../log/', lr=0.0003, model_folder='../../wt/', model_name='s2s_enc_blstm_dec_lstm3l_pfnet_blstm1L_nopfnetloss_', niter=20, pfnet_audio_feats_ext='.sp', pfnet_hs1=250, pfnet_stats_dir='../../pfnet_stats/', plot_folder='../../plots/', print_every=10, r=3, residual_flag=True, stats_dir='../../stats/', train_flag=True, wtinit_meth='default_init')
+s2s_enc_blstm_dec_lstm3l_pfnet_blstm1L_nopfnetloss__hs1250_hs2500_pfnet_hs1250_r3_lr0.0003_b10.9_b20.99_dp0.5_gc0.0_wtinitdefault_init_lw1_ef0_rf1
+[' ', ',', '-', '.', ';', 'a', 'b', 'c', 'd', 'e', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'w', 'x', 'y']
+3650 3650
+Traceback (most recent call last):
+  File "main_withpf_nopfnetloss.py", line 701, in <module>
+    train(opt)
+  File "main_withpf_nopfnetloss.py", line 484, in train
+    enc_state_dict = torch.load(load_model_name_pfx + 'enc' + load_model_name_sfx, map_location=lambda storage, loc: storage)
+  File "/home/sivanand/anaconda3/lib/python3.6/site-packages/torch/serialization.py", line 229, in load
+    f = open(f, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '../../wt/s2s_enc_blstm_dec_lstm3l_pfnet_blstm1L_nopfnetloss__hs1250_hs2500_pfnet_hs1250_r3_lr0.0003_b10.9_b20.99_dp0.5_gc0.0_wtinitdefault_init_lw0_ef0_rf1_enc_epoch_2999_15.pth'
